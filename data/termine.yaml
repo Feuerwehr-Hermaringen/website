@@ -1,29 +1,16 @@
-# Termine der Freiwilligen Feuerwehr Hermaringen
-#
-# Zentrale Datenquelle. Nur KOMMENDE Termine werden auf der Website angezeigt;
-# abgelaufene Termine verschwinden automatisch. Kein Rückblick.
-#
-# Aufbau je Termin:
-#   titel    = Bezeichnung
-#   datum    = im Format JJJJ-MM-TT
-#   uhrzeit  = frei, z. B. "19:00 Uhr" (optional)
-#   ort      = Veranstaltungsort (optional)
-#   beschreibung = kurzer Text (optional)
-#   kategorie = Übung | Versammlung | Fest | Sonstiges
-#
-# DIE FOLGENDEN EINTRÄGE SIND BEISPIELE - bitte durch echte Termine ersetzen.
-
 termine:
-  - titel: "Monatsübung Einsatzabteilung"
-    datum: "2026-09-15"
-    uhrzeit: "19:00 Uhr"
-    ort: "Feuerwehrhaus Hermaringen"
-    beschreibung: "Praktische Übung der Einsatzabteilung."
-    kategorie: "Übung"
-
-  - titel: "Übungsabend Jugendfeuerwehr"
-    datum: "2026-09-22"
-    uhrzeit: "18:00 Uhr"
-    ort: "Feuerwehrhaus Hermaringen"
-    beschreibung: "Wöchentlicher Übungsabend der Jugendfeuerwehr."
-    kategorie: "Übung"
+  - titel: Monatsübung Einsatzabteilung
+    datum: 2026-09-15
+    uhrzeit: 19:00 Uhr
+    ort: Feuerwehrhaus Hermaringen
+    beschreibung: Praktische Übung der Einsatzabteilung.
+    kategorie: Übung
+  - titel: Übungsabend Jugendfeuerwehr
+    datum: 2026-09-22
+    uhrzeit: 18:00 Uhr
+    ort: Feuerwehrhaus Hermaringen
+    beschreibung: Wöchentlicher Übungsabend der Jugendfeuerwehr.
+    kategorie: Übung
+  - kategorie: Sonstiges
+    titel: Feuerwehrausflug
+    datum: 2026-09-04
