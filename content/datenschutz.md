@@ -3,58 +3,114 @@ title: "Datenschutzerklärung"
 entwurf: true
 ---
 
-> **ENTWURF – muss von der Gemeinde bzw. dem/der behördlichen Datenschutzbeauftragten
-> geprüft und freigegeben werden, bevor die Website öffentlich geht.**
-> Dieser Entwurf beschreibt die Technik, wie sie aktuell aufgebaut ist
-> (keine Cookies, kein Tracking). Er ersetzt keine rechtliche Prüfung.
+> **ENTWURF.** Dieser Text wurde an der Datenschutzerklärung der Gemeinde Hermaringen
+> ausgerichtet, weil die Freiwillige Feuerwehr eine Einrichtung der Gemeinde ist.
+> Er **muss vom behördlichen Datenschutzbeauftragten der Gemeinde (Christoph Boser)
+> geprüft und freigegeben** werden – insbesondere, weil hier die Gemeinde als
+> Verantwortliche benannt wird und weil der Anmeldedienst des Redaktionssystems
+> (DecapBridge) ein anderer ist als auf der Gemeinde-Website (Netlify Identity).
 
 ## 1. Verantwortlicher
 
-*(Name, Anschrift, E-Mail des Verantwortlichen ergänzen – Gemeinde Hermaringen oder
-Freiwillige Feuerwehr Hermaringen, je nach Trägerschaft.)*
+Die Freiwillige Feuerwehr Hermaringen ist eine Einrichtung der Gemeinde Hermaringen
+ohne eigene Rechtspersönlichkeit. Verantwortlich für die Datenverarbeitung auf
+dieser Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist daher:
 
-## 2. Datenschutzbeauftragte:r
+Gemeinde Hermaringen
+Karlstraße 12, 89568 Hermaringen
+Telefon: 07322 954 70
+E-Mail: info@hermaringen.de
 
-*(Kontaktdaten des/der behördlichen Datenschutzbeauftragten der Gemeinde Hermaringen ergänzen.)*
+**Verantwortlich für den Inhalt dieser Website** (§ 18 Abs. 2 MStV):
+Marvin Nauenburg, presse@feuerwehr-hermaringen.de
 
-## 3. Aufruf der Website und Server-Logfiles
+## 2. Behördlicher Datenschutzbeauftragter
 
-Diese Website wird bei **Netlify** (Netlify, Inc., USA) gehostet. Beim Aufruf der Website
-werden technisch notwendige Daten verarbeitet, die Ihr Browser übermittelt (u. a.
-IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite, verwendeter Browser).
-Diese Verarbeitung ist zur sicheren und stabilen Bereitstellung der Website erforderlich
-(Rechtsgrundlage Art. 6 Abs. 1 lit. f DSGVO bzw. § 3 LDSG).
+Christoph Boser
+E-Mail: datenschutz@hermaringen.de
 
-*(Zu prüfen: Auftragsverarbeitungsvertrag mit Netlify, Datenübermittlung in die USA,
-geeignete Garantien / Standardvertragsklauseln.)*
+## 3. Hosting
 
-## 4. Cookies und Tracking
+Diese Website wird gehostet bei: Netlify, Inc., 44 Montgomery Street, Suite 300,
+San Francisco, California 94104, USA. Netlify ist im EU-US Data Privacy Framework
+zertifiziert; es besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO.
+Beim Aufruf der Website erfasst Netlify automatisch technische Zugriffsdaten
+(Server-Logfiles, siehe Abschnitt 4).
 
-Diese Website verwendet **keine Cookies** zu Analyse- oder Marketingzwecken und **keine
-Tracking- oder Analysedienste**. Es werden keine externen Schriften, Karten oder
-Social-Media-Widgets geladen. Bilder und Dokumente werden von unserem eigenen System
-ausgeliefert.
+Für die Pflege der Inhalte betreibt die Feuerwehr unter `/admin/` einen
+zugangsgeschützten Redaktionsbereich. Nur dort – nicht auf den öffentlichen
+Seiten – kommen zwei weitere Dienste zum Einsatz:
 
-## 5. Redaktionssystem (nur für Redakteurinnen und Redakteure)
+- der Anmeldedienst **DecapBridge**, über den sich die Redaktionsmitglieder mit
+  E-Mail und Passwort anmelden; verarbeitet werden dabei die Zugangsdaten der
+  angemeldeten Personen sowie technische Verbindungsdaten.
+  *(Zu prüfen: Auftragsverarbeitungsvertrag, Serverstandort und
+  Datenübermittlung des Anbieters von DecapBridge.)*
+- das Redaktionsprogramm **Decap CMS**, das über den Auslieferungsdienst
+  `unpkg.com` (Cloudflare, Inc., USA) geladen wird; dabei wird die IP-Adresse
+  des Redaktionsmitglieds an diesen Dienst übermittelt.
 
-Zur Pflege der Inhalte wird das Redaktionssystem Decap CMS in Verbindung mit dem
-Anmeldedienst **DecapBridge** genutzt. Dieser Dienst ist nur für angemeldete
-Redakteurinnen und Redakteure relevant und wird beim normalen Besuch der Website
-nicht angesprochen.
+Rechtsgrundlage ist jeweils Art. 6 Abs. 1 lit. e DSGVO (Wahrnehmung einer
+öffentlichen Aufgabe). Für Besucherinnen und Besucher der öffentlichen Seiten
+spielt dieser Bereich keine Rolle – dort werden keine dieser Dienste geladen.
 
-## 6. Kontaktaufnahme
+## 4. Server-Logfiles
 
-Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage
-gespeichert. Ein Kontaktformular ist derzeit nicht in Betrieb.
+Bei jedem Seitenaufruf werden durch den Webserver automatisch folgende Daten erfasst:
 
-## 7. Ihre Rechte
+- IP-Adresse des anfragenden Geräts
+- Datum und Uhrzeit des Zugriffs
+- aufgerufene Seite bzw. Datei
+- übertragene Datenmenge und Statusmeldung
+- verwendeter Browser und Betriebssystem
+- zuvor besuchte Seite (Referrer), sofern übermittelt
 
-Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
-Datenübertragbarkeit und Widerspruch. Außerdem können Sie sich beim
-Landesbeauftragten für den Datenschutz und die Informationsfreiheit Baden-Württemberg
-beschweren.
+Diese Daten dienen ausschließlich der Systemsicherheit und Fehleranalyse.
+Rechtsgrundlage ist Art. 6 Abs. 1 lit. e DSGVO in Verbindung mit § 4 LDSG
+Baden-Württemberg.
+*(Löschfrist mit dem Datenschutzbeauftragten festlegen – die Gemeinde-Website
+nennt 7 Tage.)*
 
-## 8. Später geplante Funktionen
+## 5. Cookies
 
-Für einen späteren Zeitpunkt sind ein Kontaktformular (über Netlify Forms) sowie eine
-Volltextsuche vorgesehen. Diese Erklärung wird vor deren Einführung entsprechend ergänzt.
+Diese Website verwendet keine Analyse- oder Werbe-Cookies. Sie bindet auch keine
+weiteren Dienste Dritter ein – keine externen Schriftarten, keine Kartendienste,
+keine Reichweitenmessung. Für den normalen Besuch dieser Website ist deshalb
+keine Einwilligung erforderlich, und es erscheint kein Cookie-Banner.
+
+## 6. Bilder und Einsatzberichte
+
+Auf dieser Website veröffentlichte Fotos werden ausschließlich von unserem
+eigenen System ausgeliefert. Bei Einsatzberichten achten wir darauf, keine
+Betroffenen, Verletzten oder Kfz-Kennzeichen erkennbar abzubilden. Fotos von
+Feuerwehrangehörigen werden nur auf Grundlage einer Einwilligung bzw. einer
+anderen Rechtsgrundlage veröffentlicht.
+
+## 7. Kontaktaufnahme
+
+Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre Angaben ausschließlich
+zur Bearbeitung Ihres Anliegens und löschen sie, sobald die Aufbewahrung nicht
+mehr erforderlich ist. Ein Kontaktformular ist derzeit nicht in Betrieb.
+*(Wird zu einem späteren Zeitpunkt ein Kontaktformular oder eine Einbindung von
+Videos ergänzt, ist diese Erklärung vorher entsprechend zu erweitern – die
+Gemeinde-Website enthält dafür passende Textbausteine.)*
+
+## 8. Ihre Rechte
+
+Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO),
+Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO),
+Datenübertragbarkeit (Art. 20 DSGVO) und Widerspruch gegen die Verarbeitung
+(Art. 21 DSGVO). Für Anfragen wenden Sie sich an den Datenschutzbeauftragten
+unter datenschutz@hermaringen.de.
+
+## 9. Beschwerderecht bei der Aufsichtsbehörde
+
+Sie haben das Recht, sich bei der zuständigen Datenschutz-Aufsichtsbehörde zu
+beschweren:
+
+Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg
+Lautenschlagerstraße 20, 70173 Stuttgart
+Telefon: 0711 615541-0
+E-Mail: poststelle@lfdi.bwl.de
+
+Stand: *(Datum bei Freigabe eintragen)*

@@ -3,39 +3,78 @@ title: "Impressum"
 entwurf: true
 ---
 
-> **ENTWURF – muss von der Gemeinde bzw. der Feuerwehrführung geprüft und freigegeben werden.**
-> Insbesondere ist zu klären, wer rechtlich verantwortlicher Betreiber der Website ist
-> (Gemeinde Hermaringen oder Freiwillige Feuerwehr Hermaringen).
+> **ENTWURF.** An das Impressum der Gemeinde Hermaringen angelehnt, da die
+> Freiwillige Feuerwehr eine Einrichtung der Gemeinde ist.
+> **Von der Gemeinde bzw. der Feuerwehrführung zu prüfen und freizugeben** –
+> insbesondere die Angabe der Trägerschaft und der vertretungsberechtigten Person.
 
 ## Angaben gemäß § 5 DDG
 
 **Freiwillige Feuerwehr Hermaringen**
+Einrichtung der Gemeinde Hermaringen
+
+Feuerwehrhaus Hermaringen
 Kaisheimstraße 10
 89568 Hermaringen
 
 Telefon: 07322 934780
 E-Mail: kommandant@feuerwehr-hermaringen.de
 
-**Vertreten durch:** Steffen Grolik, Kommandant
+**Träger:** Gemeinde Hermaringen, Körperschaft des öffentlichen Rechts,
+Karlstraße 12, 89568 Hermaringen
 
-*(Bitte prüfen: Trägerschaft der Website, ladungsfähige Anschrift, ggf. Angabe der Gemeinde Hermaringen als Diensteanbieter.)*
+**Vertreten durch:** Bürgermeister Lennart Schmeißer (Gemeinde Hermaringen);
+für die Feuerwehr: Kommandant Steffen Grolik
 
-## Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV
+## Zuständige Aufsichtsbehörde
 
-*(Name und Anschrift der verantwortlichen Person ergänzen – z. B. Kommandant oder Beauftragte:r für Öffentlichkeitsarbeit.)*
+Landratsamt Heidenheim (Rechtsaufsichtsbehörde)
+Felsenstraße 36
+89518 Heidenheim an der Brenz
+
+## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
+
+Marvin Nauenburg
+presse@feuerwehr-hermaringen.de
 
 ## Haftung für Inhalte
 
-Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.
+Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen
+Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind
+wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte
+fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine
+rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung
+der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon
+unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der
+Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von
+entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
 
 ## Haftung für Links
 
-Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte kein Einfluss besteht. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.
-
-## Elektronische Post
-
-Verschlüsselte oder signierte E-Mails können derzeit aus technischen und organisatorischen Gründen nicht bearbeitet werden. Für vertrauliche Informationen oder Dokumente, die einer Unterschrift bedürfen, verwenden Sie bitte die Briefpost.
+Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir
+keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine
+Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige
+Anbieter oder Betreiber der Seiten verantwortlich. Bei Bekanntwerden von
+Rechtsverletzungen werden wir derartige Links umgehend entfernen.
 
 ## Urheberrecht
 
-Die auf dieser Website veröffentlichten Inhalte und Bilder unterliegen dem deutschen Urheberrecht. Eine Verwendung außerhalb dieser Website bedarf der Zustimmung.
+Die auf diesen Seiten veröffentlichten Inhalte und Werke unterliegen dem
+deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede
+Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der
+schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und
+Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch
+gestattet.
+
+## Bildnachweis
+
+Sofern bei einem Bild nichts anderes vermerkt ist, liegen die Rechte bei der
+Freiwilligen Feuerwehr Hermaringen bzw. der Gemeinde Hermaringen.
+*(Für einzelne übernommene Fotos – z. B. das Titelbild der Startseite – sind die
+Nutzungsrechte noch abschließend zu klären.)*
+
+## Elektronische Kommunikation
+
+Verschlüsselte oder signierte E-Mails können derzeit aus technischen und
+organisatorischen Gründen nicht bearbeitet werden. Für Anliegen, die von Gesetzes
+wegen die Schriftform verlangen, verwenden Sie bitte die Briefpost.

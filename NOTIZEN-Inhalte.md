@@ -555,3 +555,36 @@ Das Projekt lag in iCloud Drive. iCloud hatte den Git-Ordner beschädigt
 
 NEUER Terminal-Befehl am Anfang jeder Sitzung:
 `cd /Users/marvin/Feuerwehr-Website && git pull`
+
+---
+
+## Pflichtseiten überarbeitet – an Gemeinde Hermaringen angelehnt – 2026-09-02
+
+Marvins Hinweis: Feuerwehr ist Einrichtung der Gemeinde -> Teile der Gemeinde-Website
+(https://gemeinde-hermaringen.netlify.app) übernommen. Die Gemeinde nutzt dieselbe
+Technik (Hugo + Netlify).
+
+Übernommen / eingearbeitet:
+- **Verantwortlicher (Datenschutz + Impressum): Gemeinde Hermaringen**, Karlstraße 12,
+  Tel. 07322 954 70, info@hermaringen.de. -> Die GEMEINDE muss dem zustimmen.
+- Behördlicher Datenschutzbeauftragter: **Christoph Boser, datenschutz@hermaringen.de**
+- Aufsichtsbehörde (Impressum): Landratsamt Heidenheim, Felsenstraße 36, 89518 Heidenheim
+- Datenschutz-Aufsichtsbehörde: LfDI Baden-Württemberg, Lautenschlagerstraße 20, Stuttgart
+- Barrierefreiheit-Schlichtungsstelle: Beauftragter der Landesregierung BW,
+  Else-Josenhans-Straße 6, 70173 Stuttgart
+- Bürgermeister heißt mit Vornamen **Lennart** Schmeißer
+- Rechtsgrundlage durchgängig Art. 6 Abs. 1 lit. e DSGVO + § 4 LDSG BW (öffentliche Aufgabe)
+- **Verantwortlich für den Inhalt (§ 18 Abs. 2 MStV): Marvin Nauenburg, presse@feuerwehr-hermaringen.de**
+
+Unterschied zur Gemeinde: die Gemeinde nutzt **Netlify Identity**, wir **DecapBridge**.
+Im Datenschutz-Entwurf entsprechend angepasst + als Prüfpunkt markiert
+(AVV / Serverstandort von DecapBridge klären). Überlegenswert: wie die Gemeinde
+Netlify Identity nutzen -> ein Dienstleister weniger, gleiche DSB-Freigabe.
+
+OFFEN vor Live:
+- Christoph Boser (DSB der Gemeinde) muss Datenschutzerklärung prüfen und freigeben
+  (v. a. weil Gemeinde als Verantwortliche benannt wird).
+- Gemeinde muss Trägerschaft im Impressum bestätigen.
+- Löschfrist Server-Logfiles festlegen (Gemeinde: 7 Tage).
+- Erstellungsdatum in Barrierefreiheitserklärung eintragen.
+- Textübernahme mit der Gemeinde abstimmen (deren Impressum verlangt schriftl. Zustimmung).

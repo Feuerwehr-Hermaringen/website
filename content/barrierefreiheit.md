@@ -3,47 +3,62 @@ title: "Barrierefreiheitserklärung"
 entwurf: true
 ---
 
-> **ENTWURF – die konkreten Angaben (Kontaktstelle, Datum der Prüfung, Grad der
-> Vereinbarkeit) müssen von der Feuerwehr bzw. der Gemeinde ergänzt und bestätigt werden.**
+> **ENTWURF.** An der Barrierefreiheitserklärung der Gemeinde Hermaringen
+> ausgerichtet. **Das Erstellungsdatum, die Kontaktstelle für Rückmeldungen und
+> der genaue Konformitätsgrad sind von der Feuerwehr bzw. der Gemeinde
+> festzulegen**, bevor die Seite veröffentlicht wird.
 
-## Geltungsbereich
+## Erklärung zur Barrierefreiheit
 
-Diese Erklärung gilt für die Website **feuerwehr.hermaringen.de** *(Adresse ggf. anpassen)*
-der Freiwilligen Feuerwehr Hermaringen.
+Die Freiwillige Feuerwehr Hermaringen – eine Einrichtung der Gemeinde Hermaringen –
+ist bemüht, ihre Website im Einklang mit § 10 des Landes-Behindertengleichstellungs­gesetzes
+Baden-Württemberg (L-BGG) und der Barrierefreie-Informationstechnik-Verordnung
+(BITV 2.0) barrierefrei zugänglich zu machen.
 
-Wir sind bemüht, unsere Website im Einklang mit den Vorgaben der WCAG 2.1 (Stufe AA)
-und der BITV 2.0 barrierefrei zugänglich zu machen.
+## Stand der Vereinbarkeit mit den Anforderungen
 
-## Stand der Vereinbarkeit
-
-*(Bitte festlegen: „vollständig vereinbar" / „teilweise vereinbar" / „nicht vereinbar".)*
-
-Die Website wurde bei der Erstellung so umgesetzt, dass sie unter anderem folgende
-Anforderungen berücksichtigt:
-
-- Sprungmarke zum Hauptinhalt
-- klare HTML-Struktur mit Kopf-, Navigations-, Haupt- und Fußbereich
-- sichtbarer Tastaturfokus und vollständige Bedienbarkeit per Tastatur
-- ausreichende Farbkontraste
-- Alternativtexte für Bilder *(werden fortlaufend ergänzt)*
-- verständliche Linktexte
-- Berücksichtigung der Einstellung „Bewegung reduzieren"
+Diese Website ist **teilweise** mit § 10 L-BGG und der BITV 2.0 vereinbar.
+Die Seite wurde von Grund auf nach anerkannten Standards (WCAG 2.1, Stufe AA)
+gestaltet: semantische HTML-Struktur, Sprungmarke zum Hauptinhalt, vollständige
+Tastaturbedienbarkeit, sichtbarer Tastaturfokus, ausreichende Farbkontraste,
+Alternativtexte für informative Bilder und Berücksichtigung der Einstellung
+„Bewegung reduzieren".
 
 ## Nicht barrierefreie Inhalte
 
-*(Hier bekannte Einschränkungen auflisten, z. B. ältere PDF-Dokumente ohne
-Barrierefreiheit, Bilder aus dem Archiv ohne Alternativtext.)*
+Folgende Inhalte sind derzeit noch nicht vollständig barrierefrei:
+
+- **Alternativtexte:** Ein Teil der von der bisherigen Website übernommenen
+  Fotos (insbesondere in Bildergalerien) hat noch keinen aussagekräftigen
+  Alternativtext. Diese werden schrittweise ergänzt.
+- **PDF-Dokumente:** Ältere oder von Dritten erstellte PDF-Dateien sind
+  möglicherweise nicht vollständig barrierefrei aufbereitet. Benötigen Sie ein
+  bestimmtes Dokument in zugänglicher Form, melden Sie sich bitte – wir stellen
+  Ihnen den Inhalt gerne auf einem anderen Weg zur Verfügung.
 
 ## Erstellung dieser Erklärung
 
-Diese Erklärung wurde am *(Datum ergänzen)* auf Grundlage einer Selbstbewertung erstellt.
+Diese Erklärung wurde am *(Datum eintragen)* erstellt. Die Bewertung beruht auf
+einer Selbstbewertung.
 
-## Feedback und Kontakt
+## Barrieren melden – Feedback und Kontakt
 
-Wenn Ihnen Barrieren auf dieser Website auffallen, wenden Sie sich bitte an:
-*(Kontaktstelle / E-Mail-Adresse ergänzen.)*
+Sind Ihnen Mängel beim barrierefreien Zugang zu Inhalten dieser Website
+aufgefallen? Dann teilen Sie uns das bitte mit:
 
-## Schlichtungsverfahren
+Freiwillige Feuerwehr Hermaringen
+Kaisheimstraße 10, 89568 Hermaringen
+E-Mail: presse@feuerwehr-hermaringen.de
 
-Kommt es zu keiner zufriedenstellenden Lösung, können Sie die Landes-Schlichtungsstelle
-nach § 11 des Landes-Behindertengleichstellungsgesetzes Baden-Württemberg anrufen.
+Wir werden uns innerhalb von sechs Wochen bei Ihnen melden.
+
+## Durchsetzungsverfahren / Schlichtungsstelle
+
+Wenn Sie auf Ihre Rückmeldung keine zufriedenstellende Antwort erhalten haben,
+können Sie sich an die zuständige Schlichtungsstelle wenden:
+
+Beauftragter der Landesregierung Baden-Württemberg für die Belange von Menschen mit Behinderungen
+Else-Josenhans-Straße 6, 70173 Stuttgart
+Web: www.behindertenbeauftragter-bw.de
+
+Das Schlichtungsverfahren ist für Sie kostenfrei.
