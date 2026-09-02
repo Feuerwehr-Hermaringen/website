@@ -539,3 +539,19 @@ später komplett über das CMS anlegbar / änderbar / löschbar sein.
 - Diese Seiten NICHT ohne Freigabe live schalten.
 
 --> Abschnitt 11 ABGESCHLOSSEN (Inhaltsabstimmung Schritt 1 komplett).
+
+---
+
+## Projekt aus iCloud verschoben – 2026-09-02
+
+Das Projekt lag in iCloud Drive. iCloud hatte den Git-Ordner beschädigt
+(doppelte Datei `main 2`), dadurch ging `git push` nicht mehr.
+
+- Git-Ordner repariert, CMS-Änderungen der Redaktion (2 Einsätze, Termin
+  „Feuerwehrausflug", ein Test-Bild) mit den lokalen Änderungen zusammengeführt.
+- Verwaistes Test-Bild `türöffnung.png` entfernt (war nirgends verknüpft).
+- **Projekt verschoben nach:** `/Users/marvin/Feuerwehr-Website`
+  (nicht mehr in iCloud – Git und iCloud vertragen sich nicht).
+
+NEUER Terminal-Befehl am Anfang jeder Sitzung:
+`cd /Users/marvin/Feuerwehr-Website && git pull`

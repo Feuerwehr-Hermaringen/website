@@ -46,7 +46,7 @@ Helfer als Mitglieder aufzunehmen.
 tatsächlichen Namen anpassen):
 
 ```bash
-cd "/Users/marvin/Library/Mobile Documents/com~apple~CloudDocs/Feuerwehr/Website 2"
+cd "/Users/marvin/Feuerwehr-Website"
 ```
 ```bash
 git remote add origin https://github.com/feuerwehr-hermaringen/website.git
@@ -153,7 +153,7 @@ DecapBridge braucht die Erlaubnis, in unser Repository zu schreiben.
 4. Speichern. Dann im Terminal:
 
 ```bash
-cd "/Users/marvin/Library/Mobile Documents/com~apple~CloudDocs/Feuerwehr/Website 2"
+cd "/Users/marvin/Feuerwehr-Website"
 ```
 ```bash
 git add static/admin/config.yml && git commit -m "CMS-Anmeldung eingerichtet" && git push
