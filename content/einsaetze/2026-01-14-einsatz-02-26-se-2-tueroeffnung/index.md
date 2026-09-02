@@ -7,7 +7,7 @@ einsatzende: 20:23 Uhr
 einsatzart: SE 2 - Türöffnung
 einsatzort: "**Magenaustraße, Hermaringen"
 einsatzfahrzeuge: "**HLF 20/20, MTW"
-vorschaubild: türöffnung.png
+vorschaubild: ""
 galerie: []
 uebernommen: true
 ---
