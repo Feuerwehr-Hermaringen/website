@@ -1,6 +1,6 @@
 ---
 title: Datenschutzerklärung
-entwurf: true
+entwurf: false
 ---
 > **ENTWURF.** Dieser Text wurde an der Datenschutzerklärung der Gemeinde Hermaringen
 > ausgerichtet, weil die Freiwillige Feuerwehr eine Einrichtung der Gemeinde ist.
