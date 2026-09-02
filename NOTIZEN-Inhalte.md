@@ -302,7 +302,38 @@ Partial: layouts/partials/seiten-hero.html. Geschichte-Kopfbild war nur eine Tex
 
 Offen: README.md und ANLEITUNG-Pflege.md (nach Schritt 4 / wenn die Seite fertig ist).
 
---> Schritt 3 ABGESCHLOSSEN. Nächster Schritt: 4 (GitHub- und Netlify-Konto, Verbindung, Klick-Anleitung).
+--> Schritt 3 ABGESCHLOSSEN.
+
+---
+
+## Schritt 4 – Online-Einrichtung – 2026-09-02
+
+- Lokales Git-Repository angelegt, Commits gemacht.
+- Klick-Anleitung: ANLEITUNG-Schritt4-Einrichtung.md (16 Schritte).
+- **GitHub:** Organisation `Feuerwehr-Hermaringen`, Repository `Feuerwehr-Hermaringen/website`.
+  Repo wurde auf ÖFFENTLICH gestellt, weil Netlify private Org-Repos nur noch im
+  Pro-Plan (20 $) verbindet. -> DSGVO-Fotoprüfung dadurch dringlicher.
+- **Netlify:** Site `feuerwehr-hermaringen.netlify.app`, Build aus netlify.toml.
+- **DecapBridge:** Site-ID `13d11593-2d74-4001-9731-de85a4c2e6a8`, Auth „Classic".
+  GitHub-Zugriff über klassischen PAT mit `repo`-Scope (fein abgestufte Tokens waren
+  für die Organisation nicht freigeschaltet).
+- static/admin/config.yml: Platzhalter ersetzt (repo, identity_url, site_url/display_url/
+  logo_url auf netlify.app). hugo.toml baseURL vorerst auf netlify.app.
+- **Live geprüft:** Startseite, /einsaetze/, /admin/ = 200; alte URL -> 301 auf neue URL;
+  Sicherheits-Header aktiv. Marvin bestätigt: CMS-Anmeldung funktioniert.
+- **ANLEITUNG-Pflege.md** für die ehrenamtliche Redaktion erstellt (13 Abschnitte,
+  Alltagssprache). README.md und CLAUDE.md stehen ebenfalls.
+
+### Noch offen (Schritt 4 / vor „richtig live"):
+- Domain feuerwehr.hermaringen.de: CNAME bei der Gemeinde erfragen (-> netlify.app),
+  in Netlify eintragen, danach baseURL + config.yml + DecapBridge-Login-URL umstellen.
+- Redakteure in DecapBridge einladen (Dashboard -> Manage collaborators).
+- DSGVO-Prüfung ALLER übernommenen Fotos (jetzt dringlich, Repo ist öffentlich).
+- Impressum/Datenschutz/Barrierefreiheit von der Gemeinde freigeben lassen.
+- Steckbriefe / Chronik / Ansprechpartner / Termine von der Feuerwehr bestätigen.
+- "Technische Betreuung" in ANLEITUNG-Pflege.md eintragen.
+
+--> Schritt 4 weitgehend abgeschlossen. Website ist online, CMS funktioniert.
 
 ---
 

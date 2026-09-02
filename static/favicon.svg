@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Favicon der Freiwilligen Feuerwehr Hermaringen:
+       Wappenschild in den Hermaringer Farben (Gruen), mit Baum und drei Sternen.
+       Bewusst einfach gehalten, damit es auch als kleines Tab-Symbol erkennbar ist. -->
+  <path d="M8 6h48v28c0 14-10 22-24 28C18 56 8 48 8 34V6z" fill="#1c7a3e"/>
+  <path d="M12 10h40v24c0 11-8 18-20 23-12-5-20-12-20-23V10z" fill="#f4f2ee"/>
+  <!-- gruener Schildhaupt-Balken mit drei Sternen -->
+  <path d="M12 10h40v11H12z" fill="#1c7a3e"/>
+  <g fill="#ffffff">
+    <path d="M20 11.5l1.2 2.6 2.8.3-2 2 .6 2.8-2.6-1.4-2.6 1.4.6-2.8-2-2 2.8-.3z"/>
+    <path d="M32 11.5l1.2 2.6 2.8.3-2 2 .6 2.8-2.6-1.4-2.6 1.4.6-2.8-2-2 2.8-.3z"/>
+    <path d="M44 11.5l1.2 2.6 2.8.3-2 2 .6 2.8-2.6-1.4-2.6 1.4.6-2.8-2-2 2.8-.3z"/>
+  </g>
+  <!-- Baum -->
+  <g fill="#1c7a3e">
+    <path d="M32 24c-7 0-12 5-12 11 0 5 4 9 9 10v5h6v-5c5-1 9-5 9-10 0-6-5-11-12-11z"/>
+    <rect x="30" y="42" width="4" height="8"/>
+  </g>
+</svg>
