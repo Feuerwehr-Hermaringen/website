@@ -12,9 +12,9 @@
 
 backend:
   name: git-gateway
-  repo: "<<GITHUB-ORG/REPOSITORY>>"        # z. B. feuerwehr-hermaringen/website
+  repo: "Feuerwehr-Hermaringen/website"
   branch: main
-  identity_url: "https://auth.decapbridge.com/sites/<<DECAPBRIDGE-SITE-ID>>"
+  identity_url: "https://auth.decapbridge.com/sites/13d11593-2d74-4001-9731-de85a4c2e6a8"
   gateway_url: "https://gateway.decapbridge.com"
   commit_messages:
     create: 'Neu angelegt: {{collection}} {{slug}} (über die Redaktion)'
@@ -37,10 +37,11 @@ publish_mode: simple
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
-# Adresse der fertigen Website (wird in Schritt 4/Domain gesetzt):
-site_url: "https://feuerwehr.hermaringen.de"
-display_url: "https://feuerwehr.hermaringen.de"
-logo_url: "https://feuerwehr.hermaringen.de/uploads/logo-feuerwehr-hermaringen.png"
+# Adresse der Website. Vorerst die Netlify-Adresse – wird bei der Domain-Umstellung
+# (Schritt 4, Teil D) auf https://feuerwehr.hermaringen.de geändert.
+site_url: "https://feuerwehr-hermaringen.netlify.app"
+display_url: "https://feuerwehr-hermaringen.netlify.app"
+logo_url: "https://feuerwehr-hermaringen.netlify.app/uploads/logo-feuerwehr-hermaringen.png"
 
 collections:
 
