@@ -1,13 +1,13 @@
 ---
-title: "Einsatz 02/26 - SE 2 Türöffnung"
+title: Einsatz 02/26 - SE 2 Türöffnung
 date: 2026-01-14T19:24:00+02:00
 einsatznummer: "**02/26"
-alarmzeit: "19:24 Uhr"
-einsatzende: "20:23 Uhr"
-einsatzart: "SE 2 - Türöffnung"
+alarmzeit: 19:24 Uhr
+einsatzende: 20:23 Uhr
+einsatzart: SE 2 - Türöffnung
 einsatzort: "**Magenaustraße, Hermaringen"
 einsatzfahrzeuge: "**HLF 20/20, MTW"
-vorschaubild: ""
+vorschaubild: türöffnung.png
 galerie: []
 uebernommen: true
 ---
