@@ -1,8 +1,7 @@
 ---
-title: "Datenschutzerklärung"
+title: Datenschutzerklärung
 entwurf: true
 ---
-
 > **ENTWURF.** Dieser Text wurde an der Datenschutzerklärung der Gemeinde Hermaringen
 > ausgerichtet, weil die Freiwillige Feuerwehr eine Einrichtung der Gemeinde ist.
 > Er **muss vom behördlichen Datenschutzbeauftragten der Gemeinde (Christoph Boser)
@@ -41,12 +40,12 @@ Für die Pflege der Inhalte betreibt die Feuerwehr unter `/admin/` einen
 zugangsgeschützten Redaktionsbereich. Nur dort – nicht auf den öffentlichen
 Seiten – kommen zwei weitere Dienste zum Einsatz:
 
-- der Anmeldedienst **DecapBridge**, über den sich die Redaktionsmitglieder mit
+* der Anmeldedienst **DecapBridge**, über den sich die Redaktionsmitglieder mit
   E-Mail und Passwort anmelden; verarbeitet werden dabei die Zugangsdaten der
   angemeldeten Personen sowie technische Verbindungsdaten.
   *(Zu prüfen: Auftragsverarbeitungsvertrag, Serverstandort und
   Datenübermittlung des Anbieters von DecapBridge.)*
-- das Redaktionsprogramm **Decap CMS**, das über den Auslieferungsdienst
+* das Redaktionsprogramm **Decap CMS**, das über den Auslieferungsdienst
   `unpkg.com` (Cloudflare, Inc., USA) geladen wird; dabei wird die IP-Adresse
   des Redaktionsmitglieds an diesen Dienst übermittelt.
 
@@ -58,18 +57,17 @@ spielt dieser Bereich keine Rolle – dort werden keine dieser Dienste geladen.
 
 Bei jedem Seitenaufruf werden durch den Webserver automatisch folgende Daten erfasst:
 
-- IP-Adresse des anfragenden Geräts
-- Datum und Uhrzeit des Zugriffs
-- aufgerufene Seite bzw. Datei
-- übertragene Datenmenge und Statusmeldung
-- verwendeter Browser und Betriebssystem
-- zuvor besuchte Seite (Referrer), sofern übermittelt
+* IP-Adresse des anfragenden Geräts
+* Datum und Uhrzeit des Zugriffs
+* aufgerufene Seite bzw. Datei
+* übertragene Datenmenge und Statusmeldung
+* verwendeter Browser und Betriebssystem
+* zuvor besuchte Seite (Referrer), sofern übermittelt
 
 Diese Daten dienen ausschließlich der Systemsicherheit und Fehleranalyse.
 Rechtsgrundlage ist Art. 6 Abs. 1 lit. e DSGVO in Verbindung mit § 4 LDSG
 Baden-Württemberg.
-*(Löschfrist mit dem Datenschutzbeauftragten festlegen – die Gemeinde-Website
-nennt 7 Tage.)*
+
 
 ## 5. Cookies
 
@@ -91,9 +89,7 @@ anderen Rechtsgrundlage veröffentlicht.
 Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre Angaben ausschließlich
 zur Bearbeitung Ihres Anliegens und löschen sie, sobald die Aufbewahrung nicht
 mehr erforderlich ist. Ein Kontaktformular ist derzeit nicht in Betrieb.
-*(Wird zu einem späteren Zeitpunkt ein Kontaktformular oder eine Einbindung von
-Videos ergänzt, ist diese Erklärung vorher entsprechend zu erweitern – die
-Gemeinde-Website enthält dafür passende Textbausteine.)*
+
 
 ## 8. Ihre Rechte
 
@@ -113,4 +109,4 @@ Lautenschlagerstraße 20, 70173 Stuttgart
 Telefon: 0711 615541-0
 E-Mail: poststelle@lfdi.bwl.de
 
-Stand: *(Datum bei Freigabe eintragen)*
+Stand: *02.09.2026*
