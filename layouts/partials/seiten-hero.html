@@ -1,0 +1,13 @@
+{{/*
+  Kopfbild-Band für Unterseiten (z. B. Abteilungen, Feuerwehrhaus).
+  Erwartet die Seite (.) mit .Params.titelbild und .Title.
+  Ohne titelbild wird nichts ausgegeben – dann zeigt die Seite nur die normale Überschrift.
+*/}}
+{{- with .Params.titelbild }}
+<div class="seiten-hero">
+  <img class="seiten-hero__bild" src="{{ . | relURL }}" alt="" loading="eager">
+  <div class="seiten-hero__text inhalt-breite">
+    <h1>{{ $.Title }}</h1>
+  </div>
+</div>
+{{- end }}

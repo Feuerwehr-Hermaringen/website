@@ -1,0 +1,45 @@
+{{/*
+  Liste der KOMMENDEN Termine aus data/termine.yaml.
+  Vergangene Termine werden automatisch ausgeblendet (Vergleich mit dem heutigen Datum).
+  Aufruf: {{ partial "termine.html" (dict "limit" 4) }}  -> limit 0 = alle
+*/}}
+{{- $limit := .limit | default 0 -}}
+{{- $heute := now.Format "2006-01-02" -}}
+{{- $alle := index hugo.Data.termine "termine" | default slice -}}
+{{- $kommend := slice -}}
+{{- range $alle -}}
+  {{- if ge (string .datum) $heute -}}
+    {{- $kommend = $kommend | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $kommend = sort $kommend "datum" "asc" -}}
+{{- if and (gt $limit 0) (gt (len $kommend) $limit) -}}
+  {{- $kommend = first $limit $kommend -}}
+{{- end -}}
+
+{{- $monate := slice "Jan" "Feb" "März" "Apr" "Mai" "Juni" "Juli" "Aug" "Sep" "Okt" "Nov" "Dez" -}}
+{{- if $kommend }}
+<ul class="termine">
+  {{- range $kommend }}
+  {{- $d := time.AsTime .datum }}
+  <li class="termin">
+    <span class="termin__datum">
+      <span class="termin__tag">{{ $d.Format "02" }}</span>
+      <span class="termin__monat">{{ index $monate (sub (int ($d.Format "1")) 1) }}</span>
+    </span>
+    <span class="termin__text">
+      <span class="termin__titel">{{ .titel }}</span>
+      <span class="termin__meta">
+        {{- with .uhrzeit }}{{ . }}{{ end }}
+        {{- if and .uhrzeit .ort }} · {{ end }}
+        {{- with .ort }}{{ . }}{{ end }}
+        {{- with .kategorie }} · {{ . }}{{ end }}
+      </span>
+      {{- with .beschreibung }}<span class="termin__beschreibung">{{ . }}</span>{{ end }}
+    </span>
+  </li>
+  {{- end }}
+</ul>
+{{- else }}
+<p class="termine-leer">Aktuell sind keine Termine eingetragen.</p>
+{{- end }}

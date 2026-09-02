@@ -1,0 +1,35 @@
+# Netlify-Konfiguration (Hoster der Website)
+#
+# Diese Datei sagt Netlify, wie die Website gebaut wird und welche
+# Sicherheitseinstellungen die ausgelieferten Seiten bekommen.
+
+[build]
+  # So wird die Website gebaut: Hugo erzeugt den fertigen HTML-Ordner.
+  command = "hugo --minify"
+  # In diesem Ordner liegt danach die fertige Website.
+  publish = "public"
+
+[build.environment]
+  # Feste Hugo-Version, damit der Bau bei Netlify genauso laeuft wie lokal.
+  # Bei einem bewussten Update hier UND lokal die Version anheben.
+  HUGO_VERSION = "0.165.0"
+  # Hugo Extended (mit SCSS-Unterstuetzung) verwenden.
+  HUGO_ENV = "production"
+
+# Sicherheits-Header fuer alle Seiten (/*).
+# Warum: schuetzt Besucher vor bestimmten Angriffen und ist gute Praxis
+# fuer eine oeffentliche Website.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Verhindert, dass die Seite in fremde Websites eingebettet wird.
+    X-Frame-Options = "SAMEORIGIN"
+    # Verhindert, dass der Browser Dateitypen "errät".
+    X-Content-Type-Options = "nosniff"
+    # Gibt beim Weiterklicken moeglichst wenig ueber die Herkunft preis.
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Schaltet Kamera, Mikrofon und Standort-Abfrage komplett ab.
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# 301-Weiterleitungen von alten Adressen kommen spaeter hier hinzu
+# (siehe NOTIZEN: alte Einsatz-URLs /unsere-feuerwehr/archiv/einsaetze/...).

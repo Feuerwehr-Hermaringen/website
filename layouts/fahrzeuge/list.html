@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="inhalt-breite">
+  <div class="textseite">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</div>
+
+<section class="band band--creme">
+  <div class="inhalt-breite">
+    <div class="kachel-raster">
+      {{- range .Pages.ByWeight }}
+      <a class="kachel kachel--motiv fahrzeug-kachel" href="{{ .RelPermalink }}">
+        {{- with .Params.vorschaubild }}
+        <img class="motiv" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+        {{- else }}
+        <div class="motiv motiv--default" role="img" aria-label="{{ .Title }}">
+          <svg viewBox="0 0 64 64" width="46" height="46" aria-hidden="true"><path fill="currentColor" d="M6 34l4-12h30l10 8h8v10h-4a6 6 0 0 1-12 0H24a6 6 0 0 1-12 0H6V34zm12-8-2 6h14v-6H18z"/></svg>
+        </div>
+        {{- end }}
+        <span class="kachel__body">
+          <span class="kachel__titel">{{ .Title }}</span>
+          {{- with .Params.langname }}<span class="kachel__text">{{ . }}</span>{{ end }}
+        </span>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{ end }}

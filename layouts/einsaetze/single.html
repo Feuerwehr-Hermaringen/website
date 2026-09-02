@@ -1,0 +1,45 @@
+{{ define "main" }}
+<div class="inhalt-breite">
+  <article class="textseite einsatz">
+    <p class="brotkrumen"><a href="{{ "/einsaetze/" | relURL }}">Einsätze</a> / {{ .Date.Format "2006" }}</p>
+    <h1>{{ .Title }}</h1>
+
+    {{- with .Params.vorschaubild }}
+    <img class="einsatz__titelbild" src="{{ . | relURL }}" alt="{{ $.Title }}">
+    {{- end }}
+
+    <dl class="steckbrief">
+      {{- with .Params.einsatznummer }}<div><dt>Einsatznummer</dt><dd>{{ . }}</dd></div>{{ end }}
+      <div><dt>Datum</dt><dd>{{ .Date.Format "02.01.2006" }}</dd></div>
+      {{- with .Params.alarmzeit }}<div><dt>Alarmzeit</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{- with .Params.einsatzende }}<div><dt>Einsatzende</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{- with .Params.einsatzart }}<div><dt>Einsatzart</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{- with .Params.einsatzort }}<div><dt>Einsatzort</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{- $fz := "" }}
+      {{- if .Params.einsatzfahrzeuge }}
+        {{- $fz = .Params.einsatzfahrzeuge }}
+      {{- else }}
+        {{- $teile := slice }}
+        {{- with .Params.fahrzeuge }}{{ $teile = $teile | append (partial "fahrzeug-namen.html" .) }}{{ end }}
+        {{- with .Params.weitere_kraefte }}{{ $teile = $teile | append . }}{{ end }}
+        {{- $fz = delimit $teile ", " }}
+      {{- end }}
+      {{- with $fz }}
+      <div><dt>Einsatzfahrzeuge</dt><dd>{{ . }}</dd></div>
+      {{- end }}
+    </dl>
+
+    <div class="einsatz__bericht">
+      {{ .Content }}
+    </div>
+
+    {{ partial "galerie.html" .Params.galerie }}
+
+    {{- if .Params.uebernommen }}
+    <p class="hinweis-pruefen">Dieser Bericht wurde von der bisherigen Website übernommen und ist noch zu prüfen.</p>
+    {{- end }}
+
+    <p class="zurueck"><a href="{{ "/einsaetze/" | relURL }}">← Alle Einsätze</a></p>
+  </article>
+</div>
+{{ end }}

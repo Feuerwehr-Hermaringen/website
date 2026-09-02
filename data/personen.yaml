@@ -1,0 +1,59 @@
+# Personen / Ansprechpartner der Freiwilligen Feuerwehr Hermaringen
+#
+# Zentrale Datenquelle. Andere Seiten (z. B. Abteilungsseiten) koennen ueber
+# "kuerzel" auf einen Eintrag verweisen.
+#
+# ALLE ANGABEN SIND VON DER FEUERWEHRFUEHRUNG ZU BESTAETIGEN.
+# (Liste vollstaendig? E-Mail-Adressen aktuell?)
+#
+# Aufbau je Person:
+#   kuerzel  = kurze eindeutige Kennung (nicht sichtbar)
+#   name     = Vor- und Nachname
+#   funktion = Funktion / Amt
+#   email    = E-Mail-Adresse (optional)
+#   foto     = Bildpfad (optional). Ohne Foto wird KEIN Platzhalter angezeigt.
+#   reihenfolge = Sortierung (kleiner = weiter oben)
+
+personen:
+  - kuerzel: "grolik"
+    name: "Steffen Grolik"
+    funktion: "Kommandant"
+    email: "steffen.grolik@feuerwehr-hermaringen.de"
+    foto: ""
+    reihenfolge: 1
+
+  - kuerzel: "mueller"
+    name: "Lukas Müller"
+    funktion: "Stellvertretender Kommandant"
+    email: "lukas.mueller@feuerwehr-hermaringen.de"
+    foto: ""
+    reihenfolge: 2
+
+  - kuerzel: "ott"
+    name: "Joachim Ott"
+    funktion: "Stellvertretender Kommandant"
+    email: "joachim.ott@feuerwehr-hermaringen.de"
+    foto: ""
+    reihenfolge: 3
+
+  - kuerzel: "domes"
+    name: "Niklas Domes"
+    funktion: "Jugendfeuerwehrwart"
+    # HINWEIS: private Adresse - bitte klaeren, ob auf @feuerwehr-hermaringen.de umstellen
+    email: "niklasdomes@gmail.com"
+    foto: ""
+    reihenfolge: 4
+
+  - kuerzel: "keck"
+    name: "Dieter Keck"
+    funktion: "Vorsitzender Altersabteilung"
+    email: ""
+    foto: ""
+    reihenfolge: 5
+
+  - kuerzel: "nauenburg"
+    name: "Marvin Nauenburg"
+    funktion: "Öffentlichkeitsarbeit"
+    email: "presse@feuerwehr-hermaringen.de"
+    foto: ""
+    reihenfolge: 6

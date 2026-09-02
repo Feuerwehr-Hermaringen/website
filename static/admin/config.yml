@@ -1,0 +1,423 @@
+# =====================================================================
+#  Redaktionssystem der Freiwilligen Feuerwehr Hermaringen (Decap CMS)
+# =====================================================================
+#
+# Diese Datei legt fest, WAS im Redaktionssystem bearbeitet werden kann
+# und WIE die Eingabefelder heissen. Sie muss normalerweise nur angepasst
+# werden, wenn ein ganz neuer Inhaltstyp dazukommt.
+#
+# Anmeldung: ueber DecapBridge (E-Mail + Passwort, kein GitHub-Konto noetig).
+# Die mit  << ... >>  markierten Werte werden in Schritt 4 eingetragen,
+# sobald das GitHub- und das DecapBridge-Konto der Feuerwehr existieren.
+
+backend:
+  name: git-gateway
+  repo: "<<GITHUB-ORG/REPOSITORY>>"        # z. B. feuerwehr-hermaringen/website
+  branch: main
+  identity_url: "https://auth.decapbridge.com/sites/<<DECAPBRIDGE-SITE-ID>>"
+  gateway_url: "https://gateway.decapbridge.com"
+  commit_messages:
+    create: 'Neu angelegt: {{collection}} {{slug}} (über die Redaktion)'
+    update: 'Geändert: {{collection}} {{slug}} (über die Redaktion)'
+    delete: 'Gelöscht: {{collection}} {{slug}} (über die Redaktion)'
+    uploadMedia: 'Bild/Datei hochgeladen: {{path}}'
+    deleteMedia: 'Bild/Datei gelöscht: {{path}}'
+
+# Zum Testen auf dem eigenen Rechner (wird online ignoriert):
+#   im Projektordner "npx decap-server" starten, dann /admin/ öffnen.
+local_backend: true
+
+# Deutsche Oberfläche
+locale: de
+
+# Keine Freigabe-Schleife: Veröffentlichen mit einem Klick.
+publish_mode: simple
+
+# Wohin hochgeladene Bilder und PDFs gespeichert werden.
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+# Adresse der fertigen Website (wird in Schritt 4/Domain gesetzt):
+site_url: "https://feuerwehr.hermaringen.de"
+display_url: "https://feuerwehr.hermaringen.de"
+logo_url: "https://feuerwehr.hermaringen.de/uploads/logo-feuerwehr-hermaringen.png"
+
+collections:
+
+  # ------------------------------------------------------------------
+  # STARTSEITE
+  # ------------------------------------------------------------------
+  - name: startseite
+    label: "Startseite"
+    description: "Der Kopfbereich der Startseite und der Notruf-Hinweis."
+    files:
+      - name: start
+        label: "Startseite bearbeiten"
+        file: "content/_index.md"
+        fields:
+          - { name: kopfbereich_titel, label: "Welche Überschrift soll oben auf der Startseite stehen?", widget: string }
+          - { name: kopfbild, label: "Großes Bild oben auf der Startseite", widget: image, hint: "Empfohlen: ein breites Querformat-Foto." }
+          - { name: kopfbild_alt, label: "Bildbeschreibung für sehbehinderte Menschen", widget: string, hint: "Kurz beschreiben, was auf dem Bild zu sehen ist." }
+          - { name: notruf_ueberschrift, label: "Überschrift des Notruf-Hinweises", widget: string }
+          - { name: notruf_untertitel, label: "Kurzer Zusatztext unter der Notruf-Überschrift", widget: string, required: false }
+          - name: notruf_fragen
+            label: "Die 5 W-Fragen"
+            widget: list
+            hint: "Die Fragen, die man beim Notruf beantworten sollte."
+            fields:
+              - { name: w, label: "Fragewort (z. B. Wo)", widget: string }
+              - { name: text, label: "Rest der Frage (z. B. ist es passiert?)", widget: string }
+
+  # ------------------------------------------------------------------
+  # EINSATZBERICHTE
+  # ------------------------------------------------------------------
+  - name: einsaetze
+    label: "Einsätze"
+    label_singular: "Einsatzbericht"
+    description: >
+      Einsatzberichte. WICHTIG – Datenschutz:
+      • Keine Namen von Betroffenen nennen.
+      • Keine Hausnummern oder Kfz-Kennzeichen veröffentlichen.
+      • Keine Fotos, auf denen Verletzte, Betroffene oder Kennzeichen erkennbar sind.
+      • Fotos von Einsatzkräften nur mit Einwilligung bzw. Rechtsgrundlage.
+      • Keine Angaben zur Einsatzursache, solange die Polizei noch ermittelt.
+      • Berichte immer erst NACH dem Einsatz veröffentlichen – kein Live-Ticker.
+    folder: "content/einsaetze"
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    create: true
+    summary: "{{date}} – {{title}}"
+    sortable_fields: [date, title]
+    view_filters:
+      - { label: "Nur 2026", field: date, pattern: "2026" }
+      - { label: "Nur 2025", field: date, pattern: "2025" }
+    fields:
+      - { name: title, label: "Titel des Einsatzes", widget: string, hint: "Kurz und verständlich, z. B. Brand in einer Lagerhalle." }
+      - { name: date, label: "Datum des Einsatzes", widget: datetime, format: "YYYY-MM-DD", date_format: "DD.MM.YYYY", time_format: false, picker_utc: false }
+      - { name: einsatznummer, label: "Einsatznummer (optional)", widget: string, required: false, hint: "z. B. 27/26" }
+      - { name: alarmzeit, label: "Alarmzeit (optional)", widget: string, required: false, hint: "z. B. 18:42 Uhr" }
+      - { name: einsatzende, label: "Einsatzende (optional)", widget: string, required: false, hint: "z. B. 19:30 Uhr" }
+      - name: einsatzart
+        label: "Art des Einsatzes (optional)"
+        widget: select
+        required: false
+        create: true
+        options: ["Brand", "Brandmeldeanlage", "Technische Hilfe", "Gefahrgut", "Türöffnung", "Unwetter", "Übung", "Sonstiges"]
+      - { name: einsatzort, label: "Einsatzort (optional)", widget: string, required: false, hint: "Ortsteil oder Straße ohne Hausnummer." }
+      - name: fahrzeuge
+        label: "Welche unserer Fahrzeuge waren im Einsatz?"
+        widget: relation
+        required: false
+        multiple: true
+        collection: fahrzeuge
+        search_fields: [title]
+        value_field: kuerzel
+        display_fields: [title]
+      - { name: weitere_kraefte, label: "Weitere Fahrzeuge / Feuerwehren / Organisationen (optional)", widget: string, required: false, hint: "z. B. Feuerwehr Giengen, DRK Hermaringen" }
+      - { name: einsatzfahrzeuge, label: "Fahrzeuge als Freitext (nur bei übernommenen Alt-Berichten)", widget: string, required: false, hint: "Bei neuen Berichten leer lassen und oben die Auswahl nutzen." }
+      - { name: vorschaubild, label: "Vorschaubild", widget: image, required: false, hint: "Wird auf der Startseite und in der Einsatzübersicht angezeigt. Ohne Bild erscheint ein Symbol." }
+      - name: galerie
+        label: "Bildergalerie"
+        widget: list
+        required: false
+        field: { name: bild, label: "Bild", widget: image }
+      - { name: body, label: "Einsatzbericht", widget: markdown, hint: "Der eigentliche Bericht. Absätze, Überschriften, Listen und Hervorhebungen sind möglich." }
+      - { name: uebernommen, label: "Von der alten Website übernommen (noch zu prüfen)", widget: boolean, required: false, default: false }
+
+  # ------------------------------------------------------------------
+  # AKTUELLES (Beiträge / Berichte)
+  # ------------------------------------------------------------------
+  - name: aktuelles
+    label: "Aktuelles"
+    label_singular: "Beitrag"
+    description: "Neuigkeiten, Berichte und Veranstaltungen."
+    folder: "content/aktuelles"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{date}} – {{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: "Überschrift des Beitrags", widget: string }
+      - { name: date, label: "Datum", widget: datetime, format: "YYYY-MM-DD", date_format: "DD.MM.YYYY", time_format: false }
+      - { name: vorschaubild, label: "Vorschaubild (optional)", widget: image, required: false, hint: "Erscheint auf der Startseite und in der Übersicht." }
+      - { name: body, label: "Text des Beitrags", widget: markdown }
+      - name: galerie
+        label: "Bildergalerie (optional)"
+        widget: list
+        required: false
+        field: { name: bild, label: "Bild", widget: image }
+      - { name: uebernommen, label: "Von der alten Website übernommen (noch zu prüfen)", widget: boolean, required: false, default: false }
+
+  # ------------------------------------------------------------------
+  # FAHRZEUGE
+  # ------------------------------------------------------------------
+  - name: fahrzeuge
+    label: "Fahrzeuge"
+    label_singular: "Fahrzeug"
+    description: "Die Einsatzfahrzeuge der Feuerwehr Hermaringen."
+    folder: "content/fahrzeuge"
+    path: "{{slug}}/index"
+    create: true
+    sortable_fields: [weight, title]
+    fields:
+      - { name: kuerzel, label: "Kurzname für die Technik (nur Kleinbuchstaben, einmalig)", widget: string, hint: "z. B. hlf-20-20. Nach dem Anlegen nicht mehr ändern." }
+      - { name: title, label: "Kurzbezeichnung (z. B. HLF 20/20)", widget: string }
+      - { name: langname, label: "Ausgeschriebene Bezeichnung", widget: string, required: false }
+      - { name: funkrufname, label: "Funkrufname", widget: string, required: false }
+      - { name: weight, label: "Reihenfolge in der Übersicht", widget: number, value_type: int, default: 10, hint: "Kleinere Zahl = weiter vorne." }
+      - { name: titelbild, label: "Großes Titelbild", widget: image, required: false }
+      - { name: vorschaubild, label: "Vorschaubild für die Übersicht", widget: image, required: false, hint: "Wenn leer, wird das Titelbild verwendet." }
+      - name: steckbrief
+        label: "Technischer Steckbrief"
+        widget: list
+        required: false
+        hint: "Beliebig viele Zeilen mit Merkmal und Wert."
+        fields:
+          - { name: merkmal, label: "Merkmal (z. B. Baujahr)", widget: string }
+          - { name: wert, label: "Wert (z. B. 2011)", widget: string }
+      - { name: body, label: "Beschreibung", widget: markdown, required: false }
+      - name: galerie
+        label: "Bildergalerie"
+        widget: list
+        required: false
+        field: { name: bild, label: "Bild", widget: image }
+      - { name: uebernommen, label: "Daten von der alten Website übernommen (noch zu prüfen)", widget: boolean, required: false, default: false }
+
+  # ------------------------------------------------------------------
+  # ABTEILUNGEN
+  # ------------------------------------------------------------------
+  - name: abteilungen
+    label: "Abteilungen"
+    label_singular: "Abteilung"
+    folder: "content/abteilungen"
+    create: true
+    sortable_fields: [weight, title]
+    fields:
+      - { name: title, label: "Name der Abteilung", widget: string }
+      - { name: weight, label: "Reihenfolge", widget: number, value_type: int, default: 10 }
+      - { name: titelbild, label: "Kopfbild der Seite (optional)", widget: image, required: false }
+      - { name: uebungszeit, label: "Übungszeit (optional)", widget: string, required: false, hint: "z. B. Montags ab 18:00 Uhr, Feuerwehrhaus" }
+      - name: ansprechpartner
+        label: "Ansprechpartner (optional)"
+        widget: relation
+        required: false
+        collection: personen
+        file: liste
+        search_fields: [name]
+        value_field: "personen.*.kuerzel"
+        display_fields: ["personen.*.name"]
+      - { name: body, label: "Text der Seite", widget: markdown }
+      - name: galerie
+        label: "Bildergalerie (optional)"
+        widget: list
+        required: false
+        field: { name: bild, label: "Bild", widget: image }
+      - { name: uebernommen, label: "Von der alten Website übernommen (noch zu prüfen)", widget: boolean, required: false, default: false }
+
+  # ------------------------------------------------------------------
+  # BÜRGERSERVICE
+  # ------------------------------------------------------------------
+  - name: buergerservice
+    label: "Bürgerservice"
+    label_singular: "Bürgerservice-Seite"
+    description: "Info-Seiten für Bürgerinnen und Bürger. Erscheinen als Kacheln auf der Bürgerservice-Übersicht."
+    folder: "content/buergerservice"
+    create: true
+    sortable_fields: [weight, title]
+    fields:
+      - { name: title, label: "Titel der Seite", widget: string }
+      - { name: weight, label: "Reihenfolge", widget: number, value_type: int, default: 10 }
+      - { name: zusammenfassung, label: "Kurzbeschreibung für die Kachel", widget: string, hint: "Ein Satz, der auf der Übersichtsseite angezeigt wird." }
+      - { name: body, label: "Inhalt der Seite", widget: markdown }
+
+  # ------------------------------------------------------------------
+  # EINZELSEITEN
+  # ------------------------------------------------------------------
+  - name: seiten
+    label: "Einzelseiten"
+    description: "Feste Seiten wie Geschichte, Feuerwehrhaus, Kontakt und die Pflichtseiten."
+    files:
+      - name: geschichte
+        label: "Geschichte"
+        file: "content/unsere-feuerwehr/geschichte.md"
+        fields:
+          - { name: title, label: "Seitentitel", widget: string }
+          - { name: layout, label: "Layout (nicht ändern)", widget: hidden, default: "geschichte" }
+          - { name: body, label: "Einleitungstext", widget: markdown }
+          - name: chronik
+            label: "Chronik (Jahr für Jahr)"
+            widget: list
+            fields:
+              - { name: jahr, label: "Jahr", widget: string }
+              - { name: text, label: "Was ist in diesem Jahr passiert?", widget: text }
+          - { name: uebernommen, label: "Von der alten Website übernommen (noch zu prüfen)", widget: boolean, required: false }
+
+      - name: feuerwehrhaus
+        label: "Feuerwehrhaus"
+        file: "content/unsere-feuerwehr/feuerwehrhaus.md"
+        fields:
+          - { name: title, label: "Seitentitel", widget: string }
+          - { name: titelbild, label: "Kopfbild (optional)", widget: image, required: false }
+          - { name: body, label: "Text der Seite", widget: markdown }
+          - name: galerie
+            label: "Bildergalerie (optional)"
+            widget: list
+            required: false
+            field: { name: bild, label: "Bild", widget: image }
+          - { name: uebernommen, label: "Von der alten Website übernommen (noch zu prüfen)", widget: boolean, required: false }
+
+      - name: ansprechpartner
+        label: "Ansprechpartner – Einleitungstext"
+        file: "content/unsere-feuerwehr/ansprechpartner.md"
+        fields:
+          - { name: title, label: "Seitentitel", widget: string }
+          - { name: layout, label: "Layout (nicht ändern)", widget: hidden, default: "ansprechpartner" }
+          - { name: body, label: "Einleitungstext (die Personen werden separat unter Personen gepflegt)", widget: markdown }
+
+      - name: kontakt
+        label: "Kontakt"
+        file: "content/kontakt.md"
+        fields:
+          - { name: title, label: "Seitentitel", widget: string }
+          - { name: layout, label: "Layout (nicht ändern)", widget: hidden, default: "kontakt" }
+          - { name: body, label: "Einleitungstext", widget: markdown }
+
+      - name: impressum
+        label: "Impressum"
+        file: "content/impressum.md"
+        fields:
+          - { name: title, label: "Seitentitel", widget: string }
+          - { name: entwurf, label: "Noch Entwurf (von Gemeinde zu prüfen)", widget: boolean, required: false }
+          - { name: body, label: "Text", widget: markdown }
+
+      - name: datenschutz
+        label: "Datenschutzerklärung"
+        file: "content/datenschutz.md"
+        fields:
+          - { name: title, label: "Seitentitel", widget: string }
+          - { name: entwurf, label: "Noch Entwurf (von Gemeinde zu prüfen)", widget: boolean, required: false }
+          - { name: body, label: "Text", widget: markdown }
+
+      - name: barrierefreiheit
+        label: "Barrierefreiheitserklärung"
+        file: "content/barrierefreiheit.md"
+        fields:
+          - { name: title, label: "Seitentitel", widget: string }
+          - { name: entwurf, label: "Noch Entwurf (von Gemeinde zu prüfen)", widget: boolean, required: false }
+          - { name: body, label: "Text", widget: markdown }
+
+  # ------------------------------------------------------------------
+  # PERSONEN (Ansprechpartner-Liste)
+  # ------------------------------------------------------------------
+  - name: personen
+    label: "Personen"
+    description: "Ansprechpartnerinnen und Ansprechpartner. Werden auf der Ansprechpartner-Seite und bei den Abteilungen angezeigt."
+    files:
+      - name: liste
+        label: "Personenliste"
+        file: "data/personen.yaml"
+        fields:
+          - name: personen
+            label: "Personen"
+            label_singular: "Person"
+            widget: list
+            fields:
+              - { name: kuerzel, label: "Kurzname (nur Kleinbuchstaben, für die Technik – z. B. grolik)", widget: string, hint: "Einmalig vergeben, danach nicht mehr ändern." }
+              - { name: name, label: "Vor- und Nachname", widget: string }
+              - { name: funktion, label: "Funktion / Amt", widget: string }
+              - { name: email, label: "E-Mail-Adresse (optional)", widget: string, required: false }
+              - { name: foto, label: "Foto (optional)", widget: image, required: false, hint: "Ohne Foto wird einfach kein Bild angezeigt." }
+              - { name: reihenfolge, label: "Reihenfolge (kleinere Zahl = weiter oben)", widget: number, value_type: int, default: 10 }
+
+  # ------------------------------------------------------------------
+  # TERMINE
+  # ------------------------------------------------------------------
+  - name: termine
+    label: "Termine"
+    description: "Kommende Termine. Abgelaufene Termine verschwinden automatisch von der Website."
+    files:
+      - name: liste
+        label: "Terminliste"
+        file: "data/termine.yaml"
+        fields:
+          - name: termine
+            label: "Termine"
+            label_singular: "Termin"
+            widget: list
+            fields:
+              - { name: titel, label: "Bezeichnung des Termins", widget: string }
+              - { name: datum, label: "Datum", widget: datetime, format: "YYYY-MM-DD", date_format: "DD.MM.YYYY", time_format: false, picker_utc: false }
+              - { name: uhrzeit, label: "Uhrzeit (optional)", widget: string, required: false, hint: "z. B. 19:00 Uhr" }
+              - { name: ort, label: "Ort (optional)", widget: string, required: false }
+              - { name: beschreibung, label: "Kurzbeschreibung (optional)", widget: text, required: false }
+              - name: kategorie
+                label: "Kategorie"
+                widget: select
+                options: ["Übung", "Versammlung", "Fest", "Sonstiges"]
+                default: "Sonstiges"
+
+  # ------------------------------------------------------------------
+  # NAVIGATION (Hauptmenü)
+  # ------------------------------------------------------------------
+  - name: navigation
+    label: "Menü"
+    description: "Die Hauptnavigation der Website. Bitte mit Bedacht ändern."
+    files:
+      - name: hauptmenue
+        label: "Hauptmenü"
+        file: "data/seiten.yaml"
+        fields:
+          - name: hauptmenue
+            label: "Menüpunkte"
+            label_singular: "Menüpunkt"
+            widget: list
+            fields:
+              - { name: titel, label: "Menütext", widget: string }
+              - { name: link, label: "Adresse (z. B. /fahrzeuge/) – leer lassen, wenn es nur ein Aufklappmenü ist", widget: string, required: false }
+              - { name: auto, label: "Automatik (nur für Fachleute – z. B. einsatzjahre)", widget: string, required: false }
+              - name: kinder
+                label: "Untermenüpunkte (optional)"
+                widget: list
+                required: false
+                fields:
+                  - { name: titel, label: "Menütext", widget: string }
+                  - { name: link, label: "Adresse", widget: string }
+
+  # ------------------------------------------------------------------
+  # FUSSBEREICH
+  # ------------------------------------------------------------------
+  - name: fusszeile
+    label: "Fußbereich"
+    description: "Kontaktangaben, Links und Social-Media im unteren Bereich jeder Seite."
+    files:
+      - name: fusszeile
+        label: "Fußbereich bearbeiten"
+        file: "data/fusszeile.yaml"
+        fields:
+          - name: kontakt
+            label: "Kontaktangaben"
+            widget: object
+            fields:
+              - { name: name, label: "Name", widget: string }
+              - { name: strasse, label: "Straße", widget: string }
+              - { name: hausnummer, label: "Hausnummer", widget: string }
+              - { name: plz, label: "Postleitzahl", widget: string }
+              - { name: ort, label: "Ort", widget: string }
+              - { name: telefon, label: "Telefonnummer", widget: string }
+              - { name: email, label: "E-Mail-Adresse", widget: string }
+          - name: links
+            label: "Links im Fußbereich"
+            widget: list
+            fields:
+              - { name: titel, label: "Bezeichnung", widget: string }
+              - { name: link, label: "Adresse", widget: string }
+          - name: social
+            label: "Social-Media-Kanäle"
+            widget: list
+            required: false
+            fields:
+              - name: netzwerk
+                label: "Netzwerk"
+                widget: select
+                options: ["instagram", "facebook", "youtube"]
+              - { name: titel, label: "Angezeigter Name", widget: string }
+              - { name: link, label: "Adresse (vollständige URL)", widget: string }

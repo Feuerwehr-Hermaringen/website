@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{- $k := hugo.Data.fusszeile.kontakt }}
+<div class="inhalt-breite">
+  <article class="textseite">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    <div class="kontakt-karten">
+      <div class="kontakt-karte">
+        <h2>Anschrift</h2>
+        {{ partial "adresse.html" (dict "name" $k.name "strasse" $k.strasse "hausnummer" $k.hausnummer "plz" $k.plz "ort" $k.ort) }}
+      </div>
+      <div class="kontakt-karte">
+        <h2>Telefon &amp; E-Mail</h2>
+        <p>Telefon: {{ partial "telefon.html" $k.telefon }}</p>
+        <p>E-Mail: <a href="mailto:{{ $k.email }}">{{ $k.email }}</a></p>
+      </div>
+      <div class="kontakt-karte kontakt-karte--notruf">
+        <h2>Im Notfall</h2>
+        <p class="kontakt-karte__notruf">112</p>
+        <p>Feuerwehr &amp; Rettungsdienst – rund um die Uhr, kostenlos.</p>
+      </div>
+    </div>
+
+    <h2>Anfahrt</h2>
+    <p>Das Feuerwehrhaus liegt in der Kaisheimstraße&nbsp;10 am Bauhof der Gemeinde Hermaringen.</p>
+    <p>
+      <a class="knopf" rel="noopener"
+         href="https://www.openstreetmap.org/search?query={{ (printf "%s %s, %s %s" $k.strasse $k.hausnummer $k.plz $k.ort) | urlquery }}">
+        In Karten öffnen
+      </a>
+    </p>
+    <p class="hinweis-pruefen">Impressum und Kontaktdaten sind noch von der Gemeinde bzw. der Feuerwehrführung zu bestätigen.</p>
+  </article>
+</div>
+{{ end }}

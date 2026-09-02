@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="inhalt-breite">
+  <div class="textseite">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</div>
+
+<section class="band band--creme">
+  <div class="inhalt-breite">
+    <div class="kachel-raster">
+      {{- range .Pages.ByWeight }}
+      <a class="kachel" href="{{ .RelPermalink }}">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.zusammenfassung | default (.Summary | plainify | truncate 120) }}</p>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{ end }}

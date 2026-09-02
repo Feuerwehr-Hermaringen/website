@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="inhalt-breite">
+  <div class="textseite">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</div>
+
+<section class="band band--creme">
+  <div class="inhalt-breite">
+    {{- $beitraege := .RegularPagesRecursive }}
+    {{- if $beitraege }}
+    <div class="kachel-raster">
+      {{- range $beitraege }}
+      <a class="kachel kachel--motiv" href="{{ .RelPermalink }}">
+        {{ partial "motiv.html" (dict "bild" .Params.vorschaubild "art" "beitrag" "titel" .Title) }}
+        <span class="kachel__body">
+          <span class="kachel__datum">{{ .Date.Format "02.01.2006" }}</span>
+          <span class="kachel__titel">{{ .Title }}</span>
+          <span class="kachel__text">{{ .Summary | plainify | truncate 160 }}</span>
+        </span>
+      </a>
+      {{- end }}
+    </div>
+    {{- else }}
+    <p>Es sind noch keine Beiträge veröffentlicht.</p>
+    {{- end }}
+  </div>
+</section>
+{{ end }}

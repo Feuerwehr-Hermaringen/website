@@ -1,0 +1,47 @@
+# Hauptnavigation der Website
+#
+# Warum diese Datei: Damit das Menue spaeter ueber das Redaktionssystem
+# geaendert werden kann, ohne die Vorlagen (HTML) anzufassen.
+#
+# Aufbau:
+#   titel   = so heisst der Menuepunkt
+#   link    = wohin er fuehrt. Leer ("") = nur Aufklappmenue, ist selbst kein Link.
+#   kinder  = Untermenuepunkte (optional)
+
+hauptmenue:
+  - titel: "Unsere Feuerwehr"
+    link: ""
+    kinder:
+      - titel: "Aktuelles"
+        link: "/aktuelles/"
+      - titel: "Ansprechpartner"
+        link: "/unsere-feuerwehr/ansprechpartner/"
+      - titel: "Geschichte"
+        link: "/unsere-feuerwehr/geschichte/"
+      - titel: "Feuerwehrhaus"
+        link: "/unsere-feuerwehr/feuerwehrhaus/"
+
+  - titel: "Abteilungen"
+    link: ""
+    kinder:
+      - titel: "Einsatzabteilung"
+        link: "/abteilungen/einsatzabteilung/"
+      - titel: "Jugendfeuerwehr"
+        link: "/abteilungen/jugendfeuerwehr/"
+      - titel: "Altersabteilung"
+        link: "/abteilungen/altersabteilung/"
+
+  - titel: "Einsätze"
+    link: "/einsaetze/"
+    # "auto: einsatzjahre" fuellt das Untermenue automatisch mit den Jahren,
+    # zu denen Einsatzberichte vorhanden sind. Nichts jaehrlich zu pflegen.
+    auto: "einsatzjahre"
+
+  - titel: "Fahrzeuge"
+    link: "/fahrzeuge/"
+
+  - titel: "Bürgerservice"
+    link: "/buergerservice/"
+
+  - titel: "Kontakt"
+    link: "/kontakt/"

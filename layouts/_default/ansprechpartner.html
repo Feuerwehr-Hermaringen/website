@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="inhalt-breite">
+  <div class="textseite">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</div>
+
+<section class="band band--creme">
+  <div class="inhalt-breite">
+    {{- $personen := sort (index hugo.Data.personen "personen") "reihenfolge" }}
+    <ul class="personen">
+      {{- range $personen }}
+      <li class="person">
+        {{- with .foto }}
+        <img class="person__foto" src="{{ . | relURL }}" alt="{{ $.name }}" loading="lazy">
+        {{- end }}
+        <div class="person__text">
+          <span class="person__name">{{ .name }}</span>
+          <span class="person__funktion">{{ .funktion }}</span>
+          {{- with .email }}
+          <a class="person__email" href="mailto:{{ . }}">{{ . }}</a>
+          {{- end }}
+        </div>
+      </li>
+      {{- end }}
+    </ul>
+    <p class="hinweis-pruefen">Die Liste der Ansprechpartner wurde von der bisherigen Website übernommen und ist von der Feuerwehrführung zu bestätigen.</p>
+  </div>
+</section>
+{{ end }}

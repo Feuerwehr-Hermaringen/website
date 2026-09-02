@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{ partial "seiten-hero.html" . }}
+<div class="inhalt-breite">
+  <article class="textseite">
+    <p class="brotkrumen">Abteilungen</p>
+    {{- if not .Params.titelbild }}<h1>{{ .Title }}</h1>{{ end }}
+
+    {{- with .Params.uebungszeit }}
+    <p class="uebungszeit"><strong>Übungsabend:</strong> {{ . }}</p>
+    {{- end }}
+
+    {{ .Content }}
+
+    {{- with .Params.ansprechpartner }}
+    {{- $ap := "" }}
+    {{- range (index hugo.Data.personen "personen") }}{{ if eq .kuerzel $ }}{{ $ap = . }}{{ end }}{{ end }}
+    {{- with $ap }}
+    <h2>Ansprechpartner</h2>
+    <ul class="personen">
+      <li class="person">
+        <div class="person__text">
+          <span class="person__name">{{ .name }}</span>
+          <span class="person__funktion">{{ .funktion }}</span>
+          {{- with .email }}<a class="person__email" href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+        </div>
+      </li>
+    </ul>
+    {{- end }}
+    {{- end }}
+
+    {{- with .Params.galerie }}
+    <h2>Bildergalerie</h2>
+    {{ partial "galerie.html" . }}
+    {{- end }}
+
+    {{- if .Params.uebernommen }}
+    <p class="hinweis-pruefen">Dieser Text wurde von der bisherigen Website übernommen und ist noch zu prüfen.</p>
+    {{- end }}
+  </article>
+</div>
+{{ end }}

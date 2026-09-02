@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="inhalt-breite">
+  <article class="textseite fahrzeug">
+    <p class="brotkrumen"><a href="{{ "/fahrzeuge/" | relURL }}">Fahrzeuge</a></p>
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.langname }}<p class="fahrzeug__langname">{{ . }}</p>{{ end }}
+
+    {{- with .Params.titelbild }}
+    <img class="einsatz__titelbild" src="{{ . | relURL }}" alt="{{ $.Title }}">
+    {{- end }}
+
+    {{- with .Params.steckbrief }}
+    <h2>Technischer Steckbrief</h2>
+    <dl class="steckbrief">
+      {{- range . }}
+      <div><dt>{{ .merkmal }}</dt><dd>{{ .wert }}</dd></div>
+      {{- end }}
+    </dl>
+    {{- end }}
+
+    {{- with .Content }}
+    <h2>Beschreibung</h2>
+    {{ . }}
+    {{- end }}
+
+    {{- with .Params.galerie }}
+    <h2>Bildergalerie</h2>
+    {{ partial "galerie.html" . }}
+    {{- end }}
+
+    {{- if .Params.uebernommen }}
+    <p class="hinweis-pruefen">Die technischen Daten wurden von der bisherigen Website übernommen und sind noch zu prüfen.</p>
+    {{- end }}
+
+    <p class="zurueck"><a href="{{ "/fahrzeuge/" | relURL }}">← Alle Fahrzeuge</a></p>
+  </article>
+</div>
+{{ end }}

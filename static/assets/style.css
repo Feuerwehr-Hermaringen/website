@@ -1,0 +1,821 @@
+/*
+  Gestaltung der Website der Freiwilligen Feuerwehr Hermaringen
+  --------------------------------------------------------------
+  Selbst geschrieben - kein fremdes Theme, keine externen Schriften/Bibliotheken.
+
+  Aufbau dieser Datei:
+   1. Farben & Grundwerte (Variablen)
+   2. Grund-Einstellungen (Reset, Typografie)
+   3. Hilfsklassen (Breite, Baender, Ueberschriften, Kacheln)
+   4. Kopfbereich & Navigation
+   5. Startseite: Hero & Notruf
+   6. Textseiten
+   7. Fussbereich
+   8. Barrierefreiheit (Fokus, weniger Bewegung)
+
+  FARBEN: angelehnt an das Feuerwehr-Rot und das gruene Hermaringer Wappen.
+  Kontraste sind fuer gute Lesbarkeit geprueft (WCAG AA).
+*/
+
+/* ============ 1. Farben & Grundwerte ============ */
+:root {
+  --rot: #c0201d;          /* Hauptfarbe: Feuerwehr-Rot */
+  --rot-dunkel: #8f1414;   /* fuer Text/Links auf Hell (hoher Kontrast) */
+  --rot-tief: #6d0f0f;     /* fuer Verlaeufe / dunkle Flaechen */
+  --gruen: #1c7a3e;        /* Zweitfarbe: Wappen-Gruen */
+  --gruen-dunkel: #145f30;
+
+  --tinte: #211d1c;        /* Fliesstext */
+  --grau: #5c5654;         /* Nebentext */
+
+  --hintergrund: #ffffff;  /* Karten / Kopf */
+  --creme: #faf6f2;        /* Seitenhintergrund (warm, nicht grell) */
+  --sand: #f2e9e1;         /* helles Farbband */
+  --sand-linie: #e6d9cd;
+  --dunkel: #241f1e;       /* Fussbereich */
+  --linie: #e4ddd6;
+
+  --breite-max: 70rem;
+  --abstand: 1.25rem;
+  --radius: 8px;
+  --schatten: 0 6px 20px rgba(45, 20, 20, 0.10);
+
+  --schrift: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --klickflaeche: 44px;
+}
+
+/* ============ 2. Grund-Einstellungen ============ */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--schrift);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--tinte);
+  background: var(--creme);
+}
+
+h1, h2, h3, h4 { line-height: 1.2; font-weight: 800; margin: 0 0 0.5em; }
+h1 { font-size: clamp(1.8rem, 1.2rem + 2.4vw, 2.7rem); }
+h2 { font-size: clamp(1.4rem, 1.1rem + 1.3vw, 1.9rem); }
+h3 { font-size: 1.2rem; font-weight: 700; }
+
+p { margin: 0 0 1rem; }
+a { color: var(--rot-dunkel); text-underline-offset: 2px; }
+a:hover { color: var(--rot); }
+img { max-width: 100%; height: auto; display: block; }
+strong { font-weight: 700; }
+
+/* ============ 3. Hilfsklassen ============ */
+.inhalt-breite {
+  width: 100%;
+  max-width: var(--breite-max);
+  margin-inline: auto;
+  padding-inline: var(--abstand);
+}
+
+/* Farbige Abschnitts-Baender - bringen Rhythmus und Farbe in die Seite */
+.band { padding-block: clamp(2rem, 1.4rem + 2.5vw, 3.5rem); }
+.band + .band { border-top: 1px solid var(--linie); }
+.band--creme { background: var(--creme); }
+.band--weiss { background: var(--hintergrund); border-top: 1px solid var(--linie); }
+.band--sand  { background: var(--sand); border-top: 1px solid var(--sand-linie); border-bottom: 1px solid var(--sand-linie); }
+.band--rot {
+  background: linear-gradient(135deg, var(--rot-tief), var(--rot));
+  color: #fff;
+}
+.band--rot h1, .band--rot h2, .band--rot h3 { color: #fff; }
+.band--rot a { color: #fff; }
+.band--gruen {
+  background: linear-gradient(135deg, var(--gruen-dunkel), var(--gruen));
+  color: #fff;
+}
+.band--gruen h2, .band--gruen h3 { color: #fff; }
+
+/* Abschnitts-Ueberschrift mit farbigem Akzent */
+.abschnitt-titel {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.4rem;
+}
+.abschnitt-titel::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 3rem; height: 4px;
+  background: var(--rot);
+  border-radius: 2px;
+}
+.band--rot .abschnitt-titel::after,
+.band--gruen .abschnitt-titel::after { background: #fff; }
+
+/* Kachel-Raster (Buergerservice, Startseiten-Bloecke) */
+.kachel-raster {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.kachel {
+  display: flex;
+  flex-direction: column;
+  background: var(--hintergrund);
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--schatten);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+/* einfache Kachel ohne Motiv-Bild: farbiger oberer Rand */
+.kachel:not(.kachel--motiv) { border-top: 4px solid var(--rot); padding: 1.1rem 1.15rem 1.25rem; }
+.kachel:not(.kachel--motiv):nth-child(even) { border-top-color: var(--gruen); }
+a.kachel { text-decoration: none; color: inherit; }
+a.kachel:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(45, 20, 20, 0.16);
+}
+.kachel h3 { margin-bottom: 0.35rem; color: var(--rot-dunkel); }
+.kachel p { margin: 0; color: var(--grau); font-size: 0.98rem; }
+
+/* Kachel MIT Motiv-Bild oben */
+.kachel__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.9rem 1.05rem 1.1rem;
+}
+.kachel__datum {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--rot-dunkel);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.kachel__titel { font-weight: 700; font-size: 1.08rem; line-height: 1.25; }
+.kachel__ort,
+.kachel__text { color: var(--grau); font-size: 0.95rem; }
+
+/* Motiv: entweder Foto (img.motiv) oder selbst gezeichnete Grafik (div.motiv--...) */
+.motiv {
+  width: 100%;
+  height: 158px;
+  object-fit: cover;
+  display: block;
+}
+div.motiv {
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+.motiv--brand     { background: linear-gradient(135deg, #7d1211, #c0201d); }
+.motiv--gefahrgut { background: linear-gradient(135deg, #6b4e00, #d9a400); }
+.motiv--uebung    { background: linear-gradient(135deg, #145f30, #1c7a3e); }
+.motiv--technik   { background: linear-gradient(135deg, #33414d, #5a6b78); }
+.motiv--tuer      { background: linear-gradient(135deg, #3a2f52, #5b4a80); }
+.motiv--melde     { background: linear-gradient(135deg, #8a3c00, #d9741a); }
+.motiv--beitrag   { background: linear-gradient(135deg, #145f30, #2b8f52); }
+.motiv--default   { background: linear-gradient(135deg, #2a2422, #4a3f3c); }
+
+/* Knopf-Optik fuer wichtige Links */
+.knopf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: var(--klickflaeche);
+  padding: 0.55rem 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  background: var(--rot);
+  border-radius: var(--radius);
+}
+.knopf:hover { background: var(--rot-dunkel); color: #fff; }
+.band--rot .knopf { background: #fff; color: var(--rot-dunkel); }
+.band--rot .knopf:hover { background: rgba(255,255,255,0.88); }
+
+/* Skip-Link */
+.skip-link {
+  position: absolute;
+  left: 0.5rem; top: -3rem;
+  z-index: 100;
+  background: var(--tinte);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  transition: top 0.15s ease;
+}
+.skip-link:focus { top: 0.5rem; }
+
+/* ============ 4. Kopfbereich & Navigation ============ */
+.seiten-kopf {
+  background: var(--hintergrund);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+/* farbiger Streifen ganz oben */
+.seiten-kopf::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background: linear-gradient(90deg, var(--rot-tief), var(--rot) 55%, var(--gruen));
+}
+.seiten-kopf__zeile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 84px;
+  padding-block: 0.5rem;
+}
+.logo { display: inline-flex; align-items: center; text-decoration: none; }
+.logo__bild {
+  width: auto;
+  height: clamp(52px, 9vw, 74px);
+  max-width: min(72vw, 360px);
+  object-fit: contain;
+}
+.logo__wortmarke { display: block; line-height: 1; }
+.logo__zeile1 {
+  display: block;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--rot);
+  font-size: clamp(1.25rem, 0.9rem + 1.6vw, 1.6rem);
+}
+.logo__zeile2 {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tinte);
+  font-size: clamp(0.8rem, 0.6rem + 1vw, 1rem);
+}
+
+.menue-schalter {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: var(--klickflaeche);
+  padding: 0.4rem 0.9rem;
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: var(--rot);
+  border: 0;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.menue-schalter__strich,
+.menue-schalter__strich::before,
+.menue-schalter__strich::after {
+  content: "";
+  display: block;
+  width: 22px; height: 2px;
+  background: currentColor;
+  position: relative;
+}
+.menue-schalter__strich::before { position: absolute; top: -7px; }
+.menue-schalter__strich::after  { position: absolute; top: 7px; }
+
+.hauptnav__liste {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: flex;
+  gap: 0.15rem;
+}
+.hauptnav__punkt { position: relative; }
+
+.hauptnav a,
+.untermenue-schalter {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: var(--klickflaeche);
+  padding: 0.5rem 0.8rem;
+  font: inherit;
+  font-weight: 600;
+  color: var(--tinte);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  border-radius: var(--radius);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.hauptnav a:hover,
+.untermenue-schalter:hover,
+.hauptnav__punkt.offen > a,
+.hauptnav__punkt.offen > .untermenue-schalter {
+  background: var(--rot);
+  color: #fff;
+}
+.pfeil {
+  width: 0; height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid currentColor;
+}
+
+.untermenue {
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 15rem;
+  background: var(--hintergrund);
+  border: 1px solid var(--linie);
+  border-top: 3px solid var(--rot);
+  border-radius: 0 0 var(--radius) var(--radius);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+.hauptnav__punkt.offen > .untermenue { display: block; }
+@media (hover: hover) and (min-width: 56rem) {
+  .hauptnav__punkt.hat-untermenue:hover > .untermenue { display: block; }
+}
+.untermenue a { font-weight: 500; border-radius: 4px; }
+
+@media (max-width: 55.999rem) {
+  .menue-schalter { display: inline-flex; }
+  .hauptnav {
+    display: none;
+    position: absolute;
+    left: 0; right: 0;
+    top: 100%;
+    background: var(--hintergrund);
+    border-bottom: 4px solid var(--rot);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.14);
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .hauptnav.offen { display: block; }
+  .hauptnav__liste { flex-direction: column; gap: 0; padding: 0.5rem var(--abstand) 1rem; }
+  .hauptnav__punkt { border-bottom: 1px solid var(--linie); }
+  .hauptnav a, .untermenue-schalter { width: 100%; justify-content: space-between; }
+  .untermenue {
+    display: none;
+    position: static;
+    border: 0;
+    box-shadow: none;
+    padding: 0 0 0.5rem 0.75rem;
+    min-width: 0;
+  }
+  .hauptnav__punkt.offen > .untermenue { display: block; }
+}
+
+/* ============ 5. Startseite: Hero & Notruf ============ */
+.hero {
+  position: relative;
+  background: var(--rot-tief);
+  min-height: clamp(260px, 44vw, 480px);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.hero__bild {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+/* Nur ein sanfter Verlauf am unteren Rand - damit die Überschrift lesbar bleibt.
+   Das Bild selbst bleibt weitgehend unverändert sichtbar. */
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 62%;
+  background: linear-gradient(to top, rgba(16, 12, 11, 0.74), rgba(16, 12, 11, 0.15) 70%, rgba(16, 12, 11, 0));
+}
+.hero__text {
+  position: relative;
+  z-index: 1;
+  padding-block: clamp(1.5rem, 3.5vw, 2.75rem);
+}
+.hero__text h1 {
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+  max-width: 20ch;
+}
+.hero__text h1::after {
+  content: "";
+  display: block;
+  width: 4.5rem; height: 5px;
+  margin-top: 0.7rem;
+  background: var(--rot);
+  border-radius: 3px;
+}
+
+/* Schmale Notruf-Leiste direkt unter dem Hero - immer sichtbar, nimmt wenig Platz */
+.notruf-leiste { background: var(--rot); color: #fff; }
+.notruf-leiste__innen {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding-block: 0.5rem;
+}
+.notruf-leiste__nummer {
+  font-weight: 900;
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  padding: 0.05rem 0.5rem;
+}
+.notruf-leiste__text { font-weight: 700; }
+
+/* Startblock: Einsätze links, kompakte Notruf-Hilfe rechts */
+.startblock { display: grid; gap: 2rem; }
+@media (min-width: 60rem) {
+  .startblock { grid-template-columns: 1fr 18.5rem; align-items: start; }
+}
+.startblock__haupt { min-width: 0; }
+.kachel-raster--schmal { grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); }
+
+/* Kompakte Notruf-Karte (rechte Spalte) */
+.notruf-karte {
+  background: var(--hintergrund);
+  border: 1px solid var(--linie);
+  border-top: 4px solid var(--rot);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem 1.15rem;
+  box-shadow: var(--schatten);
+}
+@media (min-width: 60rem) {
+  .notruf-karte { position: sticky; top: 6.5rem; }
+}
+.notruf-karte__kopf {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+.notruf-karte__nummer {
+  flex: none;
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #fff;
+  background: var(--rot);
+  border-radius: 8px;
+  padding: 0.05rem 0.5rem;
+}
+.notruf-karte__wer strong { display: block; font-size: 1.02rem; }
+.notruf-karte__wer span { font-size: 0.82rem; color: var(--grau); }
+.notruf-karte__hinweis {
+  margin: 0 0 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--grau);
+}
+.notruf-karte__liste {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: wfrage;
+  display: grid;
+  gap: 0.45rem;
+}
+.notruf-karte__liste li {
+  counter-increment: wfrage;
+  position: relative;
+  padding-left: 1.9rem;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+.notruf-karte__liste li::before {
+  content: counter(wfrage);
+  position: absolute;
+  left: 0; top: 0.05rem;
+  width: 1.4rem; height: 1.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--rot);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.76rem;
+}
+.notruf-karte__liste b { font-weight: 800; }
+
+/* Kopfbild-Band für Unterseiten */
+.seiten-hero {
+  position: relative;
+  background: var(--rot-tief);
+  min-height: clamp(160px, 26vw, 280px);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.seiten-hero__bild {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.seiten-hero::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 75%;
+  background: linear-gradient(to top, rgba(16, 12, 11, 0.78), rgba(16, 12, 11, 0));
+}
+.seiten-hero__text { position: relative; z-index: 1; padding-block: clamp(1rem, 3vw, 2rem); }
+.seiten-hero__text h1 {
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+}
+.seiten-hero + .inhalt-breite .textseite { margin-top: 2rem; }
+
+/* ============ 6. Textseiten ============ */
+.textseite {
+  background: var(--hintergrund);
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  padding: clamp(1.5rem, 1rem + 2vw, 2.75rem);
+  margin-block: 2rem 3rem;
+  box-shadow: var(--schatten);
+}
+.textseite > h1 {
+  border-bottom: 4px solid var(--rot);
+  padding-bottom: 0.35rem;
+  margin-bottom: 1rem;
+}
+.textseite h2 { margin-top: 1.6em; color: var(--rot-dunkel); }
+.textseite h3 { margin-top: 1.4em; }
+.seiten-liste { padding-left: 1.2rem; }
+.seiten-liste li::marker { color: var(--rot); }
+.platzhalter { padding-block: 2rem; color: var(--grau); }
+
+.adresse { font-style: normal; }
+.adresse__name { display: block; font-weight: 700; }
+.adresse__zeile { display: block; }
+
+/* ============ 7. Fussbereich ============ */
+.seiten-fuss {
+  margin-top: 3rem;
+  background: var(--dunkel);
+  color: #e9e5e2;
+  border-top: 5px solid var(--rot);
+}
+.seiten-fuss a { color: #fff; }
+.seiten-fuss a:hover { color: #ffd9d7; }
+.seiten-fuss h2 {
+  font-size: 1.05rem;
+  color: #fff;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--gruen);
+  display: inline-block;
+}
+.seiten-fuss__raster {
+  display: grid;
+  gap: 2rem;
+  padding-block: 2.5rem;
+}
+@media (min-width: 45rem) {
+  .seiten-fuss__raster { grid-template-columns: repeat(3, 1fr); }
+}
+.seiten-fuss__links,
+.seiten-fuss__social { list-style: none; margin: 0; padding: 0; }
+.seiten-fuss__links li { margin-bottom: 0.15rem; }
+.seiten-fuss__links a,
+.seiten-fuss__social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: var(--klickflaeche);
+}
+.seiten-fuss__social a:hover .social-symbol { color: #ffd9d7; }
+.seiten-fuss__notruf {
+  margin-top: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+.seiten-fuss__notruf strong { color: #ff8a84; }
+.seiten-fuss__zeile-unten {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-block: 1rem;
+  font-size: 0.9rem;
+  color: #b3aca8;
+}
+.social-symbol { flex: none; }
+
+/* ============ 7b. Einsätze, Aktuelles, Termine ============ */
+
+/* "mehr"-Link am Ende eines Abschnitts */
+.band__mehr { margin: 1.25rem 0 0; font-weight: 700; }
+.band__mehr a { text-decoration: none; }
+
+/* Steckbrief (Einsatz, spaeter auch Fahrzeuge) */
+.steckbrief {
+  margin: 1.25rem 0 1.5rem;
+  border: 1px solid var(--linie);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.steckbrief > div {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+}
+.steckbrief > div + div { border-top: 1px solid var(--linie); }
+.steckbrief dt {
+  background: var(--sand);
+  font-weight: 700;
+  padding: 0.55rem 0.9rem;
+}
+.steckbrief dd {
+  margin: 0;
+  padding: 0.55rem 0.9rem;
+}
+@media (max-width: 34rem) {
+  .steckbrief > div { grid-template-columns: 1fr; }
+  .steckbrief dd { padding-top: 0.15rem; }
+  .steckbrief > div + div { border-top-width: 4px; }
+}
+
+.jahr-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+}
+.jahr-nav a {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  background: var(--sand);
+  border: 1px solid var(--sand-linie);
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--rot-dunkel);
+}
+.jahr-nav a:hover { background: var(--rot); color: #fff; border-color: var(--rot); }
+
+.brotkrumen {
+  font-size: 0.9rem;
+  color: var(--grau);
+  margin-bottom: 0.25rem;
+}
+.beitrag__datum {
+  font-weight: 700;
+  color: var(--rot-dunkel);
+  margin-top: -0.25rem;
+}
+.beitrag__bild,
+.einsatz__titelbild {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-block: 0.5rem 1.5rem;
+}
+.zurueck { margin-top: 2rem; font-weight: 700; }
+.zurueck a { text-decoration: none; }
+
+.hinweis-pruefen {
+  margin-top: 1.5rem;
+  padding: 0.6rem 0.9rem;
+  background: #fff7e6;
+  border-left: 4px solid #d9a400;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.92rem;
+  color: #6b5300;
+}
+
+/* Personen / Ansprechpartner */
+.personen { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+@media (min-width: 40rem) { .personen { grid-template-columns: 1fr 1fr; } }
+.person {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: var(--hintergrund);
+  border: 1px solid var(--linie);
+  border-left: 4px solid var(--rot);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+}
+.person__foto {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+.person__text { display: flex; flex-direction: column; gap: 0.1rem; min-width: 0; }
+.person__name { font-weight: 800; }
+.person__funktion { color: var(--grau); font-size: 0.95rem; }
+.person__email { font-size: 0.95rem; word-break: break-word; }
+
+/* Übungszeit-Hinweis */
+.uebungszeit {
+  background: var(--sand);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Chronik (Geschichte) */
+.chronik { list-style: none; margin: 1rem 0 0; padding: 0; }
+.chronik__eintrag {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--linie);
+}
+.chronik__jahr {
+  font-weight: 800;
+  color: var(--rot-dunkel);
+  font-size: 1.05rem;
+}
+@media (max-width: 30rem) {
+  .chronik__eintrag { grid-template-columns: 1fr; gap: 0.15rem; }
+}
+
+/* Kontaktseite */
+.kontakt-karten {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+@media (min-width: 45rem) { .kontakt-karten { grid-template-columns: repeat(3, 1fr); } }
+.kontakt-karte {
+  background: var(--hintergrund);
+  border: 1px solid var(--linie);
+  border-top: 4px solid var(--rot);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem 1.2rem;
+}
+.kontakt-karte h2 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+.kontakt-karte--notruf { border-top-color: var(--tinte); }
+.kontakt-karte__notruf { font-size: 2rem; font-weight: 900; color: var(--rot); margin: 0; }
+
+.fahrzeug__langname { color: var(--grau); margin-top: -0.5rem; }
+
+/* Bildergalerie */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.5rem;
+  margin-block: 1.5rem;
+}
+.galerie__bild img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Termine-Liste */
+.termine { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; }
+.termin {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.9rem;
+}
+.band--rot .termin { background: rgba(255, 255, 255, 0.14); }
+.termin__datum {
+  flex: none;
+  width: 3.1rem;
+  text-align: center;
+  line-height: 1.1;
+}
+.termin__tag { display: block; font-size: 1.4rem; font-weight: 800; }
+.termin__monat { display: block; font-size: 0.8rem; text-transform: uppercase; }
+.termin__text { display: grid; gap: 0.1rem; }
+.termin__titel { font-weight: 700; }
+.termin__meta { font-size: 0.9rem; opacity: 0.9; }
+.termin__beschreibung { font-size: 0.92rem; opacity: 0.9; }
+.termine-leer { opacity: 0.9; }
+
+/* ============ 8. Barrierefreiheit ============ */
+:focus-visible {
+  outline: 3px solid var(--gruen);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.seiten-fuss :focus-visible,
+.hero :focus-visible,
+.band--rot :focus-visible,
+.band--gruen :focus-visible,
+.seiten-kopf .hauptnav__punkt.offen :focus-visible {
+  outline-color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

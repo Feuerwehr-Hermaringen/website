@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="inhalt-breite">
+  <article class="textseite">
+    <p class="brotkrumen"><a href="{{ "/aktuelles/" | relURL }}">Aktuelles</a></p>
+    <h1>{{ .Title }}</h1>
+    <p class="beitrag__datum">{{ .Date.Format "02.01.2006" }}</p>
+
+    {{- with .Params.vorschaubild }}
+    <img class="beitrag__bild" src="{{ . | relURL }}" alt="{{ $.Title }}">
+    {{- end }}
+
+    {{ .Content }}
+
+    {{ partial "galerie.html" .Params.galerie }}
+
+    {{- if .Params.uebernommen }}
+    <p class="hinweis-pruefen">Dieser Beitrag wurde von der bisherigen Website übernommen.</p>
+    {{- end }}
+
+    <p class="zurueck"><a href="{{ "/aktuelles/" | relURL }}">← Alle Beiträge</a></p>
+  </article>
+</div>
+{{ end }}

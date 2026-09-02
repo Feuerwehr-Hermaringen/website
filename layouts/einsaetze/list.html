@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{- $gruppen := .RegularPagesRecursive.GroupByDate "2006" }}
+<div class="inhalt-breite">
+  <div class="textseite">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{- if gt (len $gruppen) 1 }}
+    <nav class="jahr-nav" aria-label="Nach Jahr springen">
+      {{- range $gruppen }}
+      <a href="#jahr-{{ .Key }}">{{ .Key }}</a>
+      {{- end }}
+    </nav>
+    {{- end }}
+  </div>
+</div>
+
+{{- if $gruppen }}
+  {{- range $i, $gruppe := $gruppen }}
+  {{- with $gruppe }}
+  <section class="band {{ if eq (mod $i 2) 0 }}band--creme{{ else }}band--sand{{ end }}" id="jahr-{{ .Key }}">
+    <div class="inhalt-breite">
+      <h2 class="abschnitt-titel">Einsätze {{ .Key }}</h2>
+      <div class="kachel-raster">
+        {{- range .Pages }}
+        <a class="kachel kachel--motiv einsatz-kachel" href="{{ .RelPermalink }}">
+          {{ partial "motiv.html" (dict "bild" .Params.vorschaubild "art" .Params.einsatzart "titel" .Title) }}
+          <span class="kachel__body">
+            <span class="kachel__datum">{{ .Date.Format "02.01.2006" }}{{ with .Params.einsatzart }} · {{ . }}{{ end }}</span>
+            <span class="kachel__titel">{{ .Title }}</span>
+            {{- with .Params.einsatzort }}<span class="kachel__ort">{{ . }}</span>{{ end }}
+          </span>
+        </a>
+        {{- end }}
+      </div>
+    </div>
+  </section>
+  {{- end }}
+  {{- end }}
+{{- else }}
+  <div class="band band--creme"><div class="inhalt-breite">
+    <p>Es sind noch keine Einsätze veröffentlicht.</p>
+  </div></div>
+{{- end }}
+{{ end }}

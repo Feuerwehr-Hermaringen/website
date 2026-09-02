@@ -1,0 +1,27 @@
+{{/*
+  Selbst gezeichnete Social-Media-Symbole (keine externen Icon-Pakete).
+  Aufruf: {{ partial "social-symbol.html" "instagram" }}
+  Neue Netzwerke hier ergaenzen.
+*/}}
+{{- $netz := . -}}
+{{- if eq $netz "instagram" -}}
+<svg class="social-symbol" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+  <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="17" cy="7" r="1.4" fill="currentColor"/>
+</svg>
+{{- else if eq $netz "facebook" -}}
+<svg class="social-symbol" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+  <path fill="currentColor" d="M13 22v-8h3l1-4h-4V8c0-1 .3-2 2-2h2V2h-3c-3 0-5 2-5 5v3H7v4h3v8z"/>
+</svg>
+{{- else if eq $netz "youtube" -}}
+<svg class="social-symbol" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+  <rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+  <path fill="currentColor" d="M10 9l6 3-6 3z"/>
+</svg>
+{{- else -}}
+<svg class="social-symbol" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+  <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+  <path fill="currentColor" d="M11 7h2v6h-2zM11 15h2v2h-2z"/>
+</svg>
+{{- end -}}

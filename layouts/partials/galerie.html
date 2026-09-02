@@ -1,0 +1,15 @@
+{{/*
+  Bildergalerie. Erwartet eine Liste von Bildpfaden (aus dem Feld "galerie").
+  Ohne Bilder wird nichts ausgegeben.
+  Aufruf: {{ partial "galerie.html" .Params.galerie }}
+*/}}
+{{- $bilder := . -}}
+{{- with $bilder }}
+<div class="galerie" role="group" aria-label="Bildergalerie">
+  {{- range . }}
+  <a class="galerie__bild" href="{{ . | relURL }}">
+    <img src="{{ . | relURL }}" alt="" loading="lazy">
+  </a>
+  {{- end }}
+</div>
+{{- end }}

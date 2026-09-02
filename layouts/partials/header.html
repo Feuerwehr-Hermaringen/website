@@ -1,0 +1,73 @@
+{{/*
+  Kopfbereich mit Logo und Hauptnavigation.
+  Das Menue kommt aus data/seiten.yaml, damit es redaktionell aenderbar bleibt.
+  Sonderfall "auto: einsatzjahre": das Untermenue wird automatisch aus den
+  vorhandenen Einsatz-Jahren erzeugt (keine jaehrliche Pflege noetig).
+*/}}
+<header class="seiten-kopf">
+  <div class="inhalt-breite seiten-kopf__zeile">
+
+    <a class="logo" href="{{ "/" | relURL }}">
+      {{- $kandidaten := slice "uploads/logo-feuerwehr-hermaringen.svg" "uploads/logo-feuerwehr-hermaringen.png" -}}
+      {{- $logo := "" -}}
+      {{- range $kandidaten }}{{ if (os.FileExists (printf "static/%s" .)) }}{{ $logo = . }}{{ end }}{{ end -}}
+      {{- if $logo }}
+        <img class="logo__bild" src="{{ $logo | relURL }}"
+             alt="Freiwillige Feuerwehr Hermaringen – zur Startseite">
+      {{- else }}
+        <span class="logo__wortmarke">
+          <span class="logo__zeile1">Feuerwehr</span>
+          <span class="logo__zeile2">Hermaringen</span>
+        </span>
+      {{- end }}
+    </a>
+
+    <button class="menue-schalter" type="button"
+            aria-expanded="false" aria-controls="hauptnavigation">
+      <span class="menue-schalter__strich" aria-hidden="true"></span>
+      Menü
+    </button>
+
+    <nav id="hauptnavigation" class="hauptnav" aria-label="Hauptnavigation">
+      <ul class="hauptnav__liste">
+        {{- range $eintrag := (index hugo.Data.seiten "hauptmenue") }}
+
+          {{/* Untermenue-Eintraege zusammenstellen */}}
+          {{- $kinder := $eintrag.kinder | default (slice) }}
+          {{- if eq $eintrag.auto "einsatzjahre" }}
+            {{- $jahre := slice }}
+            {{- range (where site.RegularPages "Section" "einsaetze") }}
+              {{- $jahre = $jahre | append (.Date.Format "2006") }}
+            {{- end }}
+            {{- $auto := slice }}
+            {{- if $eintrag.link }}
+              {{- $auto = $auto | append (dict "titel" "Alle Einsätze" "link" $eintrag.link) }}
+            {{- end }}
+            {{- range (uniq $jahre) }}
+              {{- $auto = $auto | append (dict "titel" (printf "Einsätze %s" .) "link" (printf "%s#jahr-%s" $eintrag.link .)) }}
+            {{- end }}
+            {{- $kinder = $auto }}
+          {{- end }}
+          {{- $hatKinder := gt (len $kinder) 0 }}
+
+          <li class="hauptnav__punkt{{ if $hatKinder }} hat-untermenue{{ end }}">
+            {{- if $hatKinder }}
+              <button type="button" class="untermenue-schalter" aria-expanded="false">
+                {{ $eintrag.titel }}
+                <span class="pfeil" aria-hidden="true"></span>
+              </button>
+              <ul class="untermenue">
+                {{- range $kind := $kinder }}
+                  <li><a href="{{ $kind.link | relURL }}">{{ $kind.titel }}</a></li>
+                {{- end }}
+              </ul>
+            {{- else }}
+              <a href="{{ $eintrag.link | relURL }}">{{ $eintrag.titel }}</a>
+            {{- end }}
+          </li>
+        {{- end }}
+      </ul>
+    </nav>
+
+  </div>
+</header>

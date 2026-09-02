@@ -1,0 +1,13 @@
+{{/*
+  Gemeinsamer Baustein fuer die Ausgabe einer Adresse.
+  Warum: Jede Seite soll Adressen gleich formatieren. Zwischen Strassenname und
+  Hausnummer wird ein geschuetztes Leerzeichen gesetzt, damit z. B.
+  "Kaisheimstraße 10" nie am Zeilenende getrennt wird.
+
+  Aufruf: {{ partial "adresse.html" (dict "name" "..." "strasse" "..." "hausnummer" "..." "plz" "..." "ort" "...") }}
+*/}}
+<address class="adresse">
+  {{- with .name }}<span class="adresse__name">{{ . }}</span>{{ end }}
+  {{- if .strasse }}<span class="adresse__zeile">{{ .strasse }}&nbsp;{{ .hausnummer }}</span>{{ end }}
+  {{- if or .plz .ort }}<span class="adresse__zeile">{{ .plz }} {{ .ort }}</span>{{ end }}
+</address>

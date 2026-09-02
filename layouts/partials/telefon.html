@@ -1,0 +1,10 @@
+{{/*
+  Gemeinsamer Baustein fuer eine Telefonnummer.
+  Warum: einheitliche Darstellung und ein anklickbarer Anruf-Link (tel:) fuers Handy.
+  Erwartet die Nummer als Text, z. B. "07322 934780".
+
+  Aufruf: {{ partial "telefon.html" "07322 934780" }}
+*/}}
+{{- $anzeige := . -}}
+{{- $waehlbar := replaceRE "[^0-9+]" "" . -}}
+<a class="telefon" href="tel:{{ $waehlbar }}">{{ $anzeige }}</a>

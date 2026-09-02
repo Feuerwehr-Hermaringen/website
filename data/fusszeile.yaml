@@ -1,0 +1,33 @@
+# Inhalte des Fussbereichs (Footer)
+#
+# Warum diese Datei: Damit Kontaktdaten, Links und Social-Media im Fussbereich
+# ueber das Redaktionssystem gepflegt werden koennen.
+
+# Kontaktangaben im Fussbereich
+kontakt:
+  name: "Freiwillige Feuerwehr Hermaringen"
+  strasse: "Kaisheimstraße"
+  hausnummer: "10"
+  plz: "89568"
+  ort: "Hermaringen"
+  telefon: "07322 934780"
+  # ENTSCHEIDUNG FEUERWEHR: oeffentliche allgemeine E-Mail-Adresse
+  email: "kommandant@feuerwehr-hermaringen.de"
+
+# Wichtige Links im Fussbereich (Pflichtseiten usw.)
+links:
+  - titel: "Impressum"
+    link: "/impressum/"
+  - titel: "Datenschutz"
+    link: "/datenschutz/"
+  - titel: "Barrierefreiheit"
+    link: "/barrierefreiheit/"
+  - titel: "Kontakt"
+    link: "/kontakt/"
+
+# Social-Media-Kanaele. Spaeter einfach erweiterbar.
+# "netzwerk" steuert das passende selbstgezeichnete Symbol (aktuell: instagram).
+social:
+  - netzwerk: "instagram"
+    titel: "Instagram"
+    link: "https://www.instagram.com/feuerwehr_hermaringen/"

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="inhalt-breite">
+  <article class="textseite">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    {{- with .Params.chronik }}
+    <h2>Chronik</h2>
+    <ol class="chronik">
+      {{- range . }}
+      <li class="chronik__eintrag">
+        <span class="chronik__jahr">{{ .jahr }}</span>
+        <span class="chronik__text">{{ .text }}</span>
+      </li>
+      {{- end }}
+    </ol>
+    {{- end }}
+
+    {{- if .Params.uebernommen }}
+    <p class="hinweis-pruefen">Die Chronik wurde von der bisherigen Website übernommen und ist noch zu prüfen (u. a. die Bezeichnung der Fahrzeuge sowie Ergänzungen ab 2025).</p>
+    {{- end }}
+  </article>
+</div>
+{{ end }}

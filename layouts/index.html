@@ -1,0 +1,101 @@
+{{ define "main" }}
+{{ $p := .Params }}
+
+{{/* --- Kopfbereich / Hero --- */}}
+<section class="hero">
+  {{- with $p.kopfbild }}
+  <img class="hero__bild" src="{{ . | relURL }}" alt="{{ $p.kopfbild_alt }}"
+       width="1600" height="613" fetchpriority="high">
+  {{- end }}
+  <div class="hero__text inhalt-breite">
+    <h1>{{ $p.kopfbereich_titel | default site.Title }}</h1>
+  </div>
+</section>
+
+{{/* --- Schmale Notruf-Leiste: prominent und ohne Scrollen sichtbar --- */}}
+<div class="notruf-leiste">
+  <div class="inhalt-breite notruf-leiste__innen">
+    <span class="notruf-leiste__nummer">112</span>
+    <span class="notruf-leiste__text">Feuerwehr-Notruf – im Notfall sofort anrufen</span>
+  </div>
+</div>
+
+{{/* --- Aktuelle Einsätze + Notruf-Hilfe (rechte Spalte) --- */}}
+{{- $einsaetze := first 3 (where site.RegularPages "Section" "einsaetze") }}
+<section class="band band--creme">
+  <div class="inhalt-breite startblock">
+
+    <div class="startblock__haupt">
+      <h2 class="abschnitt-titel">Aktuelle Einsätze</h2>
+      {{- with $einsaetze }}
+      <div class="kachel-raster kachel-raster--schmal">
+        {{- range . }}
+        <a class="kachel kachel--motiv einsatz-kachel" href="{{ .RelPermalink }}">
+          {{ partial "motiv.html" (dict "bild" .Params.vorschaubild "art" .Params.einsatzart "titel" .Title) }}
+          <span class="kachel__body">
+            <span class="kachel__datum">{{ .Date.Format "02.01.2006" }}{{ with .Params.einsatzart }} · {{ . }}{{ end }}</span>
+            <span class="kachel__titel">{{ .Title }}</span>
+            {{- with .Params.einsatzort }}<span class="kachel__ort">{{ . }}</span>{{ end }}
+          </span>
+        </a>
+        {{- end }}
+      </div>
+      <p class="band__mehr"><a href="{{ "/einsaetze/" | relURL }}">Alle Einsätze &rarr;</a></p>
+      {{- else }}
+      <p>Es sind noch keine Einsätze veröffentlicht.</p>
+      {{- end }}
+    </div>
+
+    {{- with $p.notruf_fragen }}
+    <aside class="notruf-karte" aria-labelledby="notruf-karte-titel">
+      <div class="notruf-karte__kopf">
+        <span class="notruf-karte__nummer" aria-hidden="true">112</span>
+        <span class="notruf-karte__wer">
+          <strong id="notruf-karte-titel">Feuerwehr-Notruf</strong>
+          <span>rund um die Uhr · kostenlos</span>
+        </span>
+      </div>
+      <p class="notruf-karte__hinweis">Das nennen Sie am Telefon:</p>
+      <ol class="notruf-karte__liste">
+        {{- range . }}
+        <li><b>{{ .w }}</b> {{ .text }}</li>
+        {{- end }}
+      </ol>
+    </aside>
+    {{- end }}
+
+  </div>
+</section>
+
+{{/* --- Aktuelles (neueste Beiträge) --- */}}
+{{- $beitraege := first 3 (where site.RegularPages "Section" "aktuelles") }}
+{{- with $beitraege }}
+<section class="band band--sand">
+  <div class="inhalt-breite">
+    <h2 class="abschnitt-titel">Aktuelles</h2>
+    <div class="kachel-raster">
+      {{- range . }}
+      <a class="kachel kachel--motiv" href="{{ .RelPermalink }}">
+        {{ partial "motiv.html" (dict "bild" .Params.vorschaubild "art" "beitrag" "titel" .Title) }}
+        <span class="kachel__body">
+          <span class="kachel__datum">{{ .Date.Format "02.01.2006" }}</span>
+          <span class="kachel__titel">{{ .Title }}</span>
+          <span class="kachel__text">{{ .Summary | plainify | truncate 130 }}</span>
+        </span>
+      </a>
+      {{- end }}
+    </div>
+    <p class="band__mehr"><a href="{{ "/aktuelles/" | relURL }}">Alle Beiträge &rarr;</a></p>
+  </div>
+</section>
+{{- end }}
+
+{{/* --- Nächste Termine --- */}}
+<section class="band band--rot">
+  <div class="inhalt-breite">
+    <h2 class="abschnitt-titel">Nächste Termine</h2>
+    {{ partial "termine.html" (dict "limit" 4) }}
+  </div>
+</section>
+
+{{ end }}

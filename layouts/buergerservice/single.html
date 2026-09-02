@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="inhalt-breite">
+  <article class="textseite">
+    <p class="brotkrumen"><a href="{{ "/buergerservice/" | relURL }}">Bürgerservice</a></p>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <p class="zurueck"><a href="{{ "/buergerservice/" | relURL }}">← Zurück zum Bürgerservice</a></p>
+  </article>
+</div>
+{{ end }}

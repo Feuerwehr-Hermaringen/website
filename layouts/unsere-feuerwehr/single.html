@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ partial "seiten-hero.html" . }}
+<div class="inhalt-breite">
+  <article class="textseite">
+    {{- if not .Params.titelbild }}<h1>{{ .Title }}</h1>{{ end }}
+    {{ .Content }}
+
+    {{- with .Params.galerie }}
+    <h2>Bildergalerie</h2>
+    {{ partial "galerie.html" . }}
+    {{- end }}
+
+    {{- if .Params.uebernommen }}
+    <p class="hinweis-pruefen">Dieser Text wurde von der bisherigen Website übernommen und ist noch zu prüfen.</p>
+    {{- end }}
+  </article>
+</div>
+{{ end }}

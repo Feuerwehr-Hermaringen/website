@@ -1,0 +1,50 @@
+# Hugo-Konfiguration der Website der Freiwilligen Feuerwehr Hermaringen
+#
+# Warum diese Datei wichtig ist:
+# Sie legt die Grundeinstellungen fest, mit denen aus den Texten die fertige
+# Website gebaut wird. Sie muss normalerweise nicht angefasst werden - eine
+# Ausnahme ist die Adresse (baseURL), sobald die endgueltige Domain feststeht.
+
+# baseURL = die spaetere Internetadresse der Website.
+# Wird beim lokalen Testen (hugo server) automatisch ueberschrieben, ist also
+# nur fuer die veroeffentlichte Version relevant.
+# ENTSCHEIDUNG GEMEINDE/FEUERWEHR: endgueltige Domain bestaetigen (angestrebt: feuerwehr.hermaringen.de).
+baseURL = "https://feuerwehr.hermaringen.de/"
+
+# Sprache der Website: durchgehend Deutsch.
+locale = "de"
+defaultContentLanguage = "de"
+
+title = "Freiwillige Feuerwehr Hermaringen"
+
+# Erzeugt eine robots.txt (Hinweise fuer Suchmaschinen).
+enableRobotsTXT = true
+
+# Aufraeumen: keine ungenutzten Sprachdateien u. ae. im Ausgabeordner.
+[minify]
+  disableXML = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # unsafe = true: erlaubt einfaches HTML direkt im Redaktionstext.
+      # Wird fuer einzelne Bausteine (z. B. eingebettete Galerien) benoetigt.
+      unsafe = true
+      # hardWraps = true: ein einfacher Zeilenumbruch im Redaktionssystem wird
+      # auch auf der Website als Zeilenumbruch angezeigt. Wichtig, damit
+      # mehrzeilige Adressen und Kontaktdaten nicht zu einem Absatz zusammenlaufen.
+      hardWraps = true
+  [markup.goldmark.parser]
+    # Ein Bild, das alleine in einer Zeile steht, wird nicht in einen
+    # <p>-Absatz verpackt. Erleichtert die saubere Gestaltung von Bildern.
+    wrapStandAloneImageWithinParagraph = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+# Menuepunkte werden NICHT hier verwaltet, sondern in data/seiten.yaml,
+# damit sie spaeter ueber das Redaktionssystem bearbeitet werden koennen.
+
+[params]
+  # Zentrale Angaben, die an mehreren Stellen im Design gebraucht werden.
+  beschreibung = "Freiwillige Feuerwehr Hermaringen - ehrenamtlich im Einsatz fuer unsere Gemeinde."

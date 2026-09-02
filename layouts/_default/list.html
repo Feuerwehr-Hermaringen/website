@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="inhalt-breite">
+  <div class="textseite">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    {{- with .Pages }}
+    <ul class="seiten-liste">
+      {{- range . }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{- end }}
+    </ul>
+    {{- else }}
+    <p class="platzhalter"><em>Hier werden bald Inhalte gepflegt.</em></p>
+    {{- end }}
+  </div>
+</div>
+{{ end }}

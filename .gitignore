@@ -1,0 +1,12 @@
+# Von Hugo erzeugte Dateien - gehoeren nicht ins Repository,
+# weil sie bei jedem Build neu entstehen (Netlify baut sie selbst).
+/public/
+/resources/
+.hugo_build.lock
+
+# Betriebssystem
+.DS_Store
+
+# Editor
+.vscode/
+*.swp

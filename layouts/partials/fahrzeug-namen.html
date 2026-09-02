@@ -1,0 +1,16 @@
+{{/*
+  Wandelt eine Liste von Fahrzeug-Kürzeln in lesbare Namen um.
+  Unbekannte Kürzel werden unverändert ausgegeben.
+  Aufruf: {{ partial "fahrzeug-namen.html" .Params.fahrzeuge }}
+*/}}
+{{- $kuerzel := . -}}
+{{- $namen := slice -}}
+{{- range $kuerzel -}}
+  {{- $k := . -}}
+  {{- $treffer := "" -}}
+  {{- range (where site.RegularPages "Section" "fahrzeuge") -}}
+    {{- if or (eq .Params.kuerzel $k) (eq .File.ContentBaseName $k) }}{{ $treffer = .Title }}{{ end -}}
+  {{- end -}}
+  {{- $namen = $namen | append (cond (ne $treffer "") $treffer $k) -}}
+{{- end -}}
+{{- delimit $namen ", " -}}

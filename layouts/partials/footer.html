@@ -1,0 +1,50 @@
+{{/*
+  Fussbereich. Inhalte kommen aus data/fusszeile.yaml (redaktionell pflegbar).
+*/}}
+{{- $f := hugo.Data.fusszeile -}}
+<footer class="seiten-fuss">
+  <div class="inhalt-breite seiten-fuss__raster">
+
+    <div class="seiten-fuss__block">
+      <h2>Kontakt</h2>
+      {{ partial "adresse.html" $f.kontakt }}
+      {{- with $f.kontakt.telefon }}
+        <p>Telefon: {{ partial "telefon.html" . }}</p>
+      {{- end }}
+      {{- with $f.kontakt.email }}
+        <p>E-Mail: <a href="mailto:{{ . }}">{{ . }}</a></p>
+      {{- end }}
+      <p class="seiten-fuss__notruf">Im Notfall immer <strong>112</strong></p>
+    </div>
+
+    <div class="seiten-fuss__block">
+      <h2>Weitere Seiten</h2>
+      <ul class="seiten-fuss__links">
+        {{- range $f.links }}
+          <li><a href="{{ .link | relURL }}">{{ .titel }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+
+    {{- with $f.social }}
+    <div class="seiten-fuss__block">
+      <h2>Social Media</h2>
+      <ul class="seiten-fuss__social">
+        {{- range . }}
+          <li>
+            <a href="{{ .link }}" rel="me noopener">
+              {{ partial "social-symbol.html" .netzwerk }}
+              <span>{{ .titel }}</span>
+            </a>
+          </li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+
+  </div>
+
+  <div class="inhalt-breite seiten-fuss__zeile-unten">
+    <p>&copy; {{ now.Year }} Freiwillige Feuerwehr Hermaringen</p>
+  </div>
+</footer>
