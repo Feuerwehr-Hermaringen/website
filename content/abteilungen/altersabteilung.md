@@ -1,10 +1,10 @@
 ---
-titelbild: "/uploads/abteilungen/altersabteilung/titelbild.jpg"
-title: "Altersabteilung"
+title: Altersabteilung
 weight: 3
-ansprechpartner: "keck"
+titelbild: /uploads/abteilungen/altersabteilung/titelbild.jpg
+ansprechpartner: keck
 galerie: []
-uebernommen: true
+uebernommen: false
 ---
 
 **Altersabteilung – Erfahrung, Gemeinschaft & Tradition**
