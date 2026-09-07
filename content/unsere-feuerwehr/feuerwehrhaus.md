@@ -1,9 +1,9 @@
 ---
-titelbild: "/uploads/feuerwehrhaus/titelbild.jpg"
-title: "Feuerwehrhaus"
-beschreibung: "Das Feuerwehrhaus der Freiwilligen Feuerwehr Hermaringen in der Kaisheimstraße."
+title: Feuerwehrhaus
+titelbild: ""
+beschreibung: Das Feuerwehrhaus der Freiwilligen Feuerwehr Hermaringen in der Kaisheimstraße.
 galerie: []
-uebernommen: true
+uebernommen: false
 ---
 
 **Unser Feuerwehrhaus – modern, funktional und gut ausgestattet**
