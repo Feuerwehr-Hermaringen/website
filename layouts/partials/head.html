@@ -21,12 +21,13 @@
 
 {{/*
   Favicon (Symbol im Browser-Tab). Das aktuelle Logo der Feuerwehr Hermaringen.
-  Zum Ändern die Dateien unter static/ ersetzen (gleiche Namen):
-    static/favicon.ico          (fuer aeltere Browser, Pflicht-Fallback)
-    static/favicon.png          (moderne Browser, quadratisch)
-    static/apple-touch-icon.png (iPhone/iPad, 180x180)
-  Die Fragezeichen-Version (?v=2) zwingt Browser, ein evtl. altes Symbol neu zu laden.
+  Zum Ändern nur die zwei Dateien unter static/ ersetzen (exakt gleiche Namen,
+  jeweils ein quadratisches PNG):
+    static/favicon.png          (Tab-Symbol; empfohlen 512x512)
+    static/apple-touch-icon.png (iPhone/iPad-Startbildschirm; empfohlen 180x180)
+  /favicon.ico wird per Weiterleitung (static/_redirects) auf favicon.png geleitet.
+  Nach dem Ändern die Zahl unten (v=3) um 1 erhöhen -> zwingt Browser, das
+  Symbol neu zu laden.
 */}}
-<link rel="icon" href="{{ "favicon.ico" | relURL }}?v=2" sizes="any">
-<link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}?v=2">
-<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}?v=2">
+<link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}?v=3">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}?v=3">

@@ -111,3 +111,6 @@
 /unsere-feuerwehr/archiv/einsaetze-2025/*   /einsaetze/  301
 /unsere-feuerwehr/archiv/einsaetze-2026/*   /einsaetze/  301
 /unsere-feuerwehr/archiv/einsaetze/*        /einsaetze/  301
+
+# Browser fragen /favicon.ico automatisch ab -> auf die PNG-Datei leiten
+/favicon.ico    /favicon.png    200
