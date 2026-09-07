@@ -2,13 +2,6 @@
 title: Datenschutzerklärung
 entwurf: false
 ---
-> **ENTWURF.** Dieser Text wurde an der Datenschutzerklärung der Gemeinde Hermaringen
-> ausgerichtet, weil die Freiwillige Feuerwehr eine Einrichtung der Gemeinde ist.
-> Er **muss vom behördlichen Datenschutzbeauftragten der Gemeinde (Christoph Boser)
-> geprüft und freigegeben** werden – insbesondere, weil hier die Gemeinde als
-> Verantwortliche benannt wird und weil der Anmeldedienst des Redaktionssystems
-> (DecapBridge) ein anderer ist als auf der Gemeinde-Website (Netlify Identity).
-
 ## 1. Verantwortlicher
 
 Die Freiwillige Feuerwehr Hermaringen ist eine Einrichtung der Gemeinde Hermaringen
@@ -43,8 +36,7 @@ Seiten – kommen zwei weitere Dienste zum Einsatz:
 * der Anmeldedienst **DecapBridge**, über den sich die Redaktionsmitglieder mit
   E-Mail und Passwort anmelden; verarbeitet werden dabei die Zugangsdaten der
   angemeldeten Personen sowie technische Verbindungsdaten.
-  *(Zu prüfen: Auftragsverarbeitungsvertrag, Serverstandort und
-  Datenübermittlung des Anbieters von DecapBridge.)*
+
 * das Redaktionsprogramm **Decap CMS**, das über den Auslieferungsdienst
   `unpkg.com` (Cloudflare, Inc., USA) geladen wird; dabei wird die IP-Adresse
   des Redaktionsmitglieds an diesen Dienst übermittelt.
@@ -68,7 +60,6 @@ Diese Daten dienen ausschließlich der Systemsicherheit und Fehleranalyse.
 Rechtsgrundlage ist Art. 6 Abs. 1 lit. e DSGVO in Verbindung mit § 4 LDSG
 Baden-Württemberg.
 
-
 ## 5. Cookies
 
 Diese Website verwendet keine Analyse- oder Werbe-Cookies. Sie bindet auch keine
@@ -89,7 +80,6 @@ anderen Rechtsgrundlage veröffentlicht.
 Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre Angaben ausschließlich
 zur Bearbeitung Ihres Anliegens und löschen sie, sobald die Aufbewahrung nicht
 mehr erforderlich ist. Ein Kontaktformular ist derzeit nicht in Betrieb.
-
 
 ## 8. Ihre Rechte
 
