@@ -1,8 +1,7 @@
 ---
-title: "Impressum"
-entwurf: true
+title: Impressum
+entwurf: false
 ---
-
 > **ENTWURF.** An das Impressum der Gemeinde Hermaringen angelehnt, da die
 > Freiwillige Feuerwehr eine Einrichtung der Gemeinde ist.
 > **Von der Gemeinde bzw. der Feuerwehrführung zu prüfen und freizugeben** –
@@ -70,8 +69,7 @@ gestattet.
 
 Sofern bei einem Bild nichts anderes vermerkt ist, liegen die Rechte bei der
 Freiwilligen Feuerwehr Hermaringen bzw. der Gemeinde Hermaringen.
-*(Für einzelne übernommene Fotos – z. B. das Titelbild der Startseite – sind die
-Nutzungsrechte noch abschließend zu klären.)*
+
 
 ## Elektronische Kommunikation
 
