@@ -1,6 +1,6 @@
 ---
 title: Barrierefreiheitserklärung
-entwurf: true
+entwurf: false
 ---
 > **ENTWURF.** An der Barrierefreiheitserklärung der Gemeinde Hermaringen
 > ausgerichtet. **Das Erstellungsdatum, die Kontaktstelle für Rückmeldungen und
