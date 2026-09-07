@@ -97,12 +97,7 @@ collections:
       - { name: einsatznummer, label: "Einsatznummer (optional)", widget: string, required: false, hint: "z. B. 27/26" }
       - { name: alarmzeit, label: "Alarmzeit (optional)", widget: string, required: false, hint: "z. B. 18:42 Uhr" }
       - { name: einsatzende, label: "Einsatzende (optional)", widget: string, required: false, hint: "z. B. 19:30 Uhr" }
-      - name: einsatzart
-        label: "Art des Einsatzes (optional)"
-        widget: select
-        required: false
-        create: true
-        options: ["Brand", "Brandmeldeanlage", "Technische Hilfe", "Gefahrgut", "Türöffnung", "Unwetter", "Übung", "Sonstiges"]
+      - { name: einsatzart, label: "Art des Einsatzes (optional)", widget: string, required: false, hint: "Frei eingeben, z. B. Brand, Technische Hilfe, Gefahrgut, Brandmeldeanlage, Türöffnung, Unwetter, Übung." }
       - { name: einsatzort, label: "Einsatzort (optional)", widget: string, required: false, hint: "Ortsteil oder Straße ohne Hausnummer." }
       - name: fahrzeuge
         label: "Welche unserer Fahrzeuge waren im Einsatz?"
