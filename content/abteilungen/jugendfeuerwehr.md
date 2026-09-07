@@ -1,25 +1,25 @@
 ---
-titelbild: "/uploads/abteilungen/jugendfeuerwehr/titelbild.jpg"
-title: "Jugendfeuerwehr"
+title: Jugendfeuerwehr
 weight: 2
-ansprechpartner: "domes"
-uebungszeit: "Montags ab 18:00 Uhr, Feuerwehrhaus Hermaringen"
-vorschaubild: "/uploads/abteilungen/jugendfeuerwehr/bild-01.jpg"
+titelbild: /uploads/abteilungen/jugendfeuerwehr/titelbild.jpg
+uebungszeit: Montags ab 18:00 Uhr, Feuerwehrhaus Hermaringen
+ansprechpartner: domes
 galerie:
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-01.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-02.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-03.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-04.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-05.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-06.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-07.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-08.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-09.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-10.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-11.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-12.jpg"
-  - "/uploads/abteilungen/jugendfeuerwehr/bild-13.jpg"
-uebernommen: true
+  - /uploads/abteilungen/jugendfeuerwehr/bild-01.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-02.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-03.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-04.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-05.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-06.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-07.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-08.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-09.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-10.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-11.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-12.jpg
+  - /uploads/abteilungen/jugendfeuerwehr/bild-13.jpg
+uebernommen: false
+vorschaubild: /uploads/abteilungen/jugendfeuerwehr/bild-01.jpg
 ---
 
 **Jugendfeuerwehr Hermaringen – Technik, Teamgeist & jede Menge Action**
