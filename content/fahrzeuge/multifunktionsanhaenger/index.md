@@ -1,19 +1,16 @@
 ---
-kuerzel: "multifunktionsanhaenger"
-title: "Multifunktionsanhänger"
-langname: "Multifunktionsanhänger mit wechselbarem Containersystem"
+kuerzel: multifunktionsanhaenger
+title: Multifunktionsanhänger
+langname: Multifunktionsanhänger mit wechselbarem Containersystem
 funkrufname: ""
 weight: 5
-titelbild: "/uploads/fahrzeuge/multifunktionsanhaenger/titelbild.jpg"
-vorschaubild: "/uploads/fahrzeuge/multifunktionsanhaenger/titelbild.jpg"
+titelbild: /uploads/fahrzeuge/multifunktionsanhaenger/titelbild.jpg
+vorschaubild: /uploads/fahrzeuge/multifunktionsanhaenger/titelbild.jpg
 steckbrief:
-  - merkmal: "Beschaffung"
+  - merkmal: Beschaffung
     wert: "2007"
-  - merkmal: "System"
-    wert: "Wechselbares Containersystem"
+  - merkmal: System
+    wert: Wechselbares Containersystem
 galerie: []
-uebernommen: true
+uebernommen: false
 ---
-
-Angaben folgen. Die bisherige Website enthielt zu diesem Anhänger keine Details –
-Text und technische Daten werden von der Feuerwehr ergänzt.
