@@ -1,8 +1,8 @@
 ---
-titelbild: "/uploads/abteilungen/einsatzabteilung/titelbild.jpg"
-title: "Einsatzabteilung"
+title: Einsatzabteilung
 weight: 1
-ansprechpartner: "grolik"
+titelbild: /uploads/abteilungen/einsatzabteilung/titelbild.jpg
+ansprechpartner: grolik
 galerie: []
 ---
 

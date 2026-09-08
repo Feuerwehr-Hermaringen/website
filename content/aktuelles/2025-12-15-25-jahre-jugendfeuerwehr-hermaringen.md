@@ -1,23 +1,23 @@
 ---
-title: "25 Jahre Jugendfeuerwehr Hermaringen"
+title: 25 Jahre Jugendfeuerwehr Hermaringen
 date: 2025-12-15
-vorschaubild: "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-01.jpg"
+vorschaubild: /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-01.jpg
 galerie:
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-02.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-03.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-04.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-05.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-06.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-07.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-08.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-09.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-10.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-11.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-12.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-13.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-14.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-15.jpg"
-  - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-16.jpg"
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-02.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-03.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-04.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-05.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-06.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-07.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-08.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-09.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-10.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-11.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-12.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-13.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-14.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-15.jpg
+  - /uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-16.jpg
 ---
 
 Am 14. Dezember 2025 feierte die Jugendfeuerwehr Hermaringen ihr 25-jähriges Bestehen mit einer Jubiläumsveranstaltung im Feuerwehrhaus Hermaringen. Zahlreiche Gäste aus der Bevölkerung, Vertreter der Gemeinde sowie Mitglieder der aktiven Feuerwehr waren der Einladung gefolgt und sorgten für ein gut besuchtes und stimmungsvolles Fest.

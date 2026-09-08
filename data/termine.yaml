@@ -1,16 +1,7 @@
 termine:
-  - titel: Monatsübung Einsatzabteilung
-    datum: 2026-09-15
-    uhrzeit: 19:00 Uhr
+  - titel: Nachtübung
+    datum: 2026-09-21
+    uhrzeit: KW 39
     ort: Feuerwehrhaus Hermaringen
-    beschreibung: Praktische Übung der Einsatzabteilung.
+    beschreibung: Nachtübung
     kategorie: Übung
-  - titel: Übungsabend Jugendfeuerwehr
-    datum: 2026-09-22
-    uhrzeit: 18:00 Uhr
-    ort: Feuerwehrhaus Hermaringen
-    beschreibung: Wöchentlicher Übungsabend der Jugendfeuerwehr.
-    kategorie: Übung
-  - kategorie: Sonstiges
-    titel: Feuerwehrausflug
-    datum: 2026-09-04
