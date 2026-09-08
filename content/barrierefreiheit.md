@@ -2,11 +2,6 @@
 title: Barrierefreiheitserklärung
 entwurf: false
 ---
-> **ENTWURF.** An der Barrierefreiheitserklärung der Gemeinde Hermaringen
-> ausgerichtet. **Das Erstellungsdatum, die Kontaktstelle für Rückmeldungen und
-> der genaue Konformitätsgrad sind von der Feuerwehr bzw. der Gemeinde
-> festzulegen**, bevor die Seite veröffentlicht wird.
-
 ## Erklärung zur Barrierefreiheit
 
 Die Freiwillige Feuerwehr Hermaringen – eine Einrichtung der Gemeinde Hermaringen –
@@ -29,7 +24,7 @@ Folgende Inhalte sind derzeit noch nicht vollständig barrierefrei:
 
 * **Alternativtexte:** Ein Teil der von der bisherigen Website übernommenen
   Fotos (insbesondere in Bildergalerien) hat noch keinen aussagekräftigen
-  Alternativtext. Diese werden schrittweise ergänzt.
+  Alternativtext. 
 * **PDF-Dokumente:** Ältere oder von Dritten erstellte PDF-Dateien sind
   möglicherweise nicht vollständig barrierefrei aufbereitet. Benötigen Sie ein
   bestimmtes Dokument in zugänglicher Form, melden Sie sich bitte – wir stellen
