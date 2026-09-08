@@ -9,7 +9,6 @@ einsatzort: "Schillerstraße"
 einsatzfahrzeuge: "HLF 20/20, LF 20 KatS, Dekon-P, MTW, Feuerwehr Giengen"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 *Kein Berichtstext vorhanden.*

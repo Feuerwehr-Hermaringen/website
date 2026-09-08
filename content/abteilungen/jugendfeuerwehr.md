@@ -19,7 +19,6 @@ galerie:
   - "/uploads/abteilungen/jugendfeuerwehr/bild-11.jpg"
   - "/uploads/abteilungen/jugendfeuerwehr/bild-12.jpg"
   - "/uploads/abteilungen/jugendfeuerwehr/bild-13.jpg"
-uebernommen: true
 ---
 
 **Jugendfeuerwehr Hermaringen – Technik, Teamgeist & jede Menge Action**

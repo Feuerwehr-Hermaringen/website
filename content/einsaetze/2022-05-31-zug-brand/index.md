@@ -9,7 +9,6 @@ einsatzort: ""
 einsatzfahrzeuge: ""
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 **Einsatz: Zug-Brand**

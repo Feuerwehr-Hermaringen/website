@@ -11,7 +11,6 @@ vorschaubild: "/uploads/einsaetze/2025-08-28-einsatz-16-25-br-2-kleinbrand/bild-
 galerie:
   - "/uploads/einsaetze/2025-08-28-einsatz-16-25-br-2-kleinbrand/bild-01.png"
   - "/uploads/einsaetze/2025-08-28-einsatz-16-25-br-2-kleinbrand/bild-02.png"
-uebernommen: true
 ---
 
 Am Donnerstag, den 28. August 2025, wurde die Feuerwehr Hermaringen durch die Leitstelle zu einem gemeldeten PKW-Brand alarmiert. Aufgrund des laufenden Rückfallbetriebs konnte die Leitstelle lediglich per Vollalarm auslösen. Beim Eintreffen an der Einsatzstelle stellte sich jedoch schnell heraus, dass es sich nicht um einen Brand, sondern um eine Fahrzeugpanne handelte.

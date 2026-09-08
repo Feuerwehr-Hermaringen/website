@@ -9,7 +9,6 @@ einsatzort: "Nattheim"
 einsatzfahrzeuge: "Dekon-P, Feuerwehr Nattheim, Gefahrgutzug LK Heidenheim"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Die Feuerwehr Hermaringen wurde als Teil des Gefahrgutzuges des Landkreises Heidenheim mit der Dekon-P-Gruppe zu einem gemeldeten Gefahrguteinsatz nach Nattheim alarmiert.

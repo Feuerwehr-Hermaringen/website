@@ -9,7 +9,6 @@ einsatzort: "Industriebetrieb, Gerschweiler"
 einsatzfahrzeuge: "HLF 20/20, LF 20, MTW"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Am 22. November wurde die Feuerwehr Hermaringen zu einem Brand 5 in einen Industriebetrieb in Gerschweiler alarmiert, nachdem die automatische Brandmeldeanlage ausgelöst hatte. Zusammen mit der zur Unterstützung mitalarmierten Feuerwehr Giengen rückten die Einsatzkräfte an. Ebenso waren Polizei und Rettungsdienst vor Ort.

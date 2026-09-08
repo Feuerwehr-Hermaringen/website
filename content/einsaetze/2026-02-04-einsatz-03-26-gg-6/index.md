@@ -24,7 +24,6 @@ galerie:
   - "/uploads/einsaetze/2026-02-04-einsatz-03-26-gg-6/bild-13.jpg"
   - "/uploads/einsaetze/2026-02-04-einsatz-03-26-gg-6/bild-14.jpg"
   - "/uploads/einsaetze/2026-02-04-einsatz-03-26-gg-6/bild-15.jpg"
-uebernommen: true
 ---
 
 Am 04. Februar 2026 wurde die Feuerwehr Hermaringen im Rahmen eines GG6-Einsatzes gemeinsam mit dem Gefahrgutzug des Landkreises zu einem Chlorgasaustritt in einer Pumpstation in Mergelstetten alarmiert.

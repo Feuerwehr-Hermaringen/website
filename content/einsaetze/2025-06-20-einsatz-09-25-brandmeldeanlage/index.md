@@ -10,7 +10,6 @@ einsatzfahrzeuge: "HLF 20/20, LF20, MTW"
 vorschaubild: "/uploads/einsaetze/2025-06-20-einsatz-09-25-brandmeldeanlage/bild-01.png"
 galerie:
   - "/uploads/einsaetze/2025-06-20-einsatz-09-25-brandmeldeanlage/bild-01.png"
-uebernommen: true
 ---
 
 Am 20.06 wurde die Freiwillige Feuerwehr Hermaringen gegen 11:26 Uhr durch die Leitstelle Ostalb zu einem ausgelösten Brandmeldealarm im Pflegeheim in der Schillerstraße alarmiert.

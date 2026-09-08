@@ -13,7 +13,6 @@ galerie:
   - "/uploads/einsaetze/2025-12-17-einsatz-30-25-br-4-brand-ausserhalb-gebaeude/bild-02.jpg"
   - "/uploads/einsaetze/2025-12-17-einsatz-30-25-br-4-brand-ausserhalb-gebaeude/bild-03.jpg"
   - "/uploads/einsaetze/2025-12-17-einsatz-30-25-br-4-brand-ausserhalb-gebaeude/bild-04.jpg"
-uebernommen: true
 ---
 
 Am 17.12.2025 wurde die Feuerwehr Hermaringen zu einem Brand 4 nach Sontheim alarmiert. Vor Ort stand eine Gartenhütte mit eingelagertem Brennholz in Brand.

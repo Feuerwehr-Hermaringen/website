@@ -13,7 +13,6 @@ galerie:
   - "/uploads/einsaetze/2025-05-06-einsatz-05-25-baum-auf-strasse/bild-02.jpg"
   - "/uploads/einsaetze/2025-05-06-einsatz-05-25-baum-auf-strasse/bild-03.jpg"
   - "/uploads/einsaetze/2025-05-06-einsatz-05-25-baum-auf-strasse/bild-04.jpg"
-uebernommen: true
 ---
 
 Zum fünften Einsatz des Jahres wurde die Feuerwehr Hermaringen zu einer technischen Hilfeleistung auf die L1083 in Fahrtrichtung Giengen alarmiert. Kurz nach der Abzweigung zur B492 blockierte ein etwa drei Meter langer Baumstamm die linke Fahrspur. Nach ersten Erkenntnissen wurde der Baumstamm vermutlich von einem vorbeifahrenden LKW verloren. Gemeinsam mit der Polizei sicherten die Einsatzkräfte der Feuerwehr die Gefahrenstelle ab und leiteten den Verkehr einspurig an der Einsatzstelle vorbei. Zur Bergung des Baumstammes wurde eine Fachfirma hinzugezogen. Nach der erfolgreichen Entfernung des Hindernisses reinigten die Einsatzkräfte die Fahrbahn. Im Anschluss konnte der Einsatz beendet und die Straße wieder vollständig für den Verkehr freigegeben werden. Personen kamen nicht zu Schaden.

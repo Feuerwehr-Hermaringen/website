@@ -9,7 +9,6 @@ einsatzort: ""
 einsatzfahrzeuge: ""
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 22.02.2022

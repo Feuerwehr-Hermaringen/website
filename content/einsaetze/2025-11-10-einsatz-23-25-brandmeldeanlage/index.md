@@ -9,7 +9,6 @@ einsatzort: "**Industriebetrieb Gerschweiler"
 einsatzfahrzeuge: "HLF 20/20, LF 20, MTW"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Am 10. November 2025 wurde die Feuerwehr Hermaringen um 17:52 Uhr zu einer ausgelösten Brandmeldeanlage in einem Industriebetrieb in Gerschweiler alarmiert. Gemeinsam mit der Feuerwehr Giengen, der Polizei, dem Rettungsdienst sowie der HVO-Gruppe des DRK Hermaringen rückten die Einsatzkräfte zur Einsatzstelle aus.

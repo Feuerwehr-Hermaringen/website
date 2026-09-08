@@ -10,7 +10,6 @@ einsatzfahrzeuge: "HLF 20/20"
 vorschaubild: "/uploads/einsaetze/2025-10-20-einsatz-20-25-wachbesetzung/bild-01.jpg"
 galerie:
   - "/uploads/einsaetze/2025-10-20-einsatz-20-25-wachbesetzung/bild-01.jpg"
-uebernommen: true
 ---
 
 Am Montagmittag wurde das HLF der Feuerwehr Hermaringen im Zuge des Großbrandes in einem Entsorgungsbetrieb in Sontheim an der Brenz zur Gebietsabsicherung alarmiert. Während zahlreiche Feuerwehren aus der Region an der Brandbekämpfung beteiligt waren, besetzte die Feuerwehr Hermaringen das Feuerwehrhaus in Sontheim, um den Brandschutz im Gemeindegebiet sicherzustellen.

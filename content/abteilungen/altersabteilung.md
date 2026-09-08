@@ -4,7 +4,6 @@ title: "Altersabteilung"
 weight: 3
 ansprechpartner: "keck"
 galerie: []
-uebernommen: true
 ---
 
 **Altersabteilung – Erfahrung, Gemeinschaft & Tradition**

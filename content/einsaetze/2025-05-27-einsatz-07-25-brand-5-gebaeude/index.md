@@ -9,7 +9,6 @@ einsatzort: "Aussiedlerhof K3021"
 einsatzfahrzeuge: "HLF20/20, LF20, MTW, Feuerwehr Sontheim"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Am 27.05 wurde die Feuerwehr Hermaringen um 16:00 Uhr mittels Vollalarm und Sirene zu einem gemeldeten Gebäudebrand in einem Aussiedlerhof in Richtung Burgberg alarmiert. Zeitgleich wurden zwei Fahrzeuge der Feuerwehr Sontheim zur Überlandhilfe mitalarmiert. Bereits auf der Anfahrt konnte eine deutliche Rauchentwicklung festgestellt werden, weshalb zunächst weiterhin von einem bestätigten Brandereignis ausgegangen wurde.

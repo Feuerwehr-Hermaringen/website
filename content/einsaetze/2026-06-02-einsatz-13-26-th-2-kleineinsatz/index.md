@@ -10,7 +10,6 @@ einsatzfahrzeuge: "HLF 20/20, MTW"
 vorschaubild: "/uploads/einsaetze/2026-06-02-einsatz-13-26-th-2-kleineinsatz/bild-01.jpg"
 galerie:
   - "/uploads/einsaetze/2026-06-02-einsatz-13-26-th-2-kleineinsatz/bild-01.jpg"
-uebernommen: true
 ---
 
 Am Dienstag, den 02.06.2026, wurde die Feuerwehr Hermaringen nach einem heftigen Unwetter zu einem technischen Hilfeleistungseinsatz (TH 2) alarmiert. Im Giengener Weg im Ortsteil Gerschweiler war ein Baum auf die Fahrbahn gestürzt und blockierte diese teilweise. Nach dem Eintreffen der Einsatzkräfte wurde der umgestürzte Baum von der Fahrbahn gezogen und im Seitenbereich abgelegt. Abschließend reinigte die Feuerwehr die Straße. Nach kurzer Zeit konnte der Einsatz beendet werden.

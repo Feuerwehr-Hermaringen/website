@@ -35,10 +35,6 @@
 
     {{ partial "galerie.html" .Params.galerie }}
 
-    {{- if .Params.uebernommen }}
-    <p class="hinweis-pruefen">Dieser Bericht wurde von der bisherigen Website übernommen und ist noch zu prüfen.</p>
-    {{- end }}
-
     <p class="zurueck"><a href="{{ "/einsaetze/" | relURL }}">← Alle Einsätze</a></p>
   </article>
 </div>

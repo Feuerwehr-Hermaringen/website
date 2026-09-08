@@ -9,7 +9,6 @@ einsatzort: "Pflegeheim, Schillerstraße"
 einsatzfahrzeuge: "**HLF 20/20, LF 20, MTW; Feuerwehr Sontheim"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Die Feuerwehr Hermaringen wurde zu einem Brand, ausgelöst durch eine Brandmeldeanlage, alarmiert. Nach dem Eintreffen an der Einsatzstelle erfolgte eine umgehende Erkundung der ausgelösten Meldergruppe sowie der betroffenen Räumlichkeiten.

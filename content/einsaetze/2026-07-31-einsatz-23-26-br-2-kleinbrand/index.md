@@ -9,7 +9,6 @@ einsatzort: "B492, Richtung Bergenweiler"
 einsatzfahrzeuge: "LF 20 KatS"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Nach Erkundung durch die Feuerwehr konnte kein Brand festgestellt werden.

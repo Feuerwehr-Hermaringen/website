@@ -9,7 +9,6 @@ einsatzort: "**Hohweiher"
 einsatzfahrzeuge: HLF 20/20, MTW
 vorschaubild: ""
 galerie: []
-uebernommen: false
 ---
 
 Nach der Alarmierung um 19:34 Uhr rückte die Feuerwehr Hermaringen zu einem gemeldeten Wasserrohrbruch im Bereich Hohweiher aus.

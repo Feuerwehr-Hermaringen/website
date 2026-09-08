@@ -10,7 +10,6 @@ einsatzfahrzeuge: "HLF 20/20; Feuerwehr Sontheim"
 vorschaubild: "/uploads/einsaetze/2026-04-15-einsatz-07-26-br-4-brand-ausserhalb-gebaeude/bild-01.jpg"
 galerie:
   - "/uploads/einsaetze/2026-04-15-einsatz-07-26-br-4-brand-ausserhalb-gebaeude/bild-01.jpg"
-uebernommen: true
 ---
 
 Am 15. April 2026 wurde die Feuerwehr Hermaringen gemeinsam mit der Feuerwehr Sontheim zu einem Brand 4 auf die Bundesstraße 492 in Fahrtrichtung Sontheim alarmiert. Gemeldet war ein in Brand geratener LKW-Anhänger.

@@ -9,7 +9,6 @@ einsatzort: "Gemeindegebiet"
 einsatzfahrzeuge: "LF 20 KatS, Dekon-P, MTW"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 *Kein Berichtstext vorhanden.*

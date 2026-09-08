@@ -35,7 +35,6 @@ galerie:
   - "/uploads/fahrzeuge/mtw/bild-03.jpg"
   - "/uploads/fahrzeuge/mtw/bild-04.jpg"
   - "/uploads/fahrzeuge/mtw/bild-05.jpg"
-uebernommen: true
 ---
 
 Der Mannschaftstransportwagen dient dem Transport von Einsatzkräften, Material und

@@ -28,10 +28,6 @@
     {{ partial "galerie.html" . }}
     {{- end }}
 
-    {{- if .Params.uebernommen }}
-    <p class="hinweis-pruefen">Die technischen Daten wurden von der bisherigen Website übernommen und sind noch zu prüfen.</p>
-    {{- end }}
-
     <p class="zurueck"><a href="{{ "/fahrzeuge/" | relURL }}">← Alle Fahrzeuge</a></p>
   </article>
 </div>

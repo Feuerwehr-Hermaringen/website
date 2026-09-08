@@ -9,7 +9,6 @@ einsatzort: "Industriebetrieb Gerschweiler"
 einsatzfahrzeuge: "HLF 20/20, MTW"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Kurz vor dem Wiedereintreffen am Feuerwehrhaus erhielt die Feuerwehr Hermaringen von der Integrierten Leitstelle eine erneute Alarmierung: Im selben Industriebetrieb in Gerschweiler hatte erneut die Brandmeldeanlage ausgelöst

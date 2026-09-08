@@ -4,7 +4,6 @@ title: "Einsatzabteilung"
 weight: 1
 ansprechpartner: "grolik"
 galerie: []
-uebernommen: true
 ---
 
 **Freiwillige Feuerwehr Hermaringen – Gemeinsam für Ihre Sicherheit**

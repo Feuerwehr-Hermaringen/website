@@ -9,7 +9,6 @@ einsatzort: "Hermaringen-Gerschweiler, Firmengebäude"
 einsatzfahrzeuge: "HLF 20/20, LF20, MTW, Feuerwehr Giengen"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Am 16.07.2025 wurde die Freiwillige Feuerwehr Hermaringen gemeinsam mit der Feuerwehr Giengen zu einem gemeldeten Brand 5 in einem Firmengebäude in Gerschweiler alarmiert. Die Alarmierung erfolgte durch die automatische Brandmeldeanlage der betroffenen Firma.

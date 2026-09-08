@@ -9,7 +9,6 @@ einsatzort: "HLF 20/20"
 einsatzfahrzeuge: ""
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 In der Nacht von Dienstag auf Mittwoch, rückte die Hermaringer Feuerwehr zu drei Einsatzstellen aus. Insgesamt wurden vier Bäume von der Straße beseitigt werden. Der Einsatz konnte aber nach knapp einer Stunde beendet werden.

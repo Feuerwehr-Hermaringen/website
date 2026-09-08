@@ -9,7 +9,6 @@ einsatzort: "Heusteigstraße, Hermaringen"
 einsatzfahrzeuge: "HLF 20/20"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Am Sonntagvormittag, den 17.05.2026, wurde die Freiwillige Feuerwehr Hermaringen durch die Polizei zu einem TH 2 Kleineinsatz nach einem Verkehrsunfall alarmiert.

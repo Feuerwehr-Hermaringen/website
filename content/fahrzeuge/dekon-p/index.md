@@ -35,7 +35,6 @@ galerie:
   - "/uploads/fahrzeuge/dekon-p/bild-03.jpg"
   - "/uploads/fahrzeuge/dekon-p/bild-04.jpg"
   - "/uploads/fahrzeuge/dekon-p/bild-05.jpg"
-uebernommen: true
 ---
 
 Der Gerätewagen Dekontamination Personal (Dekon-P) ist ein Spezialfahrzeug des

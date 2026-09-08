@@ -10,7 +10,6 @@ einsatzfahrzeuge: "Dekon-P, MTW"
 vorschaubild: "/uploads/einsaetze/2025-07-25-einsatz-13-25-gg-6-gefahrgutunfall/bild-01.png"
 galerie:
   - "/uploads/einsaetze/2025-07-25-einsatz-13-25-gg-6-gefahrgutunfall/bild-01.png"
-uebernommen: true
 ---
 
 Am 25.07.2025 wurde die Feuerwehr Hermaringen mit ihrer DEKON‑P‑Einheit zur Überlandhilfe nach Herbrechtingenalarmiert, nachdem es dort zu einem größeren Verladeunfall gekommen war, der einen Großeinsatz auslöste. Vor Ort wurde die Hermaringer Einheit in Bereitstellung genommen, um mögliche Dekontaminationsaufgaben zu übernehmen. Nachdem klar war, dass keine Dekontaminationsmaßnahmen erforderlich waren, konnte die Mannschaft ohne weiteren Einsatz abrücken.

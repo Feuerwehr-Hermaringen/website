@@ -14,7 +14,6 @@ galerie:
   - "/uploads/einsaetze/2026-05-18-einsatz-10-26-gg-5-auslaufende-betriebsstoffe/bild-03.jpg"
   - "/uploads/einsaetze/2026-05-18-einsatz-10-26-gg-5-auslaufende-betriebsstoffe/bild-04.jpg"
   - "/uploads/einsaetze/2026-05-18-einsatz-10-26-gg-5-auslaufende-betriebsstoffe/bild-05.jpg"
-uebernommen: true
 ---
 
 Die Freiwillige Feuerwehr Hermaringen wurde zu einer größeren Dieselspur im Ortsgebiet alarmiert. Ursache war ein beschädigter LKW, aus dem größere Mengen Kraftstoff austraten. Die Dieselspur erstreckte sich von der Autobahnabfahrt bis in das Gemeindegebiet hinein.

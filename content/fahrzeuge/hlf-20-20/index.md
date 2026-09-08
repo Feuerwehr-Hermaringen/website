@@ -43,7 +43,6 @@ galerie:
   - "/uploads/fahrzeuge/hlf-20-20/bild-05.jpg"
   - "/uploads/fahrzeuge/hlf-20-20/bild-06.jpg"
   - "/uploads/fahrzeuge/hlf-20-20/bild-07.jpg"
-uebernommen: true
 ---
 
 Das HLF 20/20 ist das vielseitigste Einsatzfahrzeug der Feuerwehr Hermaringen und

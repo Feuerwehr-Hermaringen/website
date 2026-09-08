@@ -9,7 +9,6 @@ einsatzort: "Schillerstraße, Hermaringen"
 einsatzfahrzeuge: "HLF 20/20, MTW"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Die Feuerwehr Hermaringen wurde zu einer betreuten Wohnanlage gerufen, nachdem eine Bewohnerin über längere Zeit laute Klopfgeräusche aus einer Wohnung wahrgenommen hatte. Da die Geräusche plötzlich verstummten und zunächst niemand auf das Klopfen an einer Wohnungstür reagierte, wurde vorsorglich die Feuerwehr verständigt.

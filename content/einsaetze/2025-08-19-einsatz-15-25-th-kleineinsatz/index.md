@@ -9,7 +9,6 @@ einsatzort: "Pflegeheim, Schillerstraße"
 einsatzfahrzeuge: "LF 20"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 *Kein Berichtstext vorhanden.*

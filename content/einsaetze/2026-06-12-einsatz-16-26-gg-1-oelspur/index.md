@@ -10,7 +10,6 @@ einsatzfahrzeuge: "**HLF 20/20, MTW"
 vorschaubild: "/uploads/einsaetze/2026-06-12-einsatz-16-26-gg-1-oelspur/bild-01.jpg"
 galerie:
   - "/uploads/einsaetze/2026-06-12-einsatz-16-26-gg-1-oelspur/bild-01.jpg"
-uebernommen: true
 ---
 
 Die Feuerwehr Hermaringen wurde zu einer gemeldeten Ölspur im Bereich der Hirschbergstraße und der Oskar-Enslin-Straße alarmiert. Vor Ort stellte sich heraus, dass es sich entgegen der ersten Meldung nicht um eine durchgehende Ölspur handelte, sondern um mehrere einzelne Ölflecken im betroffenen Bereich.

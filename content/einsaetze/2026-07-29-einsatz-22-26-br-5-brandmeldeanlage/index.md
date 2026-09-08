@@ -9,7 +9,6 @@ einsatzort: "Industriebetrieb, Hermaringen"
 einsatzfahrzeuge: "HLF 20/20, LF20 KatS, MTW, Feuerwehr Giengen"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Die Freiwillige Feuerwehr Hermaringen wurde zu einer ausgelösten Brandmeldeanlage alarmiert. Beim Eintreffen an der Einsatzstelle war das Gebäude bereits vollständig geräumt.

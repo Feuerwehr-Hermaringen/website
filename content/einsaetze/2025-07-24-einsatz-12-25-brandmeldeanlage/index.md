@@ -9,7 +9,6 @@ einsatzort: "Pflegeheim, Schillerstraße"
 einsatzfahrzeuge: "HLF 20/20, LF 20, Feuerwehr Sontheim"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Am 24.07.2025 wurde die Feuerwehr Hermaringen zu einem Einsatz mit dem Stichwort Brand 5 in das Pflegeheim in der Schillerstraße alarmiert. Ausgelöst wurde der Alarm durch die automatische Brandmeldeanlage des Gebäudes. Nach dem Eintreffen an der Einsatzstelle begannen die Einsatzkräfte umgehend mit der Erkundung der betroffenen Bereiche. Dabei konnte glücklicherweise kein offenes Feuer festgestellt werden. Als vermutlich auslösender Grund wurde ein Kochvorgang in einer der Küchen vermutet, wodurch es zu einer Rauchentwicklung kam, die die Brandmeldeanlage aktiviert hatte.

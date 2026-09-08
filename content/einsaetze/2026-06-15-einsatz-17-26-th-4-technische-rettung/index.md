@@ -13,7 +13,6 @@ galerie:
   - "/uploads/einsaetze/2026-06-15-einsatz-17-26-th-4-technische-rettung/bild-02.jpg"
   - "/uploads/einsaetze/2026-06-15-einsatz-17-26-th-4-technische-rettung/bild-03.jpg"
   - "/uploads/einsaetze/2026-06-15-einsatz-17-26-th-4-technische-rettung/bild-04.jpg"
-uebernommen: true
 ---
 
 Die Feuerwehr Hermaringen wurde als Überlandhilfe zu einem schweren Verkehrsunfall auf die B492 im Bereich der Einfahrt Brenz alarmiert. Beim Eintreffen der Einsatzkräfte befand sich die Feuerwehr Sontheim bereits an der Einsatzstelle und hatte erste Maßnahmen eingeleitet.

@@ -14,7 +14,6 @@ galerie:
   - "/uploads/einsaetze/2025-11-15-einsatz-25-25-gg2-auslaufende-betriebsstoffe/bild-03.jpg"
   - "/uploads/einsaetze/2025-11-15-einsatz-25-25-gg2-auslaufende-betriebsstoffe/bild-04.jpg"
   - "/uploads/einsaetze/2025-11-15-einsatz-25-25-gg2-auslaufende-betriebsstoffe/bild-05.jpg"
-uebernommen: true
 ---
 
 Am 15.11.2025 wurde die Feuerwehr Hermaringen aufgrund eines Verkehrsunfalls auf der K3025 in Richtung Allewind nachalarmiert. Zuvor waren bereits die Feuerwehr Giengen sowie die Feuerwehr Hohenmemmingen an der Einsatzstelle tätig. Bei dem Unfall waren ein PKW und ein Traktor beteiligt; beide Fahrzeuge wurden dabei erheblich beschädigt.

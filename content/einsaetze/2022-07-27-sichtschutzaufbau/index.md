@@ -9,7 +9,6 @@ einsatzort: "Bahnhof Hermaringen"
 einsatzfahrzeuge: "MTW, Dekon-P"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Beim achten Einsatz in diesem Jahr, konnten die neun Kameraden und Kameradinnen, dem Rettungsdienst zur Seite stehen. Hierbei war die Aufgabe der Freiwilligen Feuerwehr, ein Sichtschutz für den Patienten aufzubauen. Der Einsatz endete nach ca. 45 Minuten.

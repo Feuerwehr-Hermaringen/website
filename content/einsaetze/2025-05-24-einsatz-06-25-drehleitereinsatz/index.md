@@ -10,7 +10,6 @@ einsatzfahrzeuge: "MTW, DLK Giengen, ELW Giengen"
 vorschaubild: "/uploads/einsaetze/2025-05-24-einsatz-06-25-drehleitereinsatz/bild-01.jpg"
 galerie:
   - "/uploads/einsaetze/2025-05-24-einsatz-06-25-drehleitereinsatz/bild-01.jpg"
-uebernommen: true
 ---
 
 Am 24.05.2025 wurde die Feuerwehr Hermaringen zusammen mit der Drehleiter der Feuerwehr Giengen zur Unterstützung des Rettungsdienstes in ein Wohngebäude der Schillerstraße alarmiert. Vor Ort betreute der Rettungsdienst bereits eine verletzte Person im 1. Obergeschoss. Aufgrund des Verletzungsmusters war eine achsgerechte und besonders schonende Rettung erforderlich. Da dies über das Treppenhaus nicht möglich war, wurde eine Rettung mittels Drehleiter angeordnet. Die verletzte Person wurde in enger Abstimmung mit dem Rettungsdienst und unter notärztlicher Begleitung achsgerecht über die Drehleiter aus dem 1. Obergeschoss gerettet und dem Rettungsdienst zur weiteren Versorgung übergeben.

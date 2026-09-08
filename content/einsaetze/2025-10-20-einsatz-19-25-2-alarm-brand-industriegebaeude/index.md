@@ -12,7 +12,6 @@ galerie:
   - "/uploads/einsaetze/2025-10-20-einsatz-19-25-2-alarm-brand-industriegebaeude/bild-01.jpg"
   - "/uploads/einsaetze/2025-10-20-einsatz-19-25-2-alarm-brand-industriegebaeude/bild-02.jpg"
   - "/uploads/einsaetze/2025-10-20-einsatz-19-25-2-alarm-brand-industriegebaeude/bild-03.jpg"
-uebernommen: true
 ---
 
 Am Montagmittag wurde die Feuerwehr Hermaringen zu einem Großbrand nach Sontheim an der Brenz alarmiert. In einem Entsorgungsbetrieb war eine Lagerhalle in Brand geraten, in der Recyclingabfälle verarbeitet wurden. Beim Eintreffen der ersten Kräfte stand die Halle bereits in Vollbrand, und auch auf einer angrenzenden Freifläche gelagerte Kunststoffballen hatten Feuer gefangen. Aufgrund der starken Rauchentwicklung und der großen Ausdehnung des Brandes wurden zahlreiche Feuerwehren aus drei Landkreisen nachalarmiert.

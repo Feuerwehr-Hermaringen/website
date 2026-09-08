@@ -2,7 +2,6 @@
 title: "Geschichte"
 layout: "geschichte"
 beschreibung: "Die Geschichte der Freiwilligen Feuerwehr Hermaringen von 1928 bis heute."
-uebernommen: true
 chronik:
   - jahr: "1928"
     text: "Antrag durch Georg Diebold, die Pflichtfeuerwehr in eine Freiwillige Feuerwehr umzuwandeln. Zur Gründung traten 95 Mitglieder bei."

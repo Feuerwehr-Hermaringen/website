@@ -9,7 +9,6 @@ einsatzort: "Robert-Bosch-Straße"
 einsatzfahrzeuge: "MTW"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Zum neunten Einsatz im Jahr 2022 wurde die Freiwillige Feuerwehr Hermaringen, wegen aus einem LKW auslaufenden Kraftstoff gerufen. Beim eintreffen an der Einsatzstelle, wurde die sechs Kameraden gleich von der Polizei abgefangen, diese hat schnell Entwarnung gegeben. Der Kraftstoff ist vor einem Industriegebäude ausgelaufen und wird auch vom Personal dort betreut.

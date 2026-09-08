@@ -9,7 +9,6 @@ einsatzort: Friedrichstraße
 einsatzfahrzeuge: HLF 20/20, MTW
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 *Kein Berichtstext vorhanden.*

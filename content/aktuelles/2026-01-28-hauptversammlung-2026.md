@@ -17,7 +17,6 @@ galerie:
   - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-13.jpg"
   - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-14.jpg"
   - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-15.jpg"
-uebernommen: true
 ---
 
 Am Samstag, den 24. Januar 2026, fand die ordentliche Hauptversammlung der Freiwilligen Feuerwehr Hermaringen in der Güssenhalle statt. Zahlreiche Mitglieder aus der Einsatzabteilung, der Jugendfeuerwehr und der Altersabteilung nahmen daran teil. Auch Vertreter aus Politik, Verwaltung, Hilfsorganisationen und der örtlichen Wirtschaft waren anwesend. Die hohe Beteiligung unterstreicht die Wertschätzung, die der Feuerwehr innerhalb der Gemeinde entgegengebracht wird.

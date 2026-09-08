@@ -9,7 +9,6 @@ einsatzort: "Silcherstraße, Hermaringen"
 einsatzfahrzeuge: "HLF 20/20"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Am 18.07.2025 wurde die Freiwillige Feuerwehr Hermaringen durch den Rettungsdienst und die Polizei zu einer Türöffnung nachgefordert.

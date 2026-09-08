@@ -9,7 +9,6 @@ einsatzort: "Friedrichstraße"
 einsatzfahrzeuge: "HLF 20/20"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Die sechs Einsatzkräfte wurden zum siebten Einsatz diesen Jahres wegen einem auf der Straße liegenden Felsbrockens gerufen. Vor Ort angekommen wurde ein Örtlicher Garten- Landschaftsbauer gerufen. Mit dessen Hilfe konnte dann, der Felsbrocken sicher beseitigt werden. Die Einsatzdauer belief sich hier, auf eine knappe halbe Stunde.

@@ -18,7 +18,6 @@ galerie:
   - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-14.jpg"
   - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-15.jpg"
   - "/uploads/aktuelles/2025-12-15-25-jahre-jugendfeuerwehr-hermaringen/bild-16.jpg"
-uebernommen: true
 ---
 
 Am 14. Dezember 2025 feierte die Jugendfeuerwehr Hermaringen ihr 25-jähriges Bestehen mit einer Jubiläumsveranstaltung im Feuerwehrhaus Hermaringen. Zahlreiche Gäste aus der Bevölkerung, Vertreter der Gemeinde sowie Mitglieder der aktiven Feuerwehr waren der Einladung gefolgt und sorgten für ein gut besuchtes und stimmungsvolles Fest.

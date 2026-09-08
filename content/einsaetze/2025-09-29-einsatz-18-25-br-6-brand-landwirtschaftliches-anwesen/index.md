@@ -14,7 +14,6 @@ galerie:
   - "/uploads/einsaetze/2025-09-29-einsatz-18-25-br-6-brand-landwirtschaftliches-anwesen/bild-03.jpg"
   - "/uploads/einsaetze/2025-09-29-einsatz-18-25-br-6-brand-landwirtschaftliches-anwesen/bild-04.jpg"
   - "/uploads/einsaetze/2025-09-29-einsatz-18-25-br-6-brand-landwirtschaftliches-anwesen/bild-05.jpg"
-uebernommen: true
 ---
 
 Am Montagabend kam es im Sontheimer Ortsteil Brenz zu einem folgenschweren Brand, bei dem ein landwirtschaftliches Gebäude und ein daran angrenzendes Wohnhaus schwer beschädigt wurden. Gegen 18.20 Uhr gingen bei der Leitstelle mehrere Notrufe ein. Schon während der Anfahrt war eine dichte Rauchwolke über dem Ort sichtbar.

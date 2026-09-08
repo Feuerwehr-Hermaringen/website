@@ -19,7 +19,6 @@ galerie:
   - "/uploads/einsaetze/2022-11-11-auslaufende-betriebsstoffe/bild-08.jpg"
   - "/uploads/einsaetze/2022-11-11-auslaufende-betriebsstoffe/bild-09.jpg"
   - "/uploads/einsaetze/2022-11-11-auslaufende-betriebsstoffe/bild-10.jpg"
-uebernommen: true
 ---
 
 Bei dem 13 Einsatz in diesem Jahr waren 29 Einsatzkräfte der Freiwilligen Feuerwehr Hermaringen beteiligt. Die Kameraden/innen wurden zum auffangen auslaufender Betriebsmittel und zur Straßenreinigung gerufen. Schnell wurde die Batterie des PKW abgeklemmt, die Flüssigkeiten aus den beiden Fahrzeugen aufgefangen und die Bundesstraße abgesperrt. Während einigen den Verkehr leiteten, unterstützten die anderen die Bergung der Unfallfahrzeuge. Bei dem Zusammenstoß zwischen LKW und PKW wurden zwei Personen verletzt. Nachdem eine Fachfirma und die Straßenmeisterei die Straße gereinigt hatten, konnte die Fahrbahn nach 3,5 Stunden wieder frei gegeben werden.

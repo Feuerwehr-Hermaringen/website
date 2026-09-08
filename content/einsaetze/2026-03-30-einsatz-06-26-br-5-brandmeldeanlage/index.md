@@ -11,7 +11,6 @@ vorschaubild: "/uploads/einsaetze/2026-03-30-einsatz-06-26-br-5-brandmeldeanlage
 galerie:
   - "/uploads/einsaetze/2026-03-30-einsatz-06-26-br-5-brandmeldeanlage/bild-01.jpg"
   - "/uploads/einsaetze/2026-03-30-einsatz-06-26-br-5-brandmeldeanlage/bild-02.jpg"
-uebernommen: true
 ---
 
 Am 30. März 2026 wurde die Feuerwehr Hermaringen durch die Auslösung einer Brandmeldeanlage zu einem  Industriebetrieb alarmiert.

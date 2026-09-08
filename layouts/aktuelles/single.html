@@ -13,10 +13,6 @@
 
     {{ partial "galerie.html" .Params.galerie }}
 
-    {{- if .Params.uebernommen }}
-    <p class="hinweis-pruefen">Dieser Beitrag wurde von der bisherigen Website übernommen.</p>
-    {{- end }}
-
     <p class="zurueck"><a href="{{ "/aktuelles/" | relURL }}">← Alle Beiträge</a></p>
   </article>
 </div>

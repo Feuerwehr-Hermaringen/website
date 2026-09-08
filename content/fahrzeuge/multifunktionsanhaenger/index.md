@@ -12,7 +12,6 @@ steckbrief:
   - merkmal: "System"
     wert: "Wechselbares Containersystem"
 galerie: []
-uebernommen: true
 ---
 
 Angaben folgen. Die bisherige Website enthielt zu diesem Anhänger keine Details –

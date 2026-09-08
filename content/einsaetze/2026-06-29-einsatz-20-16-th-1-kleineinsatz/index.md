@@ -11,7 +11,6 @@ vorschaubild: "/uploads/einsaetze/2026-06-29-einsatz-20-16-th-1-kleineinsatz/bil
 galerie:
   - "/uploads/einsaetze/2026-06-29-einsatz-20-16-th-1-kleineinsatz/bild-01.jpg"
   - "/uploads/einsaetze/2026-06-29-einsatz-20-16-th-1-kleineinsatz/bild-02.jpg"
-uebernommen: true
 ---
 
 Nachdem der Kommandant der Feuerwehr gemeinsam mit dem Bauhof bereits zur Mittagszeit erste Kontrollen durchgeführt hatte, erkundete die Feuerwehr im weiteren Verlauf das gesamte Gemeindegebiet und überprüfte sämtliche Eichen auf einen möglichen Befall durch den Eichenprozessionsspinner. Dabei wurde an insgesamt acht Bäumen ein Befall festgestellt.

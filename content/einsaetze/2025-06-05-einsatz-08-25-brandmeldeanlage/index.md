@@ -10,7 +10,6 @@ einsatzfahrzeuge: "HLF 20/20"
 vorschaubild: "/uploads/einsaetze/2025-06-05-einsatz-08-25-brandmeldeanlage/bild-01.png"
 galerie:
   - "/uploads/einsaetze/2025-06-05-einsatz-08-25-brandmeldeanlage/bild-01.png"
-uebernommen: true
 ---
 
 Am 05.06.2025 wurde die Feuerwehr Hermaringen um 07:47 Uhr durch die integrierte Leitstelle zu einer ausgelösten Brandmeldeanlage in der Filzfabrik Gerschweiler alarmiert.

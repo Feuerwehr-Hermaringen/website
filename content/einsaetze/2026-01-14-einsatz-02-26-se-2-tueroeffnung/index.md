@@ -9,7 +9,6 @@ einsatzort: "**Magenaustraße, Hermaringen"
 einsatzfahrzeuge: "**HLF 20/20, MTW"
 vorschaubild: ""
 galerie: []
-uebernommen: true
 ---
 
 Die Feuerwehr wurde am 14.01.2026 um 19:24 Uhr zu einer Türöffnung alarmiert. In einer Wohnung befand sich eine Person, die im Schlafzimmer auf dem Boden lag.

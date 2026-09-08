@@ -10,7 +10,6 @@ einsatzfahrzeuge: "HLF 20/20, MTW"
 vorschaubild: "/uploads/einsaetze/2026-03-23-einsatz-04-26-br-5-brandmeldeanlage/bild-01.jpg"
 galerie:
   - "/uploads/einsaetze/2026-03-23-einsatz-04-26-br-5-brandmeldeanlage/bild-01.jpg"
-uebernommen: true
 ---
 
 Am 23.03.2026 wurde die Feuerwehr Hermaringen um 15:15 Uhr zu einer ausgelösten Brandmeldeanlage in einem Industriebetrieb in Gerschweiler alarmiert.

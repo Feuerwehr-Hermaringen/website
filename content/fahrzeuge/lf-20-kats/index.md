@@ -40,7 +40,6 @@ galerie:
   - "/uploads/fahrzeuge/lf-20-kats/bild-04.jpg"
   - "/uploads/fahrzeuge/lf-20-kats/bild-05.jpg"
   - "/uploads/fahrzeuge/lf-20-kats/bild-06.jpg"
-uebernommen: true
 ---
 
 Das LF 20 KatS ist ein modernes Einsatzfahrzeug, konzipiert für Brandbekämpfung und

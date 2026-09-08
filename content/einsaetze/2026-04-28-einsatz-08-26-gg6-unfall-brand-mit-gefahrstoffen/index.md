@@ -17,7 +17,6 @@ galerie:
   - "/uploads/einsaetze/2026-04-28-einsatz-08-26-gg6-unfall-brand-mit-gefahrstoffen/bild-06.jpg"
   - "/uploads/einsaetze/2026-04-28-einsatz-08-26-gg6-unfall-brand-mit-gefahrstoffen/bild-07.jpg"
   - "/uploads/einsaetze/2026-04-28-einsatz-08-26-gg6-unfall-brand-mit-gefahrstoffen/bild-08.jpg"
-uebernommen: true
 ---
 
 Am Dienstag wurde die Feuerwehr Hermaringen gemeinsam mit mehreren Feuerwehren des Landkreises zu einem Gefahrguteinsatz in einem Industriebetrieb alarmiert. Bei Entsorgungsarbeiten war ein quecksilberhaltiger Durchlaufzähler in einem Schrottcontainer beschädigt worden. Dabei traten rund 100 Milliliter Quecksilber aus.
