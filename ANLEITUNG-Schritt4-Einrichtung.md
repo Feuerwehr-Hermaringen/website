@@ -181,34 +181,77 @@ Einstellungen ändern. Das bleibt bei dir als Konto-Inhaber.
 
 ---
 
-## Teil D – Domain feuerwehr.hermaringen.de
+## Teil D – Die bisherige Domain feuerwehr-hermaringen.de auf die neue Seite legen
 
-Die Wunsch-Adresse ist `feuerwehr.hermaringen.de`. Die Verwaltung der Domain
-`hermaringen.de` liegt vermutlich bei der Gemeinde. Du musst dort einen
-**DNS-Eintrag** setzen lassen.
+### Ausgangslage (bereits geprüft)
 
-### 14. Bei der Gemeinde anfragen
-Bitte die Gemeinde bzw. deren IT-Dienstleister um folgenden Eintrag:
+- Die **DNS-Verwaltung** der Domain `feuerwehr-hermaringen.de` liegt bei
+  **Alfahosting** (Nameserver `cns1/2/3.alfahosting.info`). Dort musst du dich
+  einloggen (bzw. die Person/Agentur, die den Zugang hat).
+- Die **E-Mail** `@feuerwehr-hermaringen.de` läuft über **Microsoft 365**.
+  Die dazugehörigen DNS-Einträge **dürfen auf keinen Fall geändert werden**,
+  sonst geht die Post nicht mehr. Es sind:
+  - `MX`-Eintrag (…`mail.protection.outlook.com`)
+  - `TXT`-Eintrag `v=spf1 include:spf.protection.outlook.de -all`
+  - `TXT`-Eintrag `MS=ms96542836`
+  Nur der **Website-Eintrag** wird umgestellt.
 
-> Für die Subdomain **`feuerwehr.hermaringen.de`** bitte einen
-> **CNAME-Eintrag** auf **`feuerwehr-hermaringen.netlify.app`** anlegen.
-> (Ziel = die Netlify-Adresse aus Schritt 8.)
+### 14. Domain in Netlify hinzufügen
+1. Netlify → deine Website → **„Domain management" → „Add a domain"**.
+2. `feuerwehr-hermaringen.de` eingeben, bestätigen.
+3. Netlify fügt automatisch auch `www.feuerwehr-hermaringen.de` hinzu.
+4. Netlify zeigt jetzt „Pending DNS verification" mit den benötigten Werten an –
+   das sind die aus Schritt 15.
 
-### 15. Domain in Netlify eintragen
-1. In Netlify: **„Domain management" → „Add a domain"** →
-   `feuerwehr.hermaringen.de` eingeben.
-2. Netlify prüft den DNS-Eintrag und richtet automatisch ein kostenloses
-   HTTPS-Zertifikat ein (kann bis zu einer Stunde dauern).
+### 15. Bei Alfahosting die Website-Einträge ändern
+Im Alfahosting-Kundenmenü den **DNS-Editor / die Zonenverwaltung** für
+`feuerwehr-hermaringen.de` öffnen. Dann:
 
-### 16. Adresse im Projekt anpassen
-Wenn die Domain funktioniert, im Projekt ändern:
-1. `hugo.toml` → `baseURL = "https://feuerwehr.hermaringen.de/"`
-   (steht dort schon so – nur prüfen).
+| Eintrag | bisher | neu |
+|---|---|---|
+| **A** für `@` (bzw. leer / die Domain selbst) | `81.88.36.20` | `75.2.60.5` |
+| **A/AAAA** für `www` (falls vorhanden) | (alte IP) | **löschen** |
+| **CNAME** für `www` | – | `feuerwehr-hermaringen.netlify.app` |
+| **AAAA** (IPv6) für `@`, falls vorhanden | (alte IP) | **löschen** |
+
+- Falls Alfahosting **ALIAS** oder **ANAME** anbietet: statt des A-Eintrags für
+  `@` besser `apex-loadbalancer.netlify.com` eintragen. Wenn nicht: der
+  A-Eintrag `75.2.60.5` ist völlig in Ordnung.
+- **MX- und die beiden genannten TXT-Einträge unverändert lassen.**
+
+### 16. Warten und HTTPS
+- Nach der Umstellung dauert es einige Minuten bis maximal 24 Stunden, bis die
+  Änderung überall greift.
+- Netlify erkennt die neuen Einträge automatisch, entfernt das „Pending" und
+  stellt ein kostenloses HTTPS-Zertifikat aus (kann nochmal bis zu einer Stunde
+  dauern). In Netlify unter „Domain management" sollte am Ende bei beiden
+  Adressen „Netlify DNS"/„External DNS" **grün** sein und „HTTPS: enabled".
+- In Netlify die primäre Adresse auf `www.feuerwehr-hermaringen.de` setzen
+  („Set as primary domain"); `feuerwehr-hermaringen.de` leitet dann automatisch
+  dorthin um. (Reine Geschmackssache – ohne „www" geht auch.)
+
+### 17. Adresse im Projekt anpassen (macht die technische Betreuung)
+Wenn die Domain funktioniert:
+1. `hugo.toml` → `baseURL = "https://www.feuerwehr-hermaringen.de/"`
 2. `static/admin/config.yml` → `site_url`, `display_url`, `logo_url` auf
-   `https://feuerwehr.hermaringen.de` umstellen.
+   `https://www.feuerwehr-hermaringen.de` umstellen.
 3. In DecapBridge (Dashboard → Site → Settings) die **„Decap CMS Login URL"** auf
-   `https://feuerwehr.hermaringen.de/admin/index.html` ändern.
-4. Änderungen committen und pushen (siehe Schritt 11).
+   `https://www.feuerwehr-hermaringen.de/admin/index.html` ändern.
+4. Änderungen committen und pushen.
+
+### 18. Alte Website
+- Sobald der A-Eintrag umgestellt ist, ist die alte ProcessWire-Website unter
+  dieser Adresse **nicht mehr erreichbar** – sie liegt aber weiterhin auf dem
+  Alfahosting-Server (als Sicherung).
+- **Den Alfahosting-Vertrag nicht sofort kündigen** – dort liegt aktuell die
+  DNS-Verwaltung der Domain. Erst kündigen, wenn die DNS-Verwaltung (und ggf.
+  die Domain selbst) zu einem anderen Anbieter oder zu Netlify DNS umgezogen ist.
+
+### Alternative: Subdomain der Gemeinde
+Statt der bisherigen Domain wäre auch `feuerwehr.hermaringen.de` möglich (DNS bei
+der Gemeinde, `CNAME` auf `feuerwehr-hermaringen.netlify.app`). Da die bisherige
+Adresse aber bereits bekannt ist (Google, Flyer, Fahrzeuge), ist die Umstellung
+der **bestehenden** Domain in der Regel die bessere Wahl.
 
 ---
 
