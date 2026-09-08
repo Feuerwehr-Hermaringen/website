@@ -1,9 +1,9 @@
 ---
-title: "Einsatzstatistik 2025"
+title: Einsatzstatistik 2025
 date: 2026-01-15
-vorschaubild: "/uploads/aktuelles/2026-01-15-einsatzstatistik-2025/bild-01.jpg"
-galerie:
-uebernommen: true
+vorschaubild: /uploads/aktuelles/2026-01-15-einsatzstatistik-2025/bild-01.jpg
+galerie: null
+uebernommen: false
 ---
 
 Das Jahr 2025 war für die Feuerwehr Hermaringen erneut von zahlreichen und vielfältigen Einsätzen geprägt. Unsere ehrenamtlichen Einsatzkräfte waren das ganze Jahr über rund um die Uhr einsatzbereit, um den Bürgerinnen und Bürgern schnell und kompetent Hilfe zu leisten.
