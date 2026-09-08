@@ -1,9 +1,9 @@
 ---
-title: "Gemeinsam im Einsatz für unsere Gemeinde"
+title: Gemeinsam im Einsatz für unsere Gemeinde
 date: 2026-04-20
-vorschaubild: "/uploads/aktuelles/2026-04-20-gemeinsam-im-einsatz-fuer-unsere-gemeinde/bild-01.jpg"
-galerie:
-uebernommen: true
+vorschaubild: /uploads/aktuelles/2026-04-20-gemeinsam-im-einsatz-fuer-unsere-gemeinde/bild-01.jpg
+galerie: null
+uebernommen: false
 ---
 
 Der 15. April 2026 war ein besonderer Tag für unsere Gemeinde: Mit seiner offiziellen Amtseinsetzung übernahm Bürgermeister Schmeißer nicht nur ein verantwortungsvolles politisches Amt, sondern zugleich auch eine zentrale Rolle innerhalb der örtlichen Gefahrenabwehr und des Gemeinwesens.
