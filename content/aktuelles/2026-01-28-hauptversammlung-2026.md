@@ -1,23 +1,23 @@
 ---
-title: "Hauptversammlung 2026"
+title: Hauptversammlung 2026
 date: 2026-01-28
-vorschaubild: "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-01.jpg"
+vorschaubild: /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-01.jpg
 galerie:
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-02.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-03.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-04.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-05.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-06.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-07.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-08.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-09.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-10.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-11.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-12.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-13.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-14.jpg"
-  - "/uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-15.jpg"
-uebernommen: true
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-02.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-03.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-04.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-05.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-06.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-07.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-08.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-09.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-10.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-11.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-12.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-13.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-14.jpg
+  - /uploads/aktuelles/2026-01-28-hauptversammlung-2026/bild-15.jpg
+uebernommen: false
 ---
 
 Am Samstag, den 24. Januar 2026, fand die ordentliche Hauptversammlung der Freiwilligen Feuerwehr Hermaringen in der Güssenhalle statt. Zahlreiche Mitglieder aus der Einsatzabteilung, der Jugendfeuerwehr und der Altersabteilung nahmen daran teil. Auch Vertreter aus Politik, Verwaltung, Hilfsorganisationen und der örtlichen Wirtschaft waren anwesend. Die hohe Beteiligung unterstreicht die Wertschätzung, die der Feuerwehr innerhalb der Gemeinde entgegengebracht wird.
