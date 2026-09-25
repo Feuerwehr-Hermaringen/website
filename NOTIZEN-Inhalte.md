@@ -588,3 +588,48 @@ OFFEN vor Live:
 - Löschfrist Server-Logfiles festlegen (Gemeinde: 7 Tage).
 - Erstellungsdatum in Barrierefreiheitserklärung eintragen.
 - Textübernahme mit der Gemeinde abstimmen (deren Impressum verlangt schriftl. Zustimmung).
+
+---
+
+## Durchsicht vor Live-Gang – 2026-09-25
+
+Auf Wunsch die ganze Website durchgesehen (Code + Stichproben live). Gefunden und behoben:
+
+- **17 Einsatzberichte** hatten verwaiste Markdown-Sternchen (`**`) in
+  Einsatznummer/Alarmzeit/Einsatzende/Einsatzort/Einsatzart – Überbleibsel aus dem
+  ursprünglichen Import von der alten Website (die Felder sind reiner Text, kein
+  Markdown, daher wurden die Sternchen wörtlich angezeigt). Bereinigt und live.
+- Alle Bildpfade in `content/` und `data/` wurden gegen `static/uploads/` geprüft:
+  keine fehlenden Bilder.
+- Keine Platzhaltertexte ("Inhalt folgt…", "Beispiel-…") mehr im gebauten HTML –
+  bis auf inhaltlich echte Lücken (siehe unten).
+
+### Beobachtet, nicht verändert (Rückmeldung nötig)
+
+- Auf der **Ansprechpartner-Seite** steht weiterhin der Hinweis „…ist von der
+  Feuerwehrführung zu bestätigen". Analog zum Kontakt-Hinweis, den Marvin entfernen
+  ließ – hier aber noch nicht gefragt, ob ebenfalls entfernen (Liste selbst ist
+  inhaltlich noch unvollständig: Niklas Domes hat private Gmail-Adresse, Dieter
+  Keck keine E-Mail).
+- **Datenschutz/Impressum/Barrierefreiheit**: Marvin hat den ENTWURF-Hinweis über
+  das CMS bereits entfernt (Feld `entwurf: false`, Warnblock im Text gelöscht).
+  Eine tatsächliche Freigabe durch die Gemeinde bzw. den Datenschutzbeauftragten
+  Christoph Boser liegt nach unserem Kenntnisstand aber noch nicht vor. Das ist
+  ein echtes rechtliches Risiko, keine Formsache.
+- **Multifunktionsanhänger**: kaum Inhalt (2 Steckbrief-Zeilen, kein Fließtext,
+  keine Galerie) – war auf der alten Website ebenso leer.
+- **Termine**: aktuell nur 1 echter Eintrag ("Nachtübung", 21.09.2026) hinterlegt.
+- Netlify zeigt auf der Website automatisch ein eigenes "Powered by Netlify"-
+  Abzeichen an (`/.netlify/scripts/hud?variant=public`, vom Hoster selbst
+  eingefügt, nicht Teil unseres Codes) – überlappt auf schmalen Bildschirmen
+  teilweise Inhalte. Prüfen, ob sich das in den Netlify-Kontoeinstellungen
+  abschalten lässt.
+
+### Weiterhin offen (unverändert gegenüber vorherigem Stand)
+
+1. DSGVO-Prüfung aller übernommenen Fotos (insbesondere Jugendfeuerwehr,
+   Einsatzabteilungs-Gruppenfoto).
+2. Domain-Umzug auf `feuerwehr-hermaringen.de` (Anleitung Teil D).
+3. Redakteure in DecapBridge einladen.
+4. Alt-Texte für Galerie-Bilder ergänzen (in der Barrierefreiheitserklärung
+   bereits als bekannte Einschränkung genannt).
