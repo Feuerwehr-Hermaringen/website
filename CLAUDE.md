@@ -77,9 +77,11 @@ eingetragen, sobald das GitHub- und DecapBridge-Konto der Feuerwehr existieren.
 - **Barrierefreiheit**: WCAG 2.1 AA / BITV 2.0 anstreben – Skip-Link, HTML-Landmarks,
   sichtbarer Fokus, Kontraste, sinnvolle Überschriften, Alt-Texte, `prefers-reduced-motion`,
   Klickflächen ≥ 44 px. Eigene Seite „Barrierefreiheitserklärung".
-- **Alle von der alten Website übernommenen Inhalte und Bilder** sind mit
-  `uebernommen: true` markiert und auf der Website als „noch zu prüfen" gekennzeichnet.
-  Vor dem Live-Gang müssen insbesondere alle Fotos auf DSGVO geprüft werden.
+- Die von der alten Website übernommenen Inhalte und Bilder tragen **keine**
+  besondere Kennzeichnung mehr im CMS (das frühere Feld „Von der alten Website
+  übernommen" wurde auf Wunsch der Redaktion entfernt – alle Berichte gelten
+  als geprüft). **Trotzdem gilt weiterhin:** Vor dem Live-Gang müssen
+  insbesondere alle Fotos auf DSGVO geprüft werden (siehe `NOTIZEN-Inhalte.md`).
 
 ## Architekturregel
 
@@ -89,8 +91,15 @@ Das Layout darf nicht davon abhängen, dass bestimmte Texte fest in HTML stehen.
 
 ## Domain
 
-Angestrebt: `feuerwehr.hermaringen.de`. Danach anzupassen:
-`baseURL` in `hugo.toml` und `display_url` / `site_url` in `static/admin/config.yml`.
+Entscheidung: die **bisherige Domain `feuerwehr-hermaringen.de`** wird auf die
+neue Website umgestellt (statt einer neuen Subdomain der Gemeinde) – sie ist
+bereits bekannt (Google, Flyer, Fahrzeuge). Die DNS-Verwaltung liegt bei
+**Alfahosting**, die E-Mail-Postfächer `@feuerwehr-hermaringen.de` laufen über
+**Microsoft 365** – deren DNS-Einträge (MX, SPF-TXT, MS-TXT) dürfen beim Umzug
+nicht verändert werden. Ablauf: siehe `ANLEITUNG-Schritt4-Einrichtung.md`, Teil D.
+Danach anzupassen: `baseURL` in `hugo.toml`, `display_url` / `site_url` /
+`logo_url` in `static/admin/config.yml`, sowie die „Decap CMS Login URL" im
+DecapBridge-Dashboard.
 
 ## Vor jeder Arbeitssitzung
 
@@ -99,6 +108,7 @@ Angestrebt: `feuerwehr.hermaringen.de`. Danach anzupassen:
 ## Weitere Dokumentation
 
 - `NOTIZEN-Inhalte.md` – Chronik aller Absprachen und offenen Prüfpunkte
-- `README.md` – technische Übersicht für Betreuer (wird noch erstellt)
-- `ANLEITUNG-Pflege.md` – Anleitung für die Redaktion (wird noch erstellt)
+- `README.md` – technische Übersicht für Betreuer
+- `ANLEITUNG-Pflege.md` – Anleitung für die Redaktion
+- `ANLEITUNG-Schritt4-Einrichtung.md` – GitHub/Netlify/DecapBridge/Domain-Einrichtung
 - `inhalte-alt/` – Rohtexte der alten Website als Übernahme-Grundlage
