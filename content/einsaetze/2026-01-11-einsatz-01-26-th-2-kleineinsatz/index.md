@@ -5,7 +5,7 @@ einsatznummer: 01/26
 alarmzeit: 19:34 Uhr
 einsatzende: 20:30 Uhr
 einsatzart: TH 2 - Kleineinsatz
-einsatzort: "**Hohweiher"
+einsatzort: "Hohweiher"
 einsatzfahrzeuge: HLF 20/20, MTW
 vorschaubild: ""
 galerie: []

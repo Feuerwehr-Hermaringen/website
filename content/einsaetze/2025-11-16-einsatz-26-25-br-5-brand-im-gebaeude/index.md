@@ -1,12 +1,12 @@
 ---
 title: "Einsatz 26/25 - BR 5 Brand im Gebäude"
 date: 2025-11-16T06:42:00+02:00
-einsatznummer: "**26/25"
+einsatznummer: "26/25"
 alarmzeit: "06:42 Uhr"
 einsatzende: "7:30 Uhr"
 einsatzart: "BR5 – Brand im Gebäude"
 einsatzort: "Pflegeheim, Schillerstraße"
-einsatzfahrzeuge: "**HLF 20/20, LF 20, MTW; Feuerwehr Sontheim"
+einsatzfahrzeuge: "HLF 20/20, LF 20, MTW; Feuerwehr Sontheim"
 vorschaubild: ""
 galerie: []
 ---

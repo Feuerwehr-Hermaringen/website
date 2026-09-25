@@ -3,10 +3,10 @@ title: "Einsatz 16/26 - GG 1 Ölspur"
 date: 2026-06-12T09:07:00+02:00
 einsatznummer: "16/26"
 alarmzeit: "09:07 Uhr"
-einsatzende: "**10:15 Uhr"
+einsatzende: "10:15 Uhr"
 einsatzart: "GG 1 - Ölspur"
 einsatzort: "Hirschbergstraße, Hermaringen"
-einsatzfahrzeuge: "**HLF 20/20, MTW"
+einsatzfahrzeuge: "HLF 20/20, MTW"
 vorschaubild: "/uploads/einsaetze/2026-06-12-einsatz-16-26-gg-1-oelspur/bild-01.jpg"
 galerie:
   - "/uploads/einsaetze/2026-06-12-einsatz-16-26-gg-1-oelspur/bild-01.jpg"

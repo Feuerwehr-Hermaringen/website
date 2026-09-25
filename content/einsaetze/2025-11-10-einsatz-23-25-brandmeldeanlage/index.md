@@ -4,8 +4,8 @@ date: 2025-11-10T17:52:00+02:00
 einsatznummer: "23/25"
 alarmzeit: "17:52 Uhr"
 einsatzende: "18:33 Uhr"
-einsatzart: "**BR 5 - Brandmeldeanlage"
-einsatzort: "**Industriebetrieb Gerschweiler"
+einsatzart: "BR 5 - Brandmeldeanlage"
+einsatzort: "Industriebetrieb Gerschweiler"
 einsatzfahrzeuge: "HLF 20/20, LF 20, MTW"
 vorschaubild: ""
 galerie: []

@@ -3,7 +3,7 @@ title: "Einsatz 04/26 - BR 5 Brandmeldeanlage"
 date: 2026-03-23T15:15:00+02:00
 einsatznummer: "04/26"
 alarmzeit: "15:15 Uhr"
-einsatzende: "**16:03 Uhr"
+einsatzende: "16:03 Uhr"
 einsatzart: "BR 5 - Brandmeldeanlage"
 einsatzort: "Industriebetrieb, Gerschweiler"
 einsatzfahrzeuge: "HLF 20/20, MTW"

@@ -3,9 +3,9 @@ title: "Einsatz 05/26 - SE 2 Türöffnung"
 date: 2026-03-27T10:14:00+02:00
 einsatznummer: "05/26"
 alarmzeit: "10:14 Uhr"
-einsatzende: "**11:05 Uhr"
-einsatzart: "**SE 2 - Türöffnung"
-einsatzort: "**Gartenstraße, Hermaringen"
+einsatzende: "11:05 Uhr"
+einsatzart: "SE 2 - Türöffnung"
+einsatzort: "Gartenstraße, Hermaringen"
 einsatzfahrzeuge: "HLF20/20; MTW"
 vorschaubild: "/uploads/einsaetze/2026-03-27-einsatz-05-26-se-2-tueroeffnung/bild-01.jpg"
 galerie:

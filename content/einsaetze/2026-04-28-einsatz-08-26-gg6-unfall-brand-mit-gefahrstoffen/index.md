@@ -3,7 +3,7 @@ title: "Einsatz 08/26 - GG6 Unfall/Brand mit Gefahrstoffen"
 date: 2026-04-28T13:19:00+02:00
 einsatznummer: "08/26"
 alarmzeit: "13:19 Uhr"
-einsatzende: "**20:33 Uhr"
+einsatzende: "20:33 Uhr"
 einsatzart: "GG 6 - Unfall/Brand mit Gefahrstoffen"
 einsatzort: "Industriebetrieb Gerschweiler"
 einsatzfahrzeuge: "LF 20 KatS, HLF 20/20, Dekon-P, MTW, Feuerwehr Giengen, Gefahrgutzug des Landkreises"

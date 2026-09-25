@@ -1,11 +1,11 @@
 ---
 title: "Einsatz 07/26 - BR 4 Brand außerhalb Gebäude"
 date: 2026-04-15
-einsatznummer: "**07/26"
+einsatznummer: "07/26"
 alarmzeit: ""
 einsatzende: "15:30 Uhr"
 einsatzart: "Brand 4 – Brand außerhalb Gebäude"
-einsatzort: "**B492- Fahrtrichtung Sontheim"
+einsatzort: "B492- Fahrtrichtung Sontheim"
 einsatzfahrzeuge: "HLF 20/20; Feuerwehr Sontheim"
 vorschaubild: "/uploads/einsaetze/2026-04-15-einsatz-07-26-br-4-brand-ausserhalb-gebaeude/bild-01.jpg"
 galerie:

@@ -4,7 +4,7 @@ date: 2025-09-29T18:19:00+02:00
 einsatznummer: "18/25"
 alarmzeit: "18:19 Uhr"
 einsatzende: "23:30 Uhr"
-einsatzart: "**BR6 – Brand Sonderbau/ Landwirtschaftliches Anwesen"
+einsatzart: "BR6 – Brand Sonderbau/ Landwirtschaftliches Anwesen"
 einsatzort: "Sontheim, Ortsteil Brenz"
 einsatzfahrzeuge: "HLF 20/20, LF 20, MTW, Dekon-P, FW Sontheim, FW Heidenheim, FW Giengen, FW Herbrechtingen, FW Gundelfingen, FW Bergenweiler"
 vorschaubild: "/uploads/einsaetze/2025-09-29-einsatz-18-25-br-6-brand-landwirtschaftliches-anwesen/bild-01.jpg"

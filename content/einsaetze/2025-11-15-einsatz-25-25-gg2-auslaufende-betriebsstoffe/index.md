@@ -3,7 +3,7 @@ title: "Einsatz 25/25 - GG2 Auslaufende Betriebsstoffe"
 date: 2025-11-15T20:25:00+02:00
 einsatznummer: "25/25"
 alarmzeit: "20:25 Uhr"
-einsatzende: "**23:55 Uhr"
+einsatzende: "23:55 Uhr"
 einsatzart: "GG 2 – Auslaufende Betriebsstoffe"
 einsatzort: "K3025 – Richtung Allewind"
 einsatzfahrzeuge: "HLF 20/20, MTW; Feuerwehr Giengen, Feuerwehr Hohenmemmingen"

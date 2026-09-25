@@ -4,7 +4,7 @@ date: 2026-05-18T12:31:00+02:00
 einsatznummer: "10/26"
 alarmzeit: "12:31 Uhr"
 einsatzende: "15:05 Uhr"
-einsatzart: "**GG 5 – Auslaufende Betriebsstoffe"
+einsatzart: "GG 5 – Auslaufende Betriebsstoffe"
 einsatzort: "Zeppelinstraße, Hermaringen"
 einsatzfahrzeuge: "HLF 20/20, Dekon-P, MTW"
 vorschaubild: "/uploads/einsaetze/2026-05-18-einsatz-10-26-gg-5-auslaufende-betriebsstoffe/bild-01.jpg"

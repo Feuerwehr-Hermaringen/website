@@ -4,9 +4,9 @@ date: 2025-12-08T10:56:00+02:00
 einsatznummer: "28/25"
 alarmzeit: "10:56 Uhr"
 einsatzende: "11:45 Uhr"
-einsatzart: "**SE 2 - Türöffnung"
+einsatzart: "SE 2 - Türöffnung"
 einsatzort: "Schillerstraße, Hermaringen"
-einsatzfahrzeuge: "**MTW, HLF 20/20"
+einsatzfahrzeuge: "MTW, HLF 20/20"
 vorschaubild: ""
 galerie: []
 ---

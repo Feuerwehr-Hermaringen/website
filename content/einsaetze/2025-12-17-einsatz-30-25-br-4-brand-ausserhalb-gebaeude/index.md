@@ -1,11 +1,11 @@
 ---
 title: "Einsatz 30/25 - BR 4 Brand außerhalb Gebäude"
 date: 2025-12-17T23:26:00+02:00
-einsatznummer: "**30/25"
+einsatznummer: "30/25"
 alarmzeit: "23:26 Uhr"
 einsatzende: "01:25 Uhr"
-einsatzart: "**Brand 4 – Brand außerhalb Gebäude"
-einsatzort: "**Sachsenhauser Weg, Sontheim"
+einsatzart: "Brand 4 – Brand außerhalb Gebäude"
+einsatzort: "Sachsenhauser Weg, Sontheim"
 einsatzfahrzeuge: "LF 20, MTW, Feuerwehr Sontheim, Feuerwehr Bergenweiler"
 vorschaubild: "/uploads/einsaetze/2025-12-17-einsatz-30-25-br-4-brand-ausserhalb-gebaeude/bild-01.jpg"
 galerie:
