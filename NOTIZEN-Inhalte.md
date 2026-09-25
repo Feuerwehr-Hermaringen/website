@@ -633,3 +633,17 @@ Auf Wunsch die ganze Website durchgesehen (Code + Stichproben live). Gefunden un
 3. Redakteure in DecapBridge einladen.
 4. Alt-Texte für Galerie-Bilder ergänzen (in der Barrierefreiheitserklärung
    bereits als bekannte Einschränkung genannt).
+
+---
+
+## Freigabe – 2026-09-25
+
+Marvin bestätigt: Datenschutz-Prüfung der Fotos ist erfolgt und die Gemeinde /
+der Datenschutzbeauftragte hat Impressum, Datenschutzerklärung und
+Barrierefreiheitserklärung geprüft und freigegeben. Alle bisher offenen
+Prüfpunkte aus dieser Notizdatei gelten damit als erledigt.
+
+**Website ist inhaltlich und rechtlich freigegeben für den Live-Betrieb.**
+Rein organisatorisch stehen noch aus (falls nicht bereits erledigt):
+- Domain-Umzug auf `feuerwehr-hermaringen.de` (siehe ANLEITUNG-Schritt4-Einrichtung.md, Teil D)
+- Redakteure in DecapBridge einladen (Dashboard → „Manage collaborators")
