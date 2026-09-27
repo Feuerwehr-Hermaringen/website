@@ -55,6 +55,8 @@ collections:
       - name: start
         label: "Startseite bearbeiten"
         file: "content/_index.md"
+        media_folder: "/static/uploads/startseite"
+        public_folder: "/uploads/startseite"
         fields:
           - { name: kopfbereich_titel, label: "Welche Überschrift soll oben auf der Startseite stehen?", widget: string }
           - { name: kopfbild, label: "Großes Bild oben auf der Startseite", widget: image, hint: "Empfohlen: ein breites Querformat-Foto." }
@@ -85,6 +87,8 @@ collections:
       • Berichte immer erst NACH dem Einsatz veröffentlichen – kein Live-Ticker.
     folder: "content/einsaetze"
     path: "{{year}}-{{month}}-{{day}}-{{slug}}/index"
+    media_folder: "/static/uploads/einsaetze/{{slug}}"
+    public_folder: "/uploads/einsaetze/{{slug}}"
     create: true
     summary: "{{date}} – {{title}}"
     sortable_fields: [date, title]
@@ -128,6 +132,8 @@ collections:
     folder: "content/aktuelles"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: "/static/uploads/aktuelles/{{slug}}"
+    public_folder: "/uploads/aktuelles/{{slug}}"
     summary: "{{date}} – {{title}}"
     sortable_fields: [date, title]
     fields:
@@ -150,6 +156,8 @@ collections:
     description: "Die Einsatzfahrzeuge der Feuerwehr Hermaringen."
     folder: "content/fahrzeuge"
     path: "{{slug}}/index"
+    media_folder: "/static/uploads/fahrzeuge/{{slug}}"
+    public_folder: "/uploads/fahrzeuge/{{slug}}"
     create: true
     sortable_fields: [weight, title]
     fields:
@@ -183,6 +191,8 @@ collections:
     label_singular: "Abteilung"
     folder: "content/abteilungen"
     create: true
+    media_folder: "/static/uploads/abteilungen/{{slug}}"
+    public_folder: "/uploads/abteilungen/{{slug}}"
     sortable_fields: [weight, title]
     fields:
       - { name: title, label: "Name der Abteilung", widget: string }
@@ -245,6 +255,8 @@ collections:
       - name: feuerwehrhaus
         label: "Feuerwehrhaus"
         file: "content/unsere-feuerwehr/feuerwehrhaus.md"
+        media_folder: "/static/uploads/feuerwehrhaus"
+        public_folder: "/uploads/feuerwehrhaus"
         fields:
           - { name: title, label: "Seitentitel", widget: string }
           - { name: titelbild, label: "Kopfbild (optional)", widget: image, required: false }
@@ -305,6 +317,8 @@ collections:
       - name: liste
         label: "Personenliste"
         file: "data/personen.yaml"
+        media_folder: "/static/uploads/personen"
+        public_folder: "/uploads/personen"
         fields:
           - name: personen
             label: "Personen"

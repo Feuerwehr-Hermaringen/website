@@ -13,5 +13,75 @@
     Version bewusst >= 3.8.3, damit "Anmelden mit Google/Microsoft" moeglich ist.
   -->
   <script src="https://unpkg.com/decap-cms@^3.8/dist/decap-cms.js"></script>
+
+  <script>
+    // Vorschau-Baustein fuer Seiten mit einer Bildergalerie (Liste von Bildern).
+    // Warum: Ohne eigene Vorschau kann Decap CMS eine Liste von Bildern nicht
+    // als Bilder anzeigen (nur als Text) - deshalb erschien statt des Fotos
+    // ein Symbol mit Fragezeichen. widgetsFor() liefert die fertig aufbereitete
+    // Bildvorschau fuer jedes Listenelement.
+    function galerieVorschau(props, titelFeld, bildFeld, datumFeld, textFeld, galerieFeld) {
+      var entry = props.entry;
+      var titel = entry.getIn(['data', titelFeld]) || '';
+      var datum = datumFeld ? entry.getIn(['data', datumFeld]) : null;
+      var hauptbild = null;
+      if (bildFeld && entry.getIn(['data', bildFeld])) {
+        var pfad = props.getAsset(entry.getIn(['data', bildFeld]));
+        hauptbild = h('img', {
+          src: pfad ? pfad.toString() : '',
+          style: { maxWidth: '100%', marginBottom: '1em' }
+        });
+      }
+      var galerieBilder = null;
+      var galerieListe = props.widgetsFor(galerieFeld);
+      if (galerieListe && galerieListe.size > 0) {
+        galerieBilder = h('div', { style: { display: 'flex', flexWrap: 'wrap', gap: '0.5em' } },
+          galerieListe.map(function (eintrag, i) {
+            return h('div', { key: i, style: { width: '150px' } }, eintrag.getIn(['widgets', 'bild']));
+          }).toArray()
+        );
+      }
+      return h('div', { style: { padding: '1em' } },
+        h('h1', {}, titel),
+        datum ? h('p', {}, String(datum)) : null,
+        hauptbild,
+        h('div', {}, props.widgetFor(textFeld)),
+        galerieBilder ? h('h2', {}, 'Bildergalerie') : null,
+        galerieBilder
+      );
+    }
+
+    CMS.registerPreviewTemplate('einsaetze', createClass({
+      render: function () {
+        return galerieVorschau(this.props, 'title', 'vorschaubild', 'date', 'body', 'galerie');
+      }
+    }));
+
+    CMS.registerPreviewTemplate('aktuelles', createClass({
+      render: function () {
+        return galerieVorschau(this.props, 'title', 'vorschaubild', 'date', 'body', 'galerie');
+      }
+    }));
+
+    CMS.registerPreviewTemplate('fahrzeuge', createClass({
+      render: function () {
+        return galerieVorschau(this.props, 'title', 'titelbild', null, 'body', 'galerie');
+      }
+    }));
+
+    CMS.registerPreviewTemplate('abteilungen', createClass({
+      render: function () {
+        return galerieVorschau(this.props, 'title', 'titelbild', null, 'body', 'galerie');
+      }
+    }));
+
+    CMS.registerPreviewTemplate('feuerwehrhaus', createClass({
+      render: function () {
+        return galerieVorschau(this.props, 'title', 'titelbild', null, 'body', 'galerie');
+      }
+    }));
+
+    CMS.init();
+  </script>
 </body>
 </html>
