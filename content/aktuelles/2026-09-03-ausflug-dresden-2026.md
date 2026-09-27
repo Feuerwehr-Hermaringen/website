@@ -10,8 +10,6 @@ galerie:
   - /uploads/aktuelles/ausflug-dresden-2026/img_4530.jpg
   - /uploads/aktuelles/ausflug-dresden-2026/img_4538.jpg
 ---
-Dreitägiger Feuerwehrausflug nach Dresden
-
 Am  Wochenende des 4. September 2026  machte sich die Freiwillige Feuerwehr Hermaringen zu einem dreitägigen Ausflug nach Dresden auf. In den Mittelpunkt der Reise standen dabei neben zahlreichen Sehenswürdigkeiten vor allem die gemeinsame Zeit und die Kameradschaft.
 
 Am Freitagmorgen startete die Reise früh am Feuerwehrhaus in Hermaringen. Mit dem Bus ging es in Richtung Dresden. Unterwegs durfte natürlich eine gemeinsame Vesperpause nicht fehlen. Nach der Ankunft und dem Check-in im Hotel stand bereits die erste Erkundung Dresdens auf dem Programm. Bei einer Stadtführung konnten die Teilnehmerinnen und Teilnehmer die sächsische Landeshauptstadt näher kennenlernen und viele interessante Eindrücke sammeln. Den Abend ließ die Gruppe bei einem gemeinsamen Abendessen gemütlich ausklingen.
