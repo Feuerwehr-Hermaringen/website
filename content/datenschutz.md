@@ -86,7 +86,7 @@ Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO),
 Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO),
 Datenübertragbarkeit (Art. 20 DSGVO) und Widerspruch gegen die Verarbeitung
 (Art. 21 DSGVO). Für Anfragen wenden Sie sich an den Datenschutzbeauftragten
-unter datenschutz@hermaringen.de.
+unter info@hermaringen.de
 
 ## 9. Beschwerderecht bei der Aufsichtsbehörde
 
