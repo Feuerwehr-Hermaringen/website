@@ -19,7 +19,7 @@ Marvin Nauenburg, presse@feuerwehr-hermaringen.de
 ## 2. Behördlicher Datenschutzbeauftragter
 
 Christoph Boser
-E-Mail: datenschutz@hermaringen.de
+E-Mail: info@hermaringen.de
 
 ## 3. Hosting
 
@@ -36,7 +36,6 @@ Seiten – kommen zwei weitere Dienste zum Einsatz:
 * der Anmeldedienst **DecapBridge**, über den sich die Redaktionsmitglieder mit
   E-Mail und Passwort anmelden; verarbeitet werden dabei die Zugangsdaten der
   angemeldeten Personen sowie technische Verbindungsdaten.
-
 * das Redaktionsprogramm **Decap CMS**, das über den Auslieferungsdienst
   `unpkg.com` (Cloudflare, Inc., USA) geladen wird; dabei wird die IP-Adresse
   des Redaktionsmitglieds an diesen Dienst übermittelt.
