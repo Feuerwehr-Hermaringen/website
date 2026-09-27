@@ -8,9 +8,8 @@
 # baseURL = die spaetere Internetadresse der Website.
 # Wird beim lokalen Testen (hugo server) automatisch ueberschrieben, ist also
 # nur fuer die veroeffentlichte Version relevant.
-# Vorerst die Netlify-Adresse. Bei der Domain-Umstellung (siehe ANLEITUNG Schritt 4,
-# Teil D) auf "https://feuerwehr.hermaringen.de/" aendern.
-baseURL = "https://feuerwehr-hermaringen.netlify.app/"
+# Domain-Umstellung (ANLEITUNG Schritt 4, Teil D) am 2026-09-27 abgeschlossen.
+baseURL = "https://feuerwehr-hermaringen.de/"
 
 # Sprache der Website: durchgehend Deutsch.
 locale = "de"

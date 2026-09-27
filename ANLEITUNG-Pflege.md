@@ -12,8 +12,7 @@ wieder rückgängig machen lässt.
 
 ## 1. Anmelden
 
-1. Öffne im Browser: **feuerwehr.hermaringen.de/admin/**
-   *(solange die Adresse noch nicht umgestellt ist: `feuerwehr-hermaringen.netlify.app/admin/`)*
+1. Öffne im Browser: **feuerwehr-hermaringen.de/admin/**
 2. Gib deine **E-Mail-Adresse** und dein **Passwort** ein und klicke auf **Login**.
    *(Beim ersten Mal hast du eine Einladungs-E-Mail bekommen und dort ein Passwort gesetzt.
    Passwort vergessen? Auf „Passwort vergessen" klicken.)*

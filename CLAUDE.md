@@ -91,15 +91,23 @@ Das Layout darf nicht davon abhängen, dass bestimmte Texte fest in HTML stehen.
 
 ## Domain
 
-Entscheidung: die **bisherige Domain `feuerwehr-hermaringen.de`** wird auf die
-neue Website umgestellt (statt einer neuen Subdomain der Gemeinde) – sie ist
-bereits bekannt (Google, Flyer, Fahrzeuge). Die DNS-Verwaltung liegt bei
-**Alfahosting**, die E-Mail-Postfächer `@feuerwehr-hermaringen.de` laufen über
-**Microsoft 365** – deren DNS-Einträge (MX, SPF-TXT, MS-TXT) dürfen beim Umzug
-nicht verändert werden. Ablauf: siehe `ANLEITUNG-Schritt4-Einrichtung.md`, Teil D.
-Danach anzupassen: `baseURL` in `hugo.toml`, `display_url` / `site_url` /
-`logo_url` in `static/admin/config.yml`, sowie die „Decap CMS Login URL" im
-DecapBridge-Dashboard.
+**Umstellung am 2026-09-27 abgeschlossen.** Die Website läuft jetzt unter der
+bisherigen Domain `https://feuerwehr-hermaringen.de` (statt einer neuen
+Subdomain der Gemeinde) – sie ist bereits bekannt (Google, Flyer, Fahrzeuge).
+`www.feuerwehr-hermaringen.de` leitet auf die Domain ohne `www` um. Die
+DNS-Verwaltung liegt bei **Alfahosting**, die E-Mail-Postfächer
+`@feuerwehr-hermaringen.de` laufen über **Microsoft 365** – deren
+DNS-Einträge (MX, SPF-TXT, MS-TXT) wurden beim Umzug nicht verändert.
+`baseURL` in `hugo.toml` und `display_url` / `site_url` / `logo_url` in
+`static/admin/config.yml` zeigen jetzt auf die neue Domain. Ablauf siehe
+`ANLEITUNG-Schritt4-Einrichtung.md`, Teil D.
+
+**Noch zu erledigen (nur durch die Feuerwehr selbst möglich):** Im
+DecapBridge-Dashboard (Site → Settings) die „Decap CMS Login URL" auf
+`https://feuerwehr-hermaringen.de/admin/index.html` umstellen – ohne diesen
+Schritt schlägt die Anmeldung am Redaktionssystem über die neue Domain fehl
+(„User does not exist"), die Anmeldung über die alte Netlify-Adresse
+funktioniert aber weiterhin.
 
 ## Vor jeder Arbeitssitzung
 

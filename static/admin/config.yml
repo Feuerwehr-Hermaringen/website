@@ -37,11 +37,10 @@ publish_mode: simple
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
-# Adresse der Website. Vorerst die Netlify-Adresse – wird bei der Domain-Umstellung
-# (Schritt 4, Teil D) auf https://feuerwehr.hermaringen.de geändert.
-site_url: "https://feuerwehr-hermaringen.netlify.app"
-display_url: "https://feuerwehr-hermaringen.netlify.app"
-logo_url: "https://feuerwehr-hermaringen.netlify.app/uploads/logo-feuerwehr-hermaringen.png"
+# Adresse der Website. Domain-Umstellung (Schritt 4, Teil D) am 2026-09-27 abgeschlossen.
+site_url: "https://feuerwehr-hermaringen.de"
+display_url: "https://feuerwehr-hermaringen.de"
+logo_url: "https://feuerwehr-hermaringen.de/uploads/logo-feuerwehr-hermaringen.png"
 
 collections:
 
