@@ -5,3 +5,13 @@ termine:
     ort: Feuerwehrhaus Hermaringen
     beschreibung: Nachtübung
     kategorie: Übung
+  - kategorie: Übung
+    titel: Übungsdienst
+    datum: 2026-09-29
+    uhrzeit: 20:00 Uhr
+    ort: "Feuerwehrhaus "
+  - kategorie: Sonstiges
+    titel: Weißwurstfrühstück
+    datum: 2026-10-04
+    ort: Feuerwehrhaus
+    uhrzeit: 10:00 Uhr
