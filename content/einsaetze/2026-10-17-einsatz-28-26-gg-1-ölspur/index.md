@@ -13,7 +13,7 @@ fahrzeuge:
 weitere_kraefte: Feuerwehr Giengen
 vorschaubild: ""
 galerie:
-  - /uploads/einsaetze/8002231b-4b01-469f-ae41-fb84dbba5016.jpg
+  - /uploads/einsaetze/einsatz-28-26-gg-1-ölspur/8002231b-4b01-469f-ae41-fb84dbba5016.jpg
 ---
 Einsatznummer: 28/26
 Datum: 18.10.2026
