@@ -11,7 +11,7 @@ fahrzeuge:
   - dekon-p
   - mtw
 weitere_kraefte: Feuerwehr Giengen
-vorschaubild: /uploads/einsaetze/8002231b-4b01-469f-ae41-fb84dbba5016.jpg
+vorschaubild: ""
 galerie:
   - /uploads/einsaetze/8002231b-4b01-469f-ae41-fb84dbba5016.jpg
 ---
