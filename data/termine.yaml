@@ -1,17 +1,17 @@
 termine:
-  - titel: Nachtübung
-    datum: 2026-09-21
-    uhrzeit: KW 39
-    ort: Feuerwehrhaus Hermaringen
-    beschreibung: Nachtübung
-    kategorie: Übung
   - kategorie: Übung
     titel: Übungsdienst
-    datum: 2026-09-29
-    uhrzeit: 20:00 Uhr
-    ort: "Feuerwehrhaus "
-  - kategorie: Sonstiges
-    titel: Weißwurstfrühstück
-    datum: 2026-10-04
+    datum: 2026-10-27
+    uhrzeit: 20 Uhr
     ort: Feuerwehrhaus
-    uhrzeit: 10:00 Uhr
+    beschreibung: Besprechung Hauptübung
+  - kategorie: Übung
+    titel: Hauptübung
+    datum: 2026-10-31
+    uhrzeit: 13:30 Uhr
+    ort: Johanniter Seniorenheim
+  - kategorie: Übung
+    titel: Belastungsübung
+    datum: 2026-11-17
+    uhrzeit: 18:30 Uhr
+    ort: Atemschutzstrecke Heidenheim
