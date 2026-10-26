@@ -1,6 +1,6 @@
 ---
 title: Einladung zur Hauptübung 2026
-date: 2026-10-31
+date: 2026-10-26
 vorschaubild: /uploads/aktuelles/einladung-zur-hauptübung-2026/einladung-zur-feuerwehr-hauptübung.png
 galerie:
   - /uploads/aktuelles/einladung-zur-hauptübung-2026/einladung-zur-feuerwehr-hauptübung.png
