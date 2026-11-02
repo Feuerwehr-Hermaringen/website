@@ -12,14 +12,7 @@ fahrzeuge:
   - mtw
 weitere_kraefte: Feuerwehr Giengen
 vorschaubild: /uploads/einsaetze/einsatz-31-26-–-br-5-brandmeldeanlage/img_4734.jpg
+galerie:
+  - /uploads/einsaetze/einsatz-31-26-–-br-5-brandmeldeanlage/img_4734.jpg
 ---
-Einsatznummer: 31/26
-Datum: 30.10.2026
-Alarmzeit: 15:40 Uhr 
-Einsatzende: 16:25 Uhr 
-Einsatzart: BR 5 – Brandmeldeanlage
-Einsatzort: Industriebetrieb, Hermaringen
-
-Einsatzfahrzeuge: HLF 20/20, LF 20 KatS, MTW, Feuerwehr Giengen
-
 Am Freitagnachmittag wurde die Freiwillige Feuerwehr Hermaringen mit dem Einsatzstichwort „Brand 5“ zu einer ausgelösten Brandmeldeanlage in einem Industriebetrieb alarmiert. Ebenfalls alarmiert wurden die Feuerwehr Giengen sowie der Rettungsdienst und die Polizei. Nach dem Eintreffen an der Einsatzstelle wurde der betroffene Bereich durch die Einsatzkräfte erkundet. Dabei konnte Wasserdampf als Ursache für die Auslösung der Brandmeldeanlage festgestellt werden. Ein Brandereignis lag nicht vor, sodass keine weiteren Maßnahmen durch die Feuerwehr erforderlich waren. Die Brandmeldeanlage wurde zurückgestellt und anschließend an den Betreiber übergeben. Der Einsatz konnte daraufhin beendet werden.
