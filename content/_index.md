@@ -6,7 +6,7 @@ notruf_ueberschrift: Im Notfall wählen Sie 112
 notruf_untertitel: Feuerwehr und Rettungsdienst · europaweit · kostenlos
 notruf_fragen:
   - w: Wer
-    text: Wer ruft an?
+    text: ruft an?
   - w: Wo
     text: ist es passiert?
   - w: Was
