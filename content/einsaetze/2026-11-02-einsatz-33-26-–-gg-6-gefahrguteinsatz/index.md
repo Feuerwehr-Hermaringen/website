@@ -11,4 +11,4 @@ fahrzeuge:
   - mtw
 weitere_kraefte: Gefahrgutzug des Landkreises
 ---
-Am Donnerstag wurde die Feuerwehr Hermaringen zu einem Gefahrguteinsatz der Alarmstufe GG6 nach Sontheim im Stubental alarmiert. Im Rahmen des Gefahrgutzuges des Landkreises Heidenheim wurde auch die Feuerwehr Hermaringen zur Unterstützung der Einsatzkräfte vor Ort mitalarmiert. Noch während der Anfahrt konnte der Einsatz für die Feuerwehr Hermaringen abgebrochen werden. Ein Tätigwerden vor Ort war somit nicht erforderlich.
+Am Dienstag 03.11. wurde die Feuerwehr Hermaringen zu einem Gefahrguteinsatz der Alarmstufe GG6 nach Sontheim im Stubental alarmiert. Im Rahmen des Gefahrgutzuges des Landkreises Heidenheim wurde auch die Feuerwehr Hermaringen zur Unterstützung der Einsatzkräfte vor Ort mitalarmiert. Noch während der Anfahrt konnte der Einsatz für die Feuerwehr Hermaringen abgebrochen werden. Ein Tätigwerden vor Ort war somit nicht erforderlich.
